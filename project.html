@@ -4,11 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Renova - Construction Building & Renovation Template</title>
-    <meta name="description" content="Renova - Construction Building & Renovation Template">
+    <title>Shams Conmac Pvt. Ltd.</title>
+    <meta name="description" content="Shams Conmac Pvt. Ltd.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/logo1.png">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
@@ -25,6 +25,568 @@
     <link rel="stylesheet" href="assets/css/aos.css">
     <link rel="stylesheet" href="assets/css/tg-cursor.css">
     <link rel="stylesheet" href="assets/css/main.css">
+
+    
+    <style>
+         /* ── MEGA MENU DESKTOP ── */
+.navigation .product-mega {
+  display: none;
+  position: absolute !important;
+  top: 100% !important;
+  left: 0 !important;
+  width: 660px !important;
+  flex-direction: row !important;
+  background: #fff !important;
+  border-top: 3px solid #F66300 !important;
+  box-shadow: 0 16px 50px rgba(0,0,0,0.15) !important;
+  padding: 0 !important;
+  z-index: 9999 !important;
+}
+
+.navigation .menu-item-has-children:hover > .product-mega {
+  display: flex !important;
+}
+
+.product-mega > .pd-col {
+  flex: 1;
+  padding: 22px 18px;
+  border-right: 1px solid rgba(0,0,0,0.08);
+  display: block !important;
+  width: auto !important;
+  float: none !important;
+  position: static !important;
+}
+.product-mega > .pd-col:last-child { border-right: none; }
+
+.product-mega .pd-group { margin-bottom: 18px; }
+.product-mega .pd-group:last-of-type { margin-bottom: 0; }
+
+.product-mega .pd-title {
+  display: block;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #F66300;
+  margin-bottom: 10px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  cursor: default;
+}
+
+.product-mega .pd-group ul {
+  display: block !important;
+  position: static !important;
+  background: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: auto !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  min-width: auto !important;
+}
+
+.product-mega .pd-group ul li {
+  margin-bottom: 7px;
+  padding: 0 !important;
+  border: none !important;
+}
+
+.product-mega .pd-group ul li a {
+  font-size: 12.5px !important;
+  color: #2C2C2A !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 5px !important;
+  padding: 0 !important;
+  line-height: 1.4 !important;
+  background: none !important;
+  transition: color .15s, padding-left .15s !important;
+  white-space: normal !important;
+}
+
+.product-mega .pd-group ul li a::before {
+  content: '›';
+  color: #F66300;
+  font-size: 15px;
+  line-height: 1.2;
+  flex-shrink: 0;
+}
+
+.product-mega .pd-group ul li a:hover {
+  color: #F66300 !important;
+  padding-left: 3px !important;
+  background: none !important;
+}
+
+.product-mega .pd-quote {
+  display: block;
+  margin-top: 16px;
+  background: #F66300;
+  color: #fff !important;
+  text-align: center;
+  padding: 10px 14px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background .2s;
+}
+.product-mega .pd-quote:hover { background: #cc4f00; }
+
+/* ── MOBILE OVERRIDES (below 1200px) ── */
+@media (max-width: 1199px) {
+
+  /* reset positioning — stack vertically */
+  .navigation .product-mega,
+  .navigation .menu-item-has-children:hover > .product-mega {
+    display: none !important;
+    position: static !important;
+    width: 100% !important;
+    flex-direction: column !important;
+    box-shadow: none !important;
+    border-top: 2px solid #F66300 !important;
+    padding: 0 !important;
+    background: #fafafa !important;
+  }
+
+  /* shown via JS class */
+  .navigation .menu-item-has-children.pd-mob-open > .product-mega {
+    display: flex !important;
+  }
+
+  .product-mega > .pd-col {
+    padding: 0 !important;
+    border-right: none !important;
+    border-bottom: 1px solid rgba(0,0,0,0.07) !important;
+    width: 100% !important;
+  }
+  .product-mega > .pd-col:last-child { border-bottom: none !important; }
+
+  /* group title — tappable on mobile */
+  .product-mega .pd-title {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 18px !important;
+    margin: 0 !important;
+    border-bottom: 1px solid rgba(0,0,0,0.06) !important;
+    background: #f0ede6;
+    font-size: 11px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .product-mega .pd-title::after {
+    content: '+';
+    font-size: 18px;
+    color: #F66300;
+    font-weight: 300;
+    flex-shrink: 0;
+    line-height: 1;
+  }
+
+  .product-mega .pd-title.pd-mob-open::after {
+    content: '−';
+  }
+
+  /* hide items by default on mobile */
+  .product-mega .pd-group ul {
+    display: none !important;
+  }
+
+  /* show when open */
+  .product-mega .pd-group ul.pd-mob-items-open {
+    display: flex !important;
+    flex-direction: column;
+    padding: 6px 0 10px 0 !important;
+    background: #fff !important;
+  }
+
+  .product-mega .pd-group ul li {
+    margin: 0 !important;
+    border-bottom: 1px solid rgba(0,0,0,0.04) !important;
+  }
+
+  .product-mega .pd-group ul li a {
+    padding: 9px 18px 9px 32px !important;
+    font-size: 13px !important;
+    color: #555 !important;
+  }
+
+  .product-mega .pd-group ul li a::before {
+    content: '—' !important;
+    font-size: 9px !important;
+    margin-top: 2px;
+  }
+
+  .product-mega .pd-group ul li a:hover {
+    color: #F66300 !important;
+    padding-left: 36px !important;
+    background: #fdf6ee !important;
+  }
+
+  .product-mega .pd-group {
+    margin-bottom: 0 !important;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+  }
+  .product-mega .pd-group:last-of-type { border-bottom: none; }
+
+  /* hide quote button on mobile */
+  .product-mega .pd-quote { display: none !important; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* Override theme sub-menu for mega menu only */
+.navigation .product-mega {
+  display: none;
+  position: absolute !important;
+  top: 100% !important;
+  left: 0 !important;
+  width: 660px !important;
+  flex-direction: row !important;
+  background: #fff !important;
+  border-top: 3px solid #F66300 !important;
+  box-shadow: 0 16px 50px rgba(0,0,0,0.15) !important;
+  padding: 0 !important;
+  z-index: 9999 !important;
+}
+
+/* Show on hover — override theme */
+.navigation .menu-item-has-children:hover > .product-mega {
+  display: flex !important;
+}
+
+/* 3 equal columns */
+.product-mega > .pd-col {
+  flex: 1;
+  padding: 22px 18px;
+  border-right: 1px solid rgba(0,0,0,0.08);
+  display: block !important;
+  width: auto !important;
+  float: none !important;
+  position: static !important;
+}
+.product-mega > .pd-col:last-child { border-right: none; }
+
+/* group spacing */
+.product-mega .pd-group { margin-bottom: 18px; }
+.product-mega .pd-group:last-of-type { margin-bottom: 0; }
+
+/* column title */
+.product-mega .pd-title {
+  display: block;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #F66300;
+  margin-bottom: 10px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+/* reset theme ul inside mega */
+.product-mega .pd-group ul {
+  display: block !important;
+  position: static !important;
+  background: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: auto !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  min-width: auto !important;
+}
+
+/* links */
+.product-mega .pd-group ul li {
+  margin-bottom: 7px;
+  padding: 0 !important;
+  border: none !important;
+}
+.product-mega .pd-group ul li a {
+  font-size: 12.5px !important;
+  color: #2C2C2A !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 5px !important;
+  padding: 0 !important;
+  line-height: 1.4 !important;
+  background: none !important;
+  transition: color .15s, padding-left .15s !important;
+  white-space: normal !important;
+}
+.product-mega .pd-group ul li a::before {
+  content: '›';
+  color: #F66300;
+  font-size: 15px;
+  line-height: 1.2;
+  flex-shrink: 0;
+}
+.product-mega .pd-group ul li a:hover {
+  color: #F66300 !important;
+  padding-left: 3px !important;
+  background: none !important;
+}
+
+/* quote button */
+.product-mega .pd-quote {
+  display: block;
+  margin-top: 16px;
+  background: #F66300;
+  color: #111 !important;
+  text-align: center;
+  padding: 10px 14px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background .2s;
+}
+.product-mega .pd-quote:hover { background: #A87C10; }
+
+
+
+
+
+
+
+
+:root {
+  --gold: #F66300;
+  --gold-dark: ##F66300;
+  --black: #111111;
+  --white: #ffffff;
+  --light: #F5F3EE;
+  --muted: #888880;
+  --text: #2C2C2A;
+  --border: rgba(0,0,0,0.1);
+}
+
+.wrap { max-width: 1260px; margin: 0 auto; padding: 0 20px; }
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  font-family: 'Barlow Condensed', sans-serif; font-weight: 700;
+  font-size: 13px; letter-spacing: 1.5px; text-transform: uppercase;
+  cursor: pointer; border: none; padding: 11px 24px;
+  transition: all .2s; white-space: nowrap;
+}
+.btn-gold { background: var(--gold); color: var(--black); }
+.btn-gold:hover { background: var(--gold-dark); }
+.btn-dark { background: var(--black); color: var(--white); }
+.btn-dark:hover { background: #333; }
+
+/* PAGE BANNER */
+.banner { background: var(--black); position: relative; overflow: hidden; padding: 60px 0 50px; }
+.banner-bg {
+  position: absolute; inset: 0;
+  background: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&auto=format&fit=crop&q=50') center/cover;
+  opacity: .12;
+}
+.banner-in { position: relative; }
+.btag {
+  font-size: 11px; letter-spacing: 4px; color: var(--gold);
+  text-transform: uppercase; font-weight: 700;
+  display: flex; align-items: center; gap: 10px; margin-bottom: 10px;
+}
+.btag::before { content: ''; width: 26px; height: 2px; background: var(--gold); }
+.banner h1 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(28px, 6vw, 56px); font-weight: 800;
+  color: var(--white); text-transform: uppercase; letter-spacing: 1px;
+}
+.bc { margin-top: 12px; font-size: 13px; color: rgba(255,255,255,0.45); display: flex; gap: 7px; align-items: center; }
+.bc a { color: rgba(255,255,255,0.45); text-decoration: none; }
+.bc a:hover { color: var(--gold); }
+.bc-cur { color: var(--gold); }
+
+/* LAYOUT */
+.playout { display: flex; flex-direction: column; gap: 28px; padding: 40px 0 70px; align-items: start; }
+@media(min-width: 1024px) { .playout { flex-direction: row; gap: 32px; } }
+
+/* SIDEBAR */
+.sidebar { width: 100%; flex-shrink: 0; }
+@media(min-width: 1024px) { .sidebar { width: 255px; position: sticky; top: 80px; } }
+
+.sb-tog {
+  width: 100%; display: flex; align-items: center; justify-content: space-between;
+  padding: 13px 18px; background: var(--black); color: var(--white);
+  font-family: 'Barlow Condensed', sans-serif; font-size: 14px; font-weight: 700;
+  letter-spacing: 2px; text-transform: uppercase; cursor: pointer; border: none;
+}
+.sb-tog .sta { transition: transform .3s; }
+.sb-tog.stopen .sta { transform: rotate(180deg); }
+@media(min-width: 1024px) { .sb-tog { display: none; } }
+
+.sb-body { display: none; border: 1px solid var(--border); border-top: none; }
+.sb-body.stopen { display: block; }
+@media(min-width: 1024px) { .sb-body { display: block; border: 1px solid var(--border); } }
+
+.sb-hd {
+  background: var(--black); color: var(--white); padding: 13px 18px;
+  font-family: 'Barlow Condensed', sans-serif; font-size: 12px; font-weight: 800;
+  letter-spacing: 3px; text-transform: uppercase; display: none; align-items: center; gap: 8px;
+}
+.sb-hd::before { content: ''; width: 18px; height: 2px; background: var(--gold); }
+@media(min-width: 1024px) { .sb-hd { display: flex; } }
+
+.sbg { border-bottom: 1px solid var(--border); }
+.sbg:last-of-type { border-bottom: none; }
+.sbg-btn {
+  width: 100%; padding: 12px 16px; background: none; border: none; cursor: pointer;
+  display: flex; justify-content: space-between; align-items: center;
+  font-family: 'Barlow Condensed', sans-serif; font-size: 14px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .5px; color: var(--text);
+  transition: background .2s, color .2s; text-align: left; gap: 8px;
+}
+.sbg-btn:hover, .sbg-btn.sopen { color: var(--gold); background: var(--light); }
+.sbg-arr { font-size: 10px; color: var(--muted); transition: transform .25s; flex-shrink: 0; }
+.sbg-btn.sopen .sbg-arr { transform: rotate(180deg); color: var(--gold); }
+
+.sb-sub { display: none; padding: 4px 0 10px 16px; background: var(--light); }
+.sb-sub.sopen { display: block; }
+.sb-sub a {
+  display: flex; align-items: center; gap: 5px;
+  padding: 6px 10px; font-size: 12.5px; color: var(--muted);
+  transition: color .15s; text-decoration: none;
+}
+.sb-sub a::before { content: '—'; font-size: 9px; color: var(--gold); }
+.sb-sub a:hover { color: var(--gold); }
+
+.sb-cta { padding: 16px 18px; background: var(--gold); text-align: center; margin-top: 14px; }
+.sb-cta p { font-size: 12.5px; font-weight: 600; color: var(--black); line-height: 1.5; margin-bottom: 10px; }
+.sb-cta a {
+  display: block; background: var(--black); color: var(--white); padding: 10px;
+  font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 11px;
+  letter-spacing: 2px; text-transform: uppercase; text-decoration: none; transition: background .2s;
+}
+.sb-cta a:hover { background: #333; }
+
+.sb-pdf { padding: 16px 18px; background: var(--light); border: 1px solid var(--border); margin-top: 12px; text-align: center; }
+.sb-pdf p { font-size: 13px; color: var(--text); margin-bottom: 10px; font-weight: 500; line-height: 1.5; }
+
+/* PRODUCTS MAIN */
+.pmain { flex: 1; min-width: 0; }
+
+.ptopbar { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 20px; }
+.ptopbar h2 { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(22px, 4vw, 32px); font-weight: 800; text-transform: uppercase; color: var(--black); }
+.ptopbar h2 span { color: var(--gold); }
+.rcount { font-size: 12.5px; color: var(--muted); margin-top: 2px; }
+
+/* CHIPS */
+.chips { display: flex; gap: 7px; flex-wrap: wrap; margin-bottom: 28px; overflow-x: auto; padding-bottom: 4px; }
+.chip {
+  padding: 6px 13px; font-family: 'Barlow Condensed', sans-serif;
+  font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
+  cursor: pointer; border: 1.5px solid var(--border); background: var(--white);
+  color: var(--muted); transition: all .2s; white-space: nowrap; flex-shrink: 0;
+}
+.chip:hover { border-color: var(--gold); color: var(--gold); }
+.chip.active { background: var(--gold); border-color: var(--gold); color: var(--black); }
+
+/* PRODUCT GROUP */
+.pgroup { margin-bottom: 50px; }
+.pgroup.phide { display: none; }
+
+.gh { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; padding-bottom: 14px; border-bottom: 2px solid var(--light); }
+.gnum { font-family: 'Barlow Condensed', sans-serif; font-size: 52px; font-weight: 800; color: var(--light); line-height: 1; flex-shrink: 0; }
+.glbl { font-size: 10px; letter-spacing: 3px; color: var(--gold); text-transform: uppercase; font-weight: 700; margin-bottom: 3px; }
+.gtitle { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(17px, 2.5vw, 23px); font-weight: 800; text-transform: uppercase; color: var(--black); }
+
+/* PRODUCT GRID */
+.pgrid { display: grid; grid-template-columns: 1fr; gap: 14px; }
+@media(min-width: 480px) { .pgrid { grid-template-columns: repeat(2, 1fr); } }
+@media(min-width: 900px) { .pgrid { grid-template-columns: repeat(3, 1fr); } }
+@media(min-width: 1024px) { .pgrid { grid-template-columns: repeat(2, 1fr); } }
+@media(min-width: 1200px) { .pgrid { grid-template-columns: repeat(3, 1fr); } }
+
+/* PRODUCT CARD */
+.pcard { border: 1px solid var(--border); background: var(--white); overflow: hidden; transition: box-shadow .3s, transform .3s; cursor: pointer; }
+.pcard:hover { box-shadow: 0 8px 28px rgba(0,0,0,0.1); transform: translateY(-4px); }
+
+.cimg { height: 175px; background: var(--light); overflow: hidden; position: relative; display: flex; align-items: center; justify-content: center; }
+.cimg img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s; }
+.pcard:hover .cimg img { transform: scale(1.06); }
+.ccat {
+  position: absolute; top: 10px; left: 10px;
+  background: var(--gold); color: var(--black);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 9px; font-weight: 800; letter-spacing: 2px;
+  text-transform: uppercase; padding: 3px 9px;
+}
+
+.cbody { padding: 14px 15px 17px; }
+.cbody h4 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 15px; font-weight: 700; text-transform: uppercase;
+  color: var(--black); margin-bottom: 6px; line-height: 1.25;
+}
+.cbody p { font-size: 12px; color: var(--muted); line-height: 1.65; margin-bottom: 12px; }
+.cenq {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+  color: var(--gold); background: none; border: none; cursor: pointer; padding: 0;
+  display: flex; align-items: center; gap: 5px; transition: gap .2s;
+}
+.cenq:hover { gap: 10px; }
+
+/* MODAL */
+.moverlay {
+  position: fixed; inset: 0; background: rgba(0,0,0,0.72); z-index: 1000;
+  display: flex; align-items: center; justify-content: center;
+  padding: 20px; opacity: 0; visibility: hidden; transition: all .3s;
+}
+.moverlay.mopen { opacity: 1; visibility: visible; }
+.modal {
+  background: var(--white); width: 100%; max-width: 440px;
+  padding: clamp(22px, 5vw, 38px); position: relative;
+  max-height: 90vh; overflow-y: auto;
+}
+.mcls { position: absolute; top: 12px; right: 16px; background: none; border: none; font-size: 22px; cursor: pointer; color: var(--muted); }
+.modal h3 { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(18px, 4vw, 24px); font-weight: 800; text-transform: uppercase; margin-bottom: 4px; }
+.msub { font-size: 13px; color: var(--muted); margin-bottom: 16px; }
+.mtag {
+  display: inline-block; background: var(--light); padding: 5px 13px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 11px; font-weight: 700; letter-spacing: 1px;
+  text-transform: uppercase; color: var(--gold); margin-bottom: 16px;
+}
+.mform { display: flex; flex-direction: column; gap: 10px; }
+.mform input, .mform textarea {
+  padding: 11px 13px; border: 1px solid var(--border);
+  font-family: 'Barlow', sans-serif; font-size: 13.5px;
+  color: var(--text); background: var(--white);
+  outline: none; transition: border-color .2s; width: 100%;
+}
+.mform input:focus, .mform textarea:focus { border-color: var(--gold); }
+.mform textarea { resize: vertical; min-height: 80px; }
+.msubmit {
+  width: 100%; padding: 13px; background: var(--gold); color: var(--black);
+  font-family: 'Barlow Condensed', sans-serif; font-weight: 800;
+  font-size: 13px; letter-spacing: 2px; text-transform: uppercase;
+  border: none; cursor: pointer; transition: background .2s;
+}
+.msubmit:hover { background: var(--gold-dark); }
+    </style>
 </head>
 
 <body>
@@ -33,7 +595,7 @@
     <div id="preloader">
         <div id="loader" class="loader">
             <div class="loader-container">
-                <div class="loader-icon"><img src="assets/img/logo/preloader.svg" alt="Preloader"></div>
+                <div class="loader-icon"><img src="assets/img/logo/logo1.png" alt="Preloader"></div>
             </div>
         </div>
     </div>
@@ -46,8 +608,8 @@
     <!-- Scroll-top-end-->
 
     <!-- header-area -->
-    <header>
-        <div class="tg-header__top">
+        <header>
+        <!-- <div class="tg-header__top">
             <div class="container custom-container">
                 <div class="row align-items-center">
                     <div class="col-lg-4">
@@ -76,7 +638,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div id="header-fixed-height"></div>
         <div id="sticky-header" class="tg-header__area">
             <div class="container custom-container">
@@ -90,68 +652,118 @@
                                     </a>
                                 </div>
                                 <div class="logo">
-                                    <a href="index.html"><img src="assets/img/logo/logo.svg" alt="Logo"></a>
+                                    
+                                    <a href="index.html"><img src="assets/img/logo/logo3.png" alt="Logo"></a>
                                 </div>
                                 <div class="tgmenu__navbar-wrap tgmenu__main-menu d-none d-xl-flex">
                                     <ul class="navigation">
-                                        <li class="menu-item-has-children"><a href="#">Home</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="index.html">01. Construction</a></li>
-                                                <li><a href="index-2.html">02. Engineering</a></li>
-                                                <li><a href="index-3.html">03. Building</a></li>
-                                                <li><a href="index-4.html">04. Architecture</a></li>
-                                                <li><a href="index-5.html">05. Renovation</a></li>
-                                            </ul>
+                                        <li class="active menu-item-has"><a href="#">Home</a>
                                         </li>
-                                        <li class="menu-item-has-children"><a href="#">Pages</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="about.html">About Us</a></li>
-                                                <li><a href="services.html">Our Services</a></li>
-                                                <li><a href="services-details.html">Services Details</a></li>
-                                                <li><a href="history.html">Company History</a></li>
-                                                <li><a href="company.html">Company Values</a></li>
-                                                <li><a href="office.html">Our Offices</a></li>
-                                                <li><a href="clients.html">Our clients</a></li>
-                                                <li><a href="faq.html">Faq Page</a></li>
-                                                <li><a href="team.html">Team Page</a></li>
-                                                <li><a href="team-details.html">Team Details</a></li>
-                                                <li><a href="appointment.html">Appointment Page</a></li>
-                                                <li><a href="contact.html">Contact Us</a></li>
-                                            </ul>
+                                        <li class="menu-item-has"><a href="about.html">About Us</a>
                                         </li>
-                                        <li class="menu-item-has-children"><a href="#">Shop</a>
+                                        <li class="menu-item-has"><a href="services.html">Services</a>
+                                        </li>
+                                        
+                                        <li class="menu-item-has-children">
+  <a href="project.html">Products</a>
+  <ul class="sub-menu product-mega">
+    <li class="pd-col">
+      <div class="pd-group">
+        <span class="pd-title">Construction Machinery</span>
+        <ul>
+          <li><a href="project.html#machinery">Construction Machine & Spares</a></li>
+          <li><a href="project.html#machinery">Earth Compaction Machines</a></li>
+          <li><a href="project.html#machinery">Rail Track Machine & Tools</a></li>
+          <li><a href="project.html#machinery">Concrete Mixers</a></li>
+          <li><a href="project.html#machinery">Concrete Vibrators</a></li>
+          <li><a href="project.html#machinery">Concrete & Slab Cutting</a></li>
+        </ul>
+      </div>
+      <div class="pd-group">
+        <span class="pd-title">Centring & Formwork</span>
+        <ul>
+          <li><a href="project.html#centring">Tower Crane Buckets</a></li>
+          <li><a href="project.html#centring">Bull Floaters & Texture Brush</a></li>
+          <li><a href="project.html#centring">Curing Hessian Cloth</a></li>
+          <li><a href="project.html#centring">Concrete Trolley & Tray</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="pd-col">
+      <div class="pd-group">
+        <span class="pd-title">Safety & Lifting</span>
+        <ul>
+          <li><a href="project.html#safety">Safety Nets & Helmets</a></li>
+          <li><a href="project.html#safety">Safety Jacket & Lights</a></li>
+          <li><a href="project.html#safety">Speed Breaker & Barricades</a></li>
+          <li><a href="project.html#safety">Monkey Crane & Winch</a></li>
+          <li><a href="project.html#safety">Chain Pulley Block</a></li>
+          <li><a href="project.html#safety">Webbing Belt & Slings</a></li>
+          <li><a href="project.html#safety">D-Shackle & Ton Buckle</a></li>
+        </ul>
+      </div>
+      <div class="pd-group">
+        <span class="pd-title">Bitumen & Waterproofing</span>
+        <ul>
+          <li><a href="project.html#bitumen">Bitumen Filler Board</a></li>
+          <li><a href="project.html#bitumen">Armor Board & Membrane</a></li>
+          <li><a href="project.html#bitumen">Water Stoppers</a></li>
+          <li><a href="project.html#bitumen">Bitumen Tar Paper</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="pd-col">
+      <div class="pd-group">
+        <span class="pd-title">Tools & Hardware</span>
+        <ul>
+          <li><a href="project.html#tools">Power Tools</a></li>
+          <li><a href="project.html#tools">Hand Tools</a></li>
+          <li><a href="project.html#tools">All Hardware Materials</a></li>
+        </ul>
+      </div>
+      <div class="pd-group">
+        <span class="pd-title">Civil, Survey & Agri</span>
+        <ul>
+          <li><a href="project.html#civil">Civil Lab Equipments</a></li>
+          <li><a href="project.html#civil">Survey Lab Equipments</a></li>
+          <li><a href="project.html#civil">All Types of Green Nets</a></li>
+          <li><a href="project.html#civil">Green Tarpaulins</a></li>
+          <li><a href="project.html#civil">Bird Nets & Sports Nets</a></li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</li>
+
+
+                                        <!-- <li class="menu-item-has-children"><a href="#">Shop</a>
                                             <ul class="sub-menu">
                                                 <li><a href="shop.html">Shop Page</a></li>
                                                 <li><a href="shop-details.html">Shop Details</a></li>
                                             </ul>
-                                        </li>
-                                        <li class="active menu-item-has-children"><a href="#">Portfolio</a>
+                                        </li> -->
+                                        <!-- <li class="menu-item-has-children"><a href="#">Portfolio</a>
                                             <ul class="sub-menu">
-                                                <li class="active"><a href="project.html">Portfolio Page</a></li>
+                                                <li><a href="project.html">Portfolio Page</a></li>
                                                 <li><a href="project-details.html">Portfolio Details</a></li>
                                             </ul>
-                                        </li>
-                                        <li class="menu-item-has-children"><a href="#">Blog</a>
+                                        </li> -->
+                                        <!-- <li class="menu-item-has-children"><a href="#">Blog</a>
                                             <ul class="sub-menu">
                                                 <li><a href="blog.html">Blog Standard</a></li>
                                                 <li><a href="blog-2.html">Blog List</a></li>
                                                 <li><a href="blog-3.html">Blog Grid</a></li>
                                                 <li><a href="blog-details.html">Blog Details</a></li>
                                             </ul>
+                                        </li> -->
+                                        <li class="menu-item-has"><a href="contact.html">Contact Us</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="tgmenu__action">
                                     <ul class="list-wrap">
-                                        <li class="header-search">
-                                            <a href="javascript:void(0)" class="search-open-btn"><i class="renova-search"></i></a>
-                                        </li>
-                                        <li class="header-cart">
-                                            <a href="shop.html" class="cart-count">
-                                                <i class="renova-cart"></i>
-                                                <span class="mini-cart-count">2</span>
-                                            </a>
-                                        </li>
+
+
                                         <li class="header-btn">
                                             <a href="contact.html" class="btn border-btn">Get In Touch</a>
                                         </li>
@@ -172,16 +784,11 @@
                 <div class="nav-logo">
                     <a href="index.html"><img src="assets/img/logo/logo.svg" alt="Logo"></a>
                 </div>
-                <div class="tgmobile__search">
-                    <form action="#">
-                        <input type="text" placeholder="Search here...">
-                        <button><i class="fas fa-search"></i></button>
-                    </form>
-                </div>
+
                 <div class="tgmobile__menu-outer">
                     <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
                 </div>
-                <div class="social-links">
+                <!-- <div class="social-links">
                     <ul class="list-wrap">
                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -189,7 +796,7 @@
                         <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                         <li><a href="#"><i class="fab fa-youtube"></i></a></li>
                     </ul>
-                </div>
+                </div> -->
             </nav>
         </div>
         <div class="tgmobile__menu-backdrop"></div>
@@ -205,10 +812,10 @@
                                 <button type="button" class="search-close-btn">
                                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M17 1L1 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round"></path>
-                                        <path d="M1 1L17 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round"></path>
+                                        <path d="M17 1L1 17" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M1 1L17 17" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
                                     </svg>
                                 </button>
                             </div>
@@ -220,8 +827,13 @@
                                         <button>
                                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M9.55 18.1C14.272 18.1 18.1 14.272 18.1 9.55C18.1 4.82797 14.272 1 9.55 1C4.82797 1 1 4.82797 1 9.55C1 14.272 4.82797 18.1 9.55 18.1Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                <path d="M19.0002 19.0002L17.2002 17.2002" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path
+                                                    d="M9.55 18.1C14.272 18.1 18.1 14.272 18.1 9.55C18.1 4.82797 14.272 1 9.55 1C4.82797 1 1 4.82797 1 9.55C1 14.272 4.82797 18.1 9.55 18.1Z"
+                                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                                <path d="M19.0002 19.0002L17.2002 17.2002" stroke="currentColor"
+                                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                                </path>
                                             </svg>
                                         </button>
                                     </div>
@@ -246,25 +858,26 @@
             <div class="offCanvas__side-info mb-30">
                 <div class="contact-list mb-30">
                     <h4>Office Address</h4>
-                    <p>123/A, Miranda City Likaoli <br> Prikano, Dope</p>
+                    <p>Shop: Opp Hari Masjid, Old Mondha Road, Jafar Gate, Aurangabad. (M.S) <br>
+                        Showroom: Gut No. 31 Mitmita, Sharnapur Phata, Near Daulatabad T Point Aurangabad. 431002
+</p>
                 </div>
                 <div class="contact-list mb-30">
                     <h4>Phone Number</h4>
-                    <p>+0989 7876 9865 9</p>
-                    <p>+(090) 8765 86543 85</p>
+                    <p>+91 7507541752</p>
+                    <p>+91 8623841752</p>
                 </div>
                 <div class="contact-list mb-30">
                     <h4>Email Address</h4>
-                    <p>info@example.com</p>
-                    <p>example.mail@hum.com</p>
+                    <p>shamsindia1@gmail.com</p>
                 </div>
             </div>
-            <div class="offCanvas__social-icon mt-30">
+            <!-- <div class="offCanvas__social-icon mt-30">
                 <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
                 <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
                 <a href="javascript:void(0)"><i class="fab fa-google-plus-g"></i></a>
                 <a href="javascript:void(0)"><i class="fab fa-instagram"></i></a>
-            </div>
+            </div> -->
         </div>
         <div class="offCanvas__overly"></div>
         <!-- offCanvas-menu-end -->
@@ -273,184 +886,408 @@
     <!-- header-area-end -->
 
 
+<!-- PRODUCTS PAGE BANNER -->
+<section class="banner">
+  <div class="banner-bg"></div>
+  <div class="wrap banner-in">
+    <div class="btag">Our Products</div>
+    <h1>Complete Product Range</h1>
+    <div class="bc">
+      <a href="index.html">Home</a> ›
+      <span class="bc-cur">Products</span>
+    </div>
+  </div>
+</section>
 
-    <!-- main-area -->
-    <main class="main-area fix">
+<!-- PRODUCTS LAYOUT -->
+<div class="wrap">
+  <div class="playout">
 
-        <!-- breadcrumb-area -->
-        <div class="breadcrumb__area breadcrumb__bg" data-background="assets/img/bg/breadcrumb_bg.jpg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="breadcrumb__content">
-                            <h2 class="title">Our Projects</h2>
-                            <nav class="breadcrumb">
-                                <span property="itemListElement" typeof="ListItem">
-                                    <a href="index.html">Home</a>
-                                </span>
-                                <span class="breadcrumb-separator">/</span>
-                                <span property="itemListElement" typeof="ListItem">Our Projects</span>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <button class="sb-tog" id="sbTog" onclick="toggleSb()">
+        <span>Filter by Category</span>
+        <span class="sta">&#9660;</span>
+      </button>
+      <div class="sb-body" id="sbBody">
+        <div class="sb-hd">Product Categories</div>
+
+        <div class="sbg">
+          <button class="sbg-btn sopen" onclick="toggleSbG(this,'sg1')">
+            Construction Machinery <span class="sbg-arr">&#9660;</span>
+          </button>
+          <div class="sb-sub sopen" id="sg1">
+            <a href="#g1" onclick="filterGroup('machinery',null,true)">Construction Machine & Spares</a>
+            <a href="#g2" onclick="filterGroup('machinery',null,true)">Earth Compaction Machine & Spares</a>
+            <a href="#g3" onclick="filterGroup('machinery',null,true)">Rail Track Machine & Tools</a>
+            <a href="#g4" onclick="filterGroup('machinery',null,true)">Concrete Mixers</a>
+            <a href="#g5" onclick="filterGroup('machinery',null,true)">Concrete Vibrators</a>
+            <a href="#g6" onclick="filterGroup('machinery',null,true)">Centring Material & Spares</a>
+          </div>
         </div>
-        <!-- breadcrumb-area-end -->
 
-        <!-- project-area -->
-        <section class="project__area-two">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="project__menu-nav">
-                            <button class="active" data-filter="*">ALL WORKS</button>
-                            <button class="" data-filter=".cat-one">ALFA PROJECT</button>
-                            <button class="" data-filter=".cat-two">CONSTRUCTION PROJECT</button>
-                            <button class="" data-filter=".cat-three">LORENCE PROJECT</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="row gutter-24 project-active-two">
-                    <div class="col-lg-4 col-md-6 grid-item grid-sizer cat-three cat-one">
-                        <div class="project__item-two">
-                            <div class="project__thumb-two">
-                                <a href="project-details.html"><img src="assets/img/project/inner_project01.jpg" alt="img"></a>
-                                <span class="shape"></span>
-                            </div>
-                            <div class="project__content-two">
-                                <h2 class="title"><a href="project-details.html">Service Company Building</a></h2>
-                                <span>December 2023 - March 2024</span>
-                            </div>
-                            <div class="project__icon-two">
-                                <a href="project-details.html"><i class="renova-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 grid-item grid-sizer cat-two cat-three">
-                        <div class="project__item-two">
-                            <div class="project__thumb-two">
-                                <a href="project-details.html"><img src="assets/img/project/inner_project02.jpg" alt="img"></a>
-                                <span class="shape"></span>
-                            </div>
-                            <div class="project__content-two">
-                                <h2 class="title"><a href="project-details.html">Service Company Building</a></h2>
-                                <span>December 2023 - March 2024</span>
-                            </div>
-                            <div class="project__icon-two">
-                                <a href="project-details.html"><i class="renova-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 grid-item grid-sizer cat-one">
-                        <div class="project__item-two">
-                            <div class="project__thumb-two">
-                                <a href="project-details.html"><img src="assets/img/project/inner_project03.jpg" alt="img"></a>
-                                <span class="shape"></span>
-                            </div>
-                            <div class="project__content-two">
-                                <h2 class="title"><a href="project-details.html">Service Company Building</a></h2>
-                                <span>December 2023 - March 2024</span>
-                            </div>
-                            <div class="project__icon-two">
-                                <a href="project-details.html"><i class="renova-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 grid-item grid-sizer cat-two">
-                        <div class="project__item-two">
-                            <div class="project__thumb-two">
-                                <a href="project-details.html"><img src="assets/img/project/inner_project04.jpg" alt="img"></a>
-                                <span class="shape"></span>
-                            </div>
-                            <div class="project__content-two">
-                                <h2 class="title"><a href="project-details.html">Service Company Building</a></h2>
-                                <span>December 2023 - March 2024</span>
-                            </div>
-                            <div class="project__icon-two">
-                                <a href="project-details.html"><i class="renova-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 grid-item grid-sizer cat-three">
-                        <div class="project__item-two">
-                            <div class="project__thumb-two">
-                                <a href="project-details.html"><img src="assets/img/project/inner_project05.jpg" alt="img"></a>
-                                <span class="shape"></span>
-                            </div>
-                            <div class="project__content-two">
-                                <h2 class="title"><a href="project-details.html">Service Company Building</a></h2>
-                                <span>December 2023 - March 2024</span>
-                            </div>
-                            <div class="project__icon-two">
-                                <a href="project-details.html"><i class="renova-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 grid-item grid-sizer cat-two cat-three cat-one">
-                        <div class="project__item-two">
-                            <div class="project__thumb-two">
-                                <a href="project-details.html"><img src="assets/img/project/inner_project06.jpg" alt="img"></a>
-                                <span class="shape"></span>
-                            </div>
-                            <div class="project__content-two">
-                                <h2 class="title"><a href="project-details.html">Service Company Building</a></h2>
-                                <span>December 2023 - March 2024</span>
-                            </div>
-                            <div class="project__icon-two">
-                                <a href="project-details.html"><i class="renova-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 grid-item grid-sizer cat-three">
-                        <div class="project__item-two">
-                            <div class="project__thumb-two">
-                                <a href="project-details.html"><img src="assets/img/project/inner_project07.jpg" alt="img"></a>
-                                <span class="shape"></span>
-                            </div>
-                            <div class="project__content-two">
-                                <h2 class="title"><a href="project-details.html">Service Company Building</a></h2>
-                                <span>December 2023 - March 2024</span>
-                            </div>
-                            <div class="project__icon-two">
-                                <a href="project-details.html"><i class="renova-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 grid-item grid-sizer cat-two">
-                        <div class="project__item-two">
-                            <div class="project__thumb-two">
-                                <a href="project-details.html"><img src="assets/img/project/inner_project08.jpg" alt="img"></a>
-                                <span class="shape"></span>
-                            </div>
-                            <div class="project__content-two">
-                                <h2 class="title"><a href="project-details.html">Service Company Building</a></h2>
-                                <span>December 2023 - March 2024</span>
-                            </div>
-                            <div class="project__icon-two">
-                                <a href="project-details.html"><i class="renova-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 grid-item grid-sizer cat-one">
-                        <div class="project__item-two">
-                            <div class="project__thumb-two">
-                                <a href="project-details.html"><img src="assets/img/project/inner_project09.jpg" alt="img"></a>
-                                <span class="shape"></span>
-                            </div>
-                            <div class="project__content-two">
-                                <h2 class="title"><a href="project-details.html">Service Company Building</a></h2>
-                                <span>December 2023 - March 2024</span>
-                            </div>
-                            <div class="project__icon-two">
-                                <a href="project-details.html"><i class="renova-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- project-area-end -->
+        <div class="sbg">
+          <button class="sbg-btn" onclick="toggleSbG(this,'sg2')">
+            Tools & Hardware <span class="sbg-arr">&#9660;</span>
+          </button>
+          <div class="sb-sub" id="sg2">
+            <a href="#g7" onclick="filterGroup('tools',null,true)">Power Tools</a>
+            <a href="#g8" onclick="filterGroup('tools',null,true)">Hand Tools</a>
+            <a href="#g15" onclick="filterGroup('tools',null,true)">Hardware Material</a>
+          </div>
+        </div>
+
+        <div class="sbg">
+          <button class="sbg-btn" onclick="toggleSbG(this,'sg3')">
+            Bitumen & Waterproofing <span class="sbg-arr">&#9660;</span>
+          </button>
+          <div class="sb-sub" id="sg3">
+            <a href="#g9" onclick="filterGroup('bitumen',null,true)">Bitumen Filler Board</a>
+            <a href="#g9" onclick="filterGroup('bitumen',null,true)">Armor Board</a>
+            <a href="#g9" onclick="filterGroup('bitumen',null,true)">Bitumen Membrane</a>
+            <a href="#g9" onclick="filterGroup('bitumen',null,true)">Water Stoppers</a>
+            <a href="#g9" onclick="filterGroup('bitumen',null,true)">Bitumen Tar Paper</a>
+          </div>
+        </div>
+
+        <div class="sbg">
+          <button class="sbg-btn" onclick="toggleSbG(this,'sg4')">
+            Civil & Survey Equipment <span class="sbg-arr">&#9660;</span>
+          </button>
+          <div class="sb-sub" id="sg4">
+            <a href="#g10" onclick="filterGroup('civil',null,true)">Civil Lab Equipments</a>
+            <a href="#g11" onclick="filterGroup('civil',null,true)">Survey Lab Equipments</a>
+          </div>
+        </div>
+
+        <div class="sbg">
+          <button class="sbg-btn" onclick="toggleSbG(this,'sg5')">
+            Safety & Lifting <span class="sbg-arr">&#9660;</span>
+          </button>
+          <div class="sb-sub" id="sg5">
+            <a href="#g12" onclick="filterGroup('safety',null,true)">Construction Safety Nets</a>
+            <a href="#g12" onclick="filterGroup('safety',null,true)">Safety Helmets & Jackets</a>
+            <a href="#g12" onclick="filterGroup('safety',null,true)">Speed Breaker & Barricades</a>
+            <a href="#g13" onclick="filterGroup('safety',null,true)">Monkey Crane & Winch</a>
+            <a href="#g13" onclick="filterGroup('safety',null,true)">Chain Pully Block</a>
+            <a href="#g13" onclick="filterGroup('safety',null,true)">Webbing Belt & Sling</a>
+            <a href="#g13" onclick="filterGroup('safety',null,true)">D Shackle & Chains</a>
+          </div>
+        </div>
+
+        <div class="sbg">
+          <button class="sbg-btn" onclick="toggleSbG(this,'sg6')">
+            Agri Products <span class="sbg-arr">&#9660;</span>
+          </button>
+          <div class="sb-sub" id="sg6">
+            <a href="#g14" onclick="filterGroup('agri',null,true)">All Types of Green Nets</a>
+            <a href="#g14" onclick="filterGroup('agri',null,true)">Green Tarpaulins</a>
+            <a href="#g14" onclick="filterGroup('agri',null,true)">Bird Nets</a>
+            <a href="#g14" onclick="filterGroup('agri',null,true)">Sports Nets</a>
+          </div>
+        </div>
+
+        <div class="sb-cta">
+          <p>Need a quote for bulk orders or full site supply?</p>
+          <a href="contact.html">Get a Free Quote</a>
+        </div>
+      </div>
+
+      <div class="sb-pdf">
+        <p>Download our complete product catalogue</p>
+        <a href="#" class="btn btn-gold">Download PDF</a>
+      </div>
+    </aside>
+
+    <!-- PRODUCTS MAIN -->
+    <main class="pmain">
+
+      <div class="ptopbar">
+        <div>
+          <h2>All <span>Products</span></h2>
+          <div class="rcount" id="rcount">Showing all 15 product categories</div>
+        </div>
+        <button class="btn btn-dark" onclick="filterGroup('all')">Show All</button>
+      </div>
+
+      <!-- FILTER CHIPS -->
+      <div class="chips">
+        <div class="chip active" onclick="filterGroup('all',this)">All Products</div>
+        <div class="chip" onclick="filterGroup('machinery',this)">Construction Machinery</div>
+        <div class="chip" onclick="filterGroup('tools',this)">Tools & Hardware</div>
+        <div class="chip" onclick="filterGroup('bitumen',this)">Bitumen</div>
+        <div class="chip" onclick="filterGroup('civil',this)">Civil & Survey</div>
+        <div class="chip" onclick="filterGroup('safety',this)">Safety & Lifting</div>
+        <div class="chip" onclick="filterGroup('agri',this)">Agri Products</div>
+      </div>
+
+      <!-- GROUP 1 -->
+      <div class="pgroup" id="g1" data-group="machinery">
+        <div class="gh"><div class="gnum">01</div><div><div class="glbl">Category 01</div><div class="gtitle">Construction Machine & Spares</div></div></div>
+        <div class="pgrid">
+          <div class="pcard" onclick="openModal('Bar Bender Machines')">
+            <div class="cimg"><img src="https://images.unsplash.com/photo-1590496793929-36417d3117de?w=500&auto=format&fit=crop&q=60" alt="Bar Bender"><div class="ccat">Cat 01</div></div>
+            <div class="cbody"><h4>Bar Bender Machines</h4><p>Bar bender machines available in multiple capacities for bending steel reinforcement bars on construction sites.</p><button class="cenq">Enquire Now &#8594;</button></div>
+          </div>
+          <div class="pcard" onclick="openModal('Bar Straightening Machine')">
+            <div class="cimg"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=500&auto=format&fit=crop&q=60" alt="Bar Straightening"><div class="ccat">Cat 01</div></div>
+            <div class="cbody"><h4>Bar Straightening Machine</h4><p>Bar straightening, bar treading, bar sprial and bar ring machines for all reinforcement requirements.</p><button class="cenq">Enquire Now &#8594;</button></div>
+          </div>
+          <div class="pcard" onclick="openModal('Bar Cutting Machine')">
+            <div class="cimg"><img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=500&auto=format&fit=crop&q=60" alt="Bar Cutter"><div class="ccat">Cat 01</div></div>
+            <div class="cbody"><h4>Bar Cutting Machine</h4><p>Bar cutting machines for precise cutting of steel bars along with concrete cutting and slab cutting machines.</p><button class="cenq">Enquire Now &#8594;</button></div>
+          </div>
+          <div class="pcard" onclick="openModal('Concrete Cutting Machine')">
+            <div class="cimg"><img src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=500&auto=format&fit=crop&q=60" alt="Concrete Cutting"><div class="ccat">Cat 01</div></div>
+            <div class="cbody"><h4>Concrete Cutting Machine</h4><p>Concrete cutting machine, slab cutting machine and wall chiseling machine for all construction cutting work.</p><button class="cenq">Enquire Now &#8594;</button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GROUP 2 -->
+      <div class="pgroup" id="g2" data-group="machinery">
+        <div class="gh"><div class="gnum">02</div><div><div class="glbl">Category 02</div><div class="gtitle">Earth Compaction Machine & Spares</div></div></div>
+        <div class="pgrid">
+          <div class="pcard" onclick="openModal('Mini Rollers with Engine')">
+            <div class="cimg"><img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=500&auto=format&fit=crop&q=60" alt="Mini Roller"><div class="ccat">Cat 02</div></div>
+            <div class="cbody"><h4>Mini Rollers with Engine</h4><p>Engine powered mini rollers for compacting soil, gravel and asphalt on road and foundation projects.</p><button class="cenq">Enquire Now &#8594;</button></div>
+          </div>
+          <div class="pcard" onclick="openModal('Tamping Rammer')">
+            <div class="cimg"><img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=500&auto=format&fit=crop&q=60" alt="Tamping Rammer"><div class="ccat">Cat 02</div></div>
+            <div class="cbody"><h4>Tamping Rammer</h4><p>Tamping rammers and earth compactors for soil compaction in trenches, foundations and narrow areas.</p><button class="cenq">Enquire Now &#8594;</button></div>
+          </div>
+          <div class="pcard" onclick="openModal('Earth Augar')">
+            <div class="cimg" style="background:#F5F3EE"><div class="ccat">Cat 02</div></div>
+            <div class="cbody"><h4>Earth Augar</h4><p>Earth augar machines for drilling holes in soil for poles, piles, foundations and fencing work.</p><button class="cenq">Enquire Now &#8594;</button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GROUP 3 -->
+      <div class="pgroup" id="g3" data-group="machinery">
+        <div class="gh"><div class="gnum">03</div><div><div class="glbl">Category 03</div><div class="gtitle">Rail Track Machine & Tools</div></div></div>
+        <div class="pgrid">
+          <div class="pcard" onclick="openModal('Rail Track Cutting Machine')">
+            <div class="cimg"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=500&auto=format&fit=crop&q=60" alt="Rail Track"><div class="ccat">Cat 03</div></div>
+            <div class="cbody"><h4>Rail Track Cutting Machine</h4><p>Rail track cutting machine, drilling machine and rail track jack and tools for railway contractors.</p><button class="cenq">Enquire Now &#8594;</button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GROUP 4 -->
+      <div class="pgroup" id="g4" data-group="machinery">
+        <div class="gh"><div class="gnum">04</div><div><div class="glbl">Category 04</div><div class="gtitle">Concrete Mixers</div></div></div>
+        <div class="pgrid">
+          <div class="pcard" onclick="openModal('1 Bag Mixer Heavy Duty')">
+            <div class="cimg"><img src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=500&auto=format&fit=crop&q=60" alt="1 Bag Mixer"><div class="ccat">Cat 04</div></div>
+            <div class="cbody"><h4>1 Bag Mixer Heavy Duty</h4><p>Heavy duty 1 bag concrete mixer for large construction projects requiring high volume concrete mixing.</p><button class="cenq">Enquire Now &#8594;</button></div>
+          </div>
+          <div class="pcard" onclick="openModal('1/2 Bag Mixer with 2 Wheel')">
+            <div class="cimg"><img src="https://images.unsplash.com/photo-1590496793929-36417d3117de?w=500&auto=format&fit=crop&q=60" alt="2 Wheel Mixer"><div class="ccat">Cat 04</div></div>
+            <div class="cbody"><h4>1/2 Bag Mixer with 2 Wheel</h4><p>Half bag concrete mixer with 2 wheel design for easy mobility on smaller construction sites.</p><button class="cenq">Enquire Now &#8594;</button></div>
+          </div>
+          <div class="pcard" onclick="openModal('1/2 Bag Mixer with 4 Wheel')">
+            <div class="cimg"><img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=500&auto=format&fit=crop&q=60" alt="4 Wheel Mixer"><div class="ccat">Cat 04</div></div>
+            <div class="cbody"><h4>1/2 Bag Mixer with 4 Wheel</h4><p>Half bag concrete mixer with 4 wheel design for improved stability on uneven construction site surfaces.</p><button class="cenq">Enquire Now &#8594;</button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GROUP 5 -->
+      <div class="pgroup" id="g5" data-group="machinery">
+        <div class="gh"><div class="gnum">05</div><div><div class="glbl">Category 05</div><div class="gtitle">Concrete Vibrators</div></div></div>
+        <div class="pgrid">
+          <div class="pcard" onclick="openModal('Electric Concrete Vibrators')">
+            <div class="cimg"><img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=500&auto=format&fit=crop&q=60" alt="Electric Vibrator"><div class="ccat">Cat 05</div></div>
+            <div class="cbody"><h4>Electric Concrete Vibrators</h4><p>Electric and high frequency concrete vibrators for efficient compaction of concrete during pouring.</p><button class="cenq">Enquire Now &#8594;</button></div>
+          </div>
+          <div class="pcard" onclick="openModal('Petrol & Diesel Concrete Vibrators')">
+            <div class="cimg"><img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=500&auto=format&fit=crop&q=60" alt="Petrol Vibrator"><div class="ccat">Cat 05</div></div>
+            <div class="cbody"><h4>Petrol & Diesel Concrete Vibrators</h4><p>Petrol and diesel concrete vibrators along with handy concrete vibrators for remote sites.</p><button class="cenq">Enquire Now &#8594;</button></div>
+          </div>
+          <div class="pcard" onclick="openModal('Power Trowel & Screed Vibrators')">
+            <div class="cimg"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=500&auto=format&fit=crop&q=60" alt="Power Trowel"><div class="ccat">Cat 05</div></div>
+            <div class="cbody"><h4>Power Trowel & Screed Vibrators</h4><p>Power trowel, needle assemble and screed vibrators for smooth concrete surface finishing work.</p><button class="cenq">Enquire Now &#8594;</button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GROUP 6 -->
+      <div class="pgroup" id="g6" data-group="machinery">
+        <div class="gh"><div class="gnum">06</div><div><div class="glbl">Category 06</div><div class="gtitle">Centring Material & Spares</div></div></div>
+        <div class="pgrid">
+          <div class="pcard" onclick="openModal('Tower Crane Concrete Buckets')">
+            <div class="cimg"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=500&auto=format&fit=crop&q=60" alt="Tower Crane"><div class="ccat">Cat 06</div></div>
+            <div class="cbody"><h4>Tower Crane Concrete Buckets</h4><p>Heavy duty tower crane concrete buckets for lifting and pouring concrete on high rise construction projects.</p><button class="cenq">Enquire Now &#8594;</button></div>
+          </div>
+          <div class="pcard" onclick="openModal('Bull Petrol Floater & Texture Brush')">
+            <div class="cimg" style="background:#F5F3EE"><div class="ccat">Cat 06</div></div>
+            <div class="cbody"><h4>Bull Petrol Floater & Texture Brush</h4><p>Bull petrol floater, magnesium bull floater and texture brush for concrete floor surface finishing.</p><button class="cenq">Enquire Now &#8594;</button></div>
+          </div>
+          <div class="pcard" onclick="openModal('M S Tierod with Nuts & Shikanja')">
+            <div class="cimg" style="background:#F5F3EE"><div class="ccat">Cat 06</div></div>
+            <div class="cbody"><h4>M S Tierod with Nuts & Shikanja</h4><p>M S Tierod with nuts, M S Shikanja, concrete tray, concrete trolley, curring hesain cloth and covering blocks.</p><button class="cenq">Enquire Now &#8594;</button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GROUP 7 -->
+      <div class="pgroup" id="g7" data-group="tools">
+        <div class="gh"><div class="gnum">07</div><div><div class="glbl">Category 07</div><div class="gtitle">Power Tools</div></div></div>
+        <div class="pgrid">
+          <div class="pcard" onclick="openModal('All Types of Power Tools')">
+            <div class="cimg"><img src="https://images.unsplash.com/photo-1572981779307-38b8cabb2407?w=500&auto=format&fit=crop&q=60" alt="Power Tools"><div class="ccat">Cat 07</div></div>
+            <div class="cbody"><h4>All Types of Power Tools</h4><p>Complete range of power tools including angle grinders, hammer drills, circular saws and cut-off machines.</p><button class="cenq">Enquire Now &#8594;</button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GROUP 8 -->
+      <div class="pgroup" id="g8" data-group="tools">
+        <div class="gh"><div class="gnum">08</div><div><div class="glbl">Category 08</div><div class="gtitle">Hand Tools</div></div></div>
+        <div class="pgrid">
+          <div class="pcard" onclick="openModal('All Types of Hand Tools')">
+            <div class="cimg"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&auto=format&fit=crop&q=60" alt="Hand Tools"><div class="ccat">Cat 08</div></div>
+            <div class="cbody"><h4>All Types of Hand Tools</h4><p>Complete range of hand tools for construction, plumbing, electrical and general site maintenance work.</p><button class="cenq">Enquire Now &#8594;</button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GROUP 9 -->
+      <div class="pgroup" id="g9" data-group="bitumen">
+        <div class="gh"><div class="gnum">09</div><div><div class="glbl">Category 09</div><div class="gtitle">Bitumen & Expansion Joints</div></div></div>
+        <div class="pgrid">
+          <div class="pcard" onclick="openModal('Bitumen Filler Board')">
+            <div class="cimg"><img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=500&auto=format&fit=crop&q=60" alt="Bitumen"><div class="ccat">Cat 09</div></div>
+            <div class="cbody"><h4>Bitumen Filler Board</h4><p>Bitumen filler board for expansion joints in road, bridge and building construction to absorb movement.</p><button class="cenq">Enquire Now &#8594;</button></div>
+          </div>
+          <div class="pcard" onclick="openModal('Armor Board')">
+            <div class="cimg" style="background:#F5F3EE"><div class="ccat">Cat 09</div></div>
+            <div class="cbody"><h4>Armor Board</h4><p>Armor board for protecting edges and joints in concrete structures against wear and impact damage.</p><button class="cenq">Enquire Now &#8594;</button></div>
+          </div>
+          <div class="pcard" onclick="openModal('Bitumen Membrane')">
+            <div class="cimg" style="background:#F5F3EE"><div class="ccat">Cat 09</div></div>
+            <div class="cbody"><h4>Bitumen Membrane</h4><p>Bitumen membrane for waterproofing roofs, basements, tunnels and underground construction structures.</p><button class="cenq">Enquire Now &#8594;</button></div>
+          </div>
+          <div class="pcard" onclick="openModal('Water Stoppers')">
+            <div class="cimg" style="background:#F5F3EE"><div class="ccat">Cat 09</div></div>
+            <div class="cbody"><h4>Water Stoppers</h4><p>PVC and rubber water stoppers for sealing construction joints against water penetration in concrete structures.</p><button class="cenq">Enquire Now &#8594;</button></div>
+          </div>
+          <div class="pcard" onclick="openModal('Bitumen Tar Paper')">
+            <div class="cimg" style="background:#F5F3EE"><div class="ccat">Cat 09</div></div>
+            <div class="cbody"><h4>Bitumen Tar Paper</h4><p>Bitumen tar paper for waterproofing and damp proofing in construction and roofing projects.</p><button class="cenq">Enquire Now &#8594;</button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GROUP 10 -->
+      <div class="pgroup" id="g10" data-group="civil">
+        <div class="gh"><div class="gnum">10</div><div><div class="glbl">Category 10</div><div class="gtitle">Civil Lab Equipments</div></div></div>
+        <div class="pgrid">
+          <div class="pcard" onclick="openModal('All Types of Civil Lab Equipments')">
+            <div class="cimg"><img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=500&auto=format&fit=crop&q=60" alt="Civil Lab"><div class="ccat">Cat 10</div></div>
+            <div class="cbody"><h4>All Types of Civil Lab Equipments</h4><p>Complete range of civil lab equipment for soil testing, concrete testing and material quality assessment on site.</p><button class="cenq">Enquire Now &#8594;</button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GROUP 11 -->
+      <div class="pgroup" id="g11" data-group="civil">
+        <div class="gh"><div class="gnum">11</div><div><div class="glbl">Category 11</div><div class="gtitle">Survey Lab Equipments</div></div></div>
+        <div class="pgrid">
+          <div class="pcard" onclick="openModal('All Types of Survey Lab Equipments')">
+            <div class="cimg"><img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=500&auto=format&fit=crop&q=60" alt="Survey"><div class="ccat">Cat 11</div></div>
+            <div class="cbody"><h4>All Types of Survey Lab Equipments</h4><p>Total stations, auto levels, theodolites and complete surveying accessories for site engineers.</p><button class="cenq">Enquire Now &#8594;</button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GROUP 12 -->
+      <div class="pgroup" id="g12" data-group="safety">
+        <div class="gh"><div class="gnum">12</div><div><div class="glbl">Category 12</div><div class="gtitle">Safety Products</div></div></div>
+        <div class="pgrid">
+          <div class="pcard" onclick="openModal('Construction Safety Nets')">
+            <div class="cimg"><img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&auto=format&fit=crop&q=60" alt="Safety Net"><div class="ccat">Cat 12</div></div>
+            <div class="cbody"><h4>Construction Safety Nets</h4><p>Construction safety nets for fall protection on building sites, bridges and high rise construction projects.</p><button class="cenq">Enquire Now &#8594;</button></div>
+          </div>
+          <div class="pcard" onclick="openModal('Safety Helmets & Safety Jacket')">
+            <div class="cimg"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=500&auto=format&fit=crop&q=60" alt="Helmet"><div class="ccat">Cat 12</div></div>
+            <div class="cbody"><h4>Safety Helmets & Safety Jacket</h4><p>Construction safety helmets, safety jackets and safety lights for worker protection on all construction sites.</p><button class="cenq">Enquire Now &#8594;</button></div>
+          </div>
+          <div class="pcard" onclick="openModal('Speed Breaker & PVC Barricades')">
+            <div class="cimg" style="background:#F5F3EE"><div class="ccat">Cat 12</div></div>
+            <div class="cbody"><h4>Speed Breaker & PVC Barricades</h4><p>Speed breakers, all kinds of PVC barricades, raidium tapes, danger tapes and all types of safety products.</p><button class="cenq">Enquire Now &#8594;</button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GROUP 13 -->
+      <div class="pgroup" id="g13" data-group="safety">
+        <div class="gh"><div class="gnum">13</div><div><div class="glbl">Category 13</div><div class="gtitle">Lifting Material & Crane & Spares</div></div></div>
+        <div class="pgrid">
+          <div class="pcard" onclick="openModal('Monkey Crane & Winch')">
+            <div class="cimg"><img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=500&auto=format&fit=crop&q=60" alt="Monkey Crane"><div class="ccat">Cat 13</div></div>
+            <div class="cbody"><h4>Monkey Crane & Winch</h4><p>Monkey crane, winch and mini hoists for safe material lifting on construction sites of all sizes.</p><button class="cenq">Enquire Now &#8594;</button></div>
+          </div>
+          <div class="pcard" onclick="openModal('Chain Pully Block')">
+            <div class="cimg" style="background:#F5F3EE"><div class="ccat">Cat 13</div></div>
+            <div class="cbody"><h4>Chain Pully Block</h4><p>Heavy duty chain pully blocks in multiple ton capacities for safe and reliable load lifting on construction sites.</p><button class="cenq">Enquire Now &#8594;</button></div>
+          </div>
+          <div class="pcard" onclick="openModal('Webbing Belt & Sling')">
+            <div class="cimg" style="background:#F5F3EE"><div class="ccat">Cat 13</div></div>
+            <div class="cbody"><h4>Webbing Belt & Sling</h4><p>Webbing belt, sling, D shackle, ton buckle, chain hooks and all types of chains for rigging and lifting.</p><button class="cenq">Enquire Now &#8594;</button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GROUP 14 -->
+      <div class="pgroup" id="g14" data-group="agri">
+        <div class="gh"><div class="gnum">14</div><div><div class="glbl">Category 14</div><div class="gtitle">Agri Products</div></div></div>
+        <div class="pgrid">
+          <div class="pcard" onclick="openModal('All Types of Green Nets')">
+            <div class="cimg" style="background:#F5F3EE"><div class="ccat">Cat 14</div></div>
+            <div class="cbody"><h4>All Types of Green Nets</h4><p>All types of green nets and green tarpaulins for agricultural shade, crop protection and farming applications.</p><button class="cenq">Enquire Now &#8594;</button></div>
+          </div>
+          <div class="pcard" onclick="openModal('Bird Nets & Sports Nets')">
+            <div class="cimg" style="background:#F5F3EE"><div class="ccat">Cat 14</div></div>
+            <div class="cbody"><h4>Bird Nets & Sports Nets</h4><p>Bird nets for crop and building protection along with sports nets for cricket, football and other sports.</p><button class="cenq">Enquire Now &#8594;</button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GROUP 15 -->
+      <div class="pgroup" id="g15" data-group="tools">
+        <div class="gh"><div class="gnum">15</div><div><div class="glbl">Category 15</div><div class="gtitle">Hardware</div></div></div>
+        <div class="pgrid">
+          <div class="pcard" onclick="openModal('All Types of Hardware Material')">
+            <div class="cimg"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&auto=format&fit=crop&q=60" alt="Hardware"><div class="ccat">Cat 15</div></div>
+            <div class="cbody"><h4>All Types of Hardware Material</h4><p>Complete range of hardware materials for construction, industrial and general purpose site requirements.</p><button class="cenq">Enquire Now &#8594;</button></div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+</div>
+
+<!-- ENQUIRY MODAL -->
+<div class="moverlay" id="moverlay" onclick="closeModalOut(event)">
+  <div class="modal">
+    <button class="mcls" onclick="closeModal()">&#10005;</button>
+    <h3>Enquire Now</h3>
+    <p class="msub">We will get back to you within 24 hours.</p>
+    <div class="mtag" id="mtag">Product</div>
+    <div class="mform">
+      <input type="text" placeholder="Your Full Name *">
+      <input type="tel" placeholder="Phone / WhatsApp Number *">
+      <input type="email" placeholder="Email Address">
+      <input type="text" placeholder="Company / Project Name">
+      <textarea placeholder="Your requirement — quantity, specifications, delivery location"></textarea>
+      <button class="msubmit" onclick="submitForm()">Send Enquiry</button>
+    </div>
+  </div>
+</div>
+
 
         <!-- cta-area -->
         <section class="cta__area fix">
@@ -470,7 +1307,7 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="cta__content-right" data-aos="fade-up" data-aos-delay="600">
-                            <h4 class="title">Leading Developer Of Commercial & Residential Projects</h4>
+                            <h4 class="title">Trusted Supplier of Construction Machinery & Hardware Across Maharashtra</h4>
                         </div>
                     </div>
                 </div>
@@ -485,32 +1322,38 @@
     <!-- main-area-end -->
 
     <!-- footer-area -->
-    <footer class="footer__area">
+        <footer class="footer__area">
         <div class="container">
-            <div class="footer__features">
+            <!-- <div class="footer__features">
                 <a href="contact.html">Commercial Building</a>
                 <a href="contact.html">Remodeling Building</a>
                 <a href="contact.html">Residential Development</a>
                 <a href="contact.html">Architectural Development</a>
-            </div>
+            </div> -->
             <div class="footer__top">
                 <div class="row">
                     <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                         <div class="footer__widget">
                             <div class="footer__logo">
-                                <a href="index.html"><img src="assets/img/logo/logo.svg" alt="logo"></a>
+                                <a href="index.html"><img src="assets/img/logo/logo3.png" alt="logo"></a>
                             </div>
                             <div class="footer__content">
-                                <p>Sapien luctus lesuada sentus pharetra nisilona quisuea aenean eros mus magnis arcu vehicula nascetur feugiat service.</p>
+                                <p>Your trusted partner for anything in hardware and construction machinery — serving contractors across Maharashtra since 1969.
+
+                                    </p>
                             </div>
-                            <div class="footer__social">
+                            <!-- <div class="footer__social">
                                 <ul class="list-wrap">
-                                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="https://twitter.com/home" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="https://www.facebook.com/" target="_blank"><i
+                                                class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="https://twitter.com/home" target="_blank"><i
+                                                class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/" target="_blank"><i
+                                                class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="https://www.instagram.com/" target="_blank"><i
+                                                class="fab fa-youtube"></i></a></li>
                                 </ul>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="col-xl-2 col-lg-4 col-md-3 col-sm-4">
@@ -522,16 +1365,19 @@
                                         <a href="about.html"><i class="renova-right-arrow"></i><span>About Us</span></a>
                                     </li>
                                     <li>
-                                        <a href="contact.html"><i class="renova-right-arrow"></i><span>Our Gallery</span></a>
+                                        <a href="contact.html"><i class="renova-right-arrow"></i><span>Our
+                                                Products</span></a>
                                     </li>
                                     <li>
-                                        <a href="services.html"><i class="renova-right-arrow"></i><span>Our Services</span></a>
+                                        <a href="services.html"><i class="renova-right-arrow"></i><span>Our
+                                                Services</span></a>
                                     </li>
-                                    <li>
+                                    <!-- <li>
                                         <a href="team.html"><i class="renova-right-arrow"></i><span>Our Team</span></a>
-                                    </li>
+                                    </li> -->
                                     <li>
-                                        <a href="contact.html"><i class="renova-right-arrow"></i><span>Contact Us</span></a>
+                                        <a href="contact.html"><i class="renova-right-arrow"></i><span>Contact
+                                                Us</span></a>
                                     </li>
                                 </ul>
                             </div>
@@ -543,19 +1389,24 @@
                             <div class="footer__widget-link">
                                 <ul class="list-wrap">
                                     <li>
-                                        <a href="services.html"><i class="renova-right-arrow"></i><span>Renovation</span></a>
+                                        <a href="services.html"><i
+                                                class="renova-right-arrow"></i><span>Construction Machinery</span></a>
                                     </li>
                                     <li>
-                                        <a href="services.html"><i class="renova-right-arrow"></i><span>Construction</span></a>
+                                        <a href="services.html"><i
+                                                class="renova-right-arrow"></i><span>Lifting Equipment</span></a>
                                     </li>
                                     <li>
-                                        <a href="services.html"><i class="renova-right-arrow"></i><span>Architectural</span></a>
+                                        <a href="services.html"><i
+                                                class="renova-right-arrow"></i><span>Safety Products & Nets</span></a>
                                     </li>
                                     <li>
-                                        <a href="services.html"><i class="renova-right-arrow"></i><span>Development</span></a>
+                                        <a href="services.html"><i
+                                                class="renova-right-arrow"></i><span>Bitumen & Waterproofing</span></a>
                                     </li>
                                     <li>
-                                        <a href="services.html"><i class="renova-right-arrow"></i><span>Building</span></a>
+                                        <a href="services.html"><i
+                                                class="renova-right-arrow"></i><span>Garware Ropes & Tarpaulins</span></a>
                                     </li>
                                 </ul>
                             </div>
@@ -567,19 +1418,23 @@
                             <div class="footer__widget-link">
                                 <ul class="list-wrap">
                                     <li>
-                                        <a href="about.html"><i class="renova-right-arrow"></i><span>Our Story</span></a>
+                                        <a href="about.html"><i class="renova-right-arrow"></i><span>Our
+                                                Story</span></a>
                                     </li>
                                     <li>
-                                        <a href="appointment.html"><i class="renova-right-arrow"></i><span>Appointment</span></a>
+                                        <a href="appointment.html"><i
+                                                class="renova-right-arrow"></i><span>Appointment</span></a>
                                     </li>
                                     <li>
-                                        <a href="contact.html"><i class="renova-right-arrow"></i><span>Terms & Condition</span></a>
+                                        <a href="contact.html"><i class="renova-right-arrow"></i><span>Terms &
+                                                Condition</span></a>
                                     </li>
                                     <li>
-                                        <a href="contact.html"><i class="renova-right-arrow"></i><span>Get in touch</span></a>
+                                        <a href="contact.html"><i class="renova-right-arrow"></i><span>Get in
+                                                touch</span></a>
                                     </li>
                                     <li>
-                                        <a href="project.html"><i class="renova-right-arrow"></i><span>Project Showcase</span></a>
+                                        <a href="project.html"><i class="renova-right-arrow"></i><span> Our Projects</span></a>
                                     </li>
                                 </ul>
                             </div>
@@ -589,7 +1444,7 @@
                         <div class="footer__widget">
                             <h4 class="footer__widget-title">Newsletter</h4>
                             <div class="footer__newsletter">
-                                <p>Aplications prodize before front end ortals visualize front end</p>
+                                <p>Stay updated with new products, brand arrivals, and special offers from Shams Conmac.</p>
                                 <form action="#" class="footer__newsletter-form">
                                     <input type="email" placeholder="Email Address">
                                     <button type="submit" class="btn btn-two">Subscribe</button>
@@ -603,17 +1458,17 @@
                 <div class="row align-items-center">
                     <div class="col-md-7">
                         <div class="copyright-text">
-                            <p>© 2024 Renova. All images are for demo purposes.</p>
+                            <p>© 2026 Shams Conmac Pvt. Ltd. All Rights Reserved.</p>
                         </div>
                     </div>
-                    <div class="col-md-5">
+                    <!-- <div class="col-md-5">
                         <div class="footer__bottom-menu">
                             <ul class="list-wrap">
                                 <li><a href="contact.html">Terms and Conditions</a></li>
                                 <li><a href="contact.html">Privacy Policy</a></li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -624,6 +1479,82 @@
 
 
     <!-- JS here -->
+<script>
+  // Sidebar mobile toggle
+function toggleSb() {
+  document.getElementById('sbBody').classList.toggle('stopen');
+  document.getElementById('sbTog').classList.toggle('stopen');
+}
+
+// Sidebar accordion
+function toggleSbG(btn, id) {
+  var s = document.getElementById(id);
+  var o = s.classList.contains('sopen');
+  document.querySelectorAll('.sb-sub').forEach(function(x) { x.classList.remove('sopen'); });
+  document.querySelectorAll('.sbg-btn').forEach(function(x) { x.classList.remove('sopen'); });
+  if (!o) { s.classList.add('sopen'); btn.classList.add('sopen'); }
+}
+
+// Filter groups
+var labelMap = {
+  'machinery': 'Construction Machinery',
+  'tools': 'Tools & Hardware',
+  'bitumen': 'Bitumen & Waterproofing',
+  'civil': 'Civil & Survey Equipment',
+  'safety': 'Safety & Lifting',
+  'agri': 'Agri Products'
+};
+
+function filterGroup(g, chip, fromSb) {
+  document.querySelectorAll('.chip').forEach(function(c) { c.classList.remove('active'); });
+  if (chip) { chip.classList.add('active'); }
+  else if (!fromSb) { document.querySelector('.chip').classList.add('active'); }
+
+  document.querySelectorAll('.pgroup').forEach(function(p) {
+    if (g === 'all') {
+      p.classList.remove('phide');
+    } else {
+      if (p.getAttribute('data-group') === g) { p.classList.remove('phide'); }
+      else { p.classList.add('phide'); }
+    }
+  });
+
+  var rc = document.getElementById('rcount');
+  if (g === 'all') { rc.textContent = 'Showing all 15 product categories'; }
+  else { rc.textContent = 'Showing: ' + (labelMap[g] || g); }
+
+  if (g !== 'all') {
+    var el = document.querySelector('.pgroup:not(.phide)');
+    if (el) { setTimeout(function() { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 80); }
+  }
+
+  if (fromSb && window.innerWidth < 1024) {
+    document.getElementById('sbBody').classList.remove('stopen');
+    document.getElementById('sbTog').classList.remove('stopen');
+  }
+}
+
+// Modal
+function openModal(name) {
+  document.getElementById('mtag').textContent = name;
+  document.getElementById('moverlay').classList.add('mopen');
+  document.body.style.overflow = 'hidden';
+}
+function closeModal() {
+  document.getElementById('moverlay').classList.remove('mopen');
+  document.body.style.overflow = '';
+}
+function closeModalOut(e) {
+  if (e.target.id === 'moverlay') closeModal();
+}
+function submitForm() {
+  alert('Thank you! Your enquiry has been sent. We will contact you within 24 hours.');
+  closeModal();
+}
+</script>
+
+
+
     <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/isotope.pkgd.min.js"></script>

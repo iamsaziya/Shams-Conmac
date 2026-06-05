@@ -25,6 +25,345 @@
     <link rel="stylesheet" href="assets/css/aos.css">
     <link rel="stylesheet" href="assets/css/tg-cursor.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+
+
+/* ── MEGA MENU DESKTOP ── */
+.navigation .product-mega {
+  display: none;
+  position: absolute !important;
+  top: 100% !important;
+  left: 0 !important;
+  width: 660px !important;
+  flex-direction: row !important;
+  background: #fff !important;
+  border-top: 3px solid #F66300 !important;
+  box-shadow: 0 16px 50px rgba(0,0,0,0.15) !important;
+  padding: 0 !important;
+  z-index: 9999 !important;
+}
+
+.navigation .menu-item-has-children:hover > .product-mega {
+  display: flex !important;
+}
+
+.product-mega > .pd-col {
+  flex: 1;
+  padding: 22px 18px;
+  border-right: 1px solid rgba(0,0,0,0.08);
+  display: block !important;
+  width: auto !important;
+  float: none !important;
+  position: static !important;
+}
+.product-mega > .pd-col:last-child { border-right: none; }
+
+.product-mega .pd-group { margin-bottom: 18px; }
+.product-mega .pd-group:last-of-type { margin-bottom: 0; }
+
+.product-mega .pd-title {
+  display: block;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #F66300;
+  margin-bottom: 10px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  cursor: default;
+}
+
+.product-mega .pd-group ul {
+  display: block !important;
+  position: static !important;
+  background: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: auto !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  min-width: auto !important;
+}
+
+.product-mega .pd-group ul li {
+  margin-bottom: 7px;
+  padding: 0 !important;
+  border: none !important;
+}
+
+.product-mega .pd-group ul li a {
+  font-size: 12.5px !important;
+  color: #2C2C2A !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 5px !important;
+  padding: 0 !important;
+  line-height: 1.4 !important;
+  background: none !important;
+  transition: color .15s, padding-left .15s !important;
+  white-space: normal !important;
+}
+
+.product-mega .pd-group ul li a::before {
+  content: '›';
+  color: #F66300;
+  font-size: 15px;
+  line-height: 1.2;
+  flex-shrink: 0;
+}
+
+.product-mega .pd-group ul li a:hover {
+  color: #F66300 !important;
+  padding-left: 3px !important;
+  background: none !important;
+}
+
+.product-mega .pd-quote {
+  display: block;
+  margin-top: 16px;
+  background: #F66300;
+  color: #fff !important;
+  text-align: center;
+  padding: 10px 14px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background .2s;
+}
+.product-mega .pd-quote:hover { background: #cc4f00; }
+
+/* ── MOBILE OVERRIDES (below 1200px) ── */
+@media (max-width: 1199px) {
+
+  /* reset positioning — stack vertically */
+  .navigation .product-mega,
+  .navigation .menu-item-has-children:hover > .product-mega {
+    display: none !important;
+    position: static !important;
+    width: 100% !important;
+    flex-direction: column !important;
+    box-shadow: none !important;
+    border-top: 2px solid #F66300 !important;
+    padding: 0 !important;
+    background: #fafafa !important;
+  }
+
+  /* shown via JS class */
+  .navigation .menu-item-has-children.pd-mob-open > .product-mega {
+    display: flex !important;
+  }
+
+  .product-mega > .pd-col {
+    padding: 0 !important;
+    border-right: none !important;
+    border-bottom: 1px solid rgba(0,0,0,0.07) !important;
+    width: 100% !important;
+  }
+  .product-mega > .pd-col:last-child { border-bottom: none !important; }
+
+  /* group title — tappable on mobile */
+  .product-mega .pd-title {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 18px !important;
+    margin: 0 !important;
+    border-bottom: 1px solid rgba(0,0,0,0.06) !important;
+    background: #f0ede6;
+    font-size: 11px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .product-mega .pd-title::after {
+    content: '+';
+    font-size: 18px;
+    color: #F66300;
+    font-weight: 300;
+    flex-shrink: 0;
+    line-height: 1;
+  }
+
+  .product-mega .pd-title.pd-mob-open::after {
+    content: '−';
+  }
+
+  /* hide items by default on mobile */
+  .product-mega .pd-group ul {
+    display: none !important;
+  }
+
+  /* show when open */
+  .product-mega .pd-group ul.pd-mob-items-open {
+    display: flex !important;
+    flex-direction: column;
+    padding: 6px 0 10px 0 !important;
+    background: #fff !important;
+  }
+
+  .product-mega .pd-group ul li {
+    margin: 0 !important;
+    border-bottom: 1px solid rgba(0,0,0,0.04) !important;
+  }
+
+  .product-mega .pd-group ul li a {
+    padding: 9px 18px 9px 32px !important;
+    font-size: 13px !important;
+    color: #555 !important;
+  }
+
+  .product-mega .pd-group ul li a::before {
+    content: '—' !important;
+    font-size: 9px !important;
+    margin-top: 2px;
+  }
+
+  .product-mega .pd-group ul li a:hover {
+    color: #F66300 !important;
+    padding-left: 36px !important;
+    background: #fdf6ee !important;
+  }
+
+  .product-mega .pd-group {
+    margin-bottom: 0 !important;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+  }
+  .product-mega .pd-group:last-of-type { border-bottom: none; }
+
+  /* hide quote button on mobile */
+  .product-mega .pd-quote { display: none !important; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* Override theme sub-menu for mega menu only */
+.navigation .product-mega {
+  display: none;
+  position: absolute !important;
+  top: 100% !important;
+  left: 0 !important;
+  width: 660px !important;
+  flex-direction: row !important;
+  background: #fff !important;
+  border-top: 3px solid #F66300 !important;
+  box-shadow: 0 16px 50px rgba(0,0,0,0.15) !important;
+  padding: 0 !important;
+  z-index: 9999 !important;
+}
+
+/* Show on hover — override theme */
+.navigation .menu-item-has-children:hover > .product-mega {
+  display: flex !important;
+}
+
+/* 3 equal columns */
+.product-mega > .pd-col {
+  flex: 1;
+  padding: 22px 18px;
+  border-right: 1px solid rgba(0,0,0,0.08);
+  display: block !important;
+  width: auto !important;
+  float: none !important;
+  position: static !important;
+}
+.product-mega > .pd-col:last-child { border-right: none; }
+
+/* group spacing */
+.product-mega .pd-group { margin-bottom: 18px; }
+.product-mega .pd-group:last-of-type { margin-bottom: 0; }
+
+/* column title */
+.product-mega .pd-title {
+  display: block;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #F66300;
+  margin-bottom: 10px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+/* reset theme ul inside mega */
+.product-mega .pd-group ul {
+  display: block !important;
+  position: static !important;
+  background: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: auto !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  min-width: auto !important;
+}
+
+/* links */
+.product-mega .pd-group ul li {
+  margin-bottom: 7px;
+  padding: 0 !important;
+  border: none !important;
+}
+.product-mega .pd-group ul li a {
+  font-size: 12.5px !important;
+  color: #2C2C2A !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 5px !important;
+  padding: 0 !important;
+  line-height: 1.4 !important;
+  background: none !important;
+  transition: color .15s, padding-left .15s !important;
+  white-space: normal !important;
+}
+.product-mega .pd-group ul li a::before {
+  content: '›';
+  color: #F66300;
+  font-size: 15px;
+  line-height: 1.2;
+  flex-shrink: 0;
+}
+.product-mega .pd-group ul li a:hover {
+  color: #F66300 !important;
+  padding-left: 3px !important;
+  background: none !important;
+}
+
+/* quote button */
+.product-mega .pd-quote {
+  display: block;
+  margin-top: 16px;
+  background: #F66300;
+  color: #111 !important;
+  text-align: center;
+  padding: 10px 14px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background .2s;
+}
+.product-mega .pd-quote:hover { background: #A87C10; }
+    </style>
+
 </head>
 
 <body>
@@ -97,27 +436,83 @@
                                     <ul class="navigation">
                                         <li class="active menu-item-has"><a href="#">Home</a>
                                         </li>
-                                        <li class="menu-item-has"><a href="#">About Us</a>
+                                        <li class="menu-item-has"><a href="about.html">About Us</a>
                                         </li>
-                                        <li class="menu-item-has"><a href="#">Services</a>
+                                        <li class="menu-item-has"><a href="services.html">Services</a>
                                         </li>
                                         
-                                        <li class="menu-item-has-children"><a href="#">Products</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="about.html">About Us</a></li>
-                                                <li><a href="services.html">Our Services</a></li>
-                                                <li><a href="services-details.html">Services Details</a></li>
-                                                <li><a href="history.html">Company History</a></li>
-                                                <li><a href="company.html">Company Values</a></li>
-                                                <li><a href="office.html">Our Offices</a></li>
-                                                <li><a href="clients.html">Our clients</a></li>
-                                                <li><a href="faq.html">Faq Page</a></li>
-                                                <li><a href="team.html">Team Page</a></li>
-                                                <li><a href="team-details.html">Team Details</a></li>
-                                                <li><a href="appointment.html">Appointment Page</a></li>
-                                                <li><a href="contact.html">Contact Us</a></li>
-                                            </ul>
-                                        </li>
+                                        <li class="menu-item-has-children">
+  <a href="project.html">Products</a>
+  <ul class="sub-menu product-mega">
+    <li class="pd-col">
+      <div class="pd-group">
+        <span class="pd-title">Construction Machinery</span>
+        <ul>
+          <li><a href="project.html#machinery">Construction Machine & Spares</a></li>
+          <li><a href="project.html#machinery">Earth Compaction Machines</a></li>
+          <li><a href="project.html#machinery">Rail Track Machine & Tools</a></li>
+          <li><a href="project.html#machinery">Concrete Mixers</a></li>
+          <li><a href="project.html#machinery">Concrete Vibrators</a></li>
+          <li><a href="project.html#machinery">Concrete & Slab Cutting</a></li>
+        </ul>
+      </div>
+      <div class="pd-group">
+        <span class="pd-title">Centring & Formwork</span>
+        <ul>
+          <li><a href="project.html#centring">Tower Crane Buckets</a></li>
+          <li><a href="project.html#centring">Bull Floaters & Texture Brush</a></li>
+          <li><a href="project.html#centring">Curing Hessian Cloth</a></li>
+          <li><a href="project.html#centring">Concrete Trolley & Tray</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="pd-col">
+      <div class="pd-group">
+        <span class="pd-title">Safety & Lifting</span>
+        <ul>
+          <li><a href="project.html#safety">Safety Nets & Helmets</a></li>
+          <li><a href="project.html#safety">Safety Jacket & Lights</a></li>
+          <li><a href="project.html#safety">Speed Breaker & Barricades</a></li>
+          <li><a href="project.html#safety">Monkey Crane & Winch</a></li>
+          <li><a href="project.html#safety">Chain Pulley Block</a></li>
+          <li><a href="project.html#safety">Webbing Belt & Slings</a></li>
+          <li><a href="project.html#safety">D-Shackle & Ton Buckle</a></li>
+        </ul>
+      </div>
+      <div class="pd-group">
+        <span class="pd-title">Bitumen & Waterproofing</span>
+        <ul>
+          <li><a href="project.html#bitumen">Bitumen Filler Board</a></li>
+          <li><a href="project.html#bitumen">Armor Board & Membrane</a></li>
+          <li><a href="project.html#bitumen">Water Stoppers</a></li>
+          <li><a href="project.html#bitumen">Bitumen Tar Paper</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="pd-col">
+      <div class="pd-group">
+        <span class="pd-title">Tools & Hardware</span>
+        <ul>
+          <li><a href="project.html#tools">Power Tools</a></li>
+          <li><a href="project.html#tools">Hand Tools</a></li>
+          <li><a href="project.html#tools">All Hardware Materials</a></li>
+        </ul>
+      </div>
+      <div class="pd-group">
+        <span class="pd-title">Civil, Survey & Agri</span>
+        <ul>
+          <li><a href="project.html#civil">Civil Lab Equipments</a></li>
+          <li><a href="project.html#civil">Survey Lab Equipments</a></li>
+          <li><a href="project.html#civil">All Types of Green Nets</a></li>
+          <li><a href="project.html#civil">Green Tarpaulins</a></li>
+          <li><a href="project.html#civil">Bird Nets & Sports Nets</a></li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</li>
+
+
                                         <!-- <li class="menu-item-has-children"><a href="#">Shop</a>
                                             <ul class="sub-menu">
                                                 <li><a href="shop.html">Shop Page</a></li>
@@ -130,15 +525,15 @@
                                                 <li><a href="project-details.html">Portfolio Details</a></li>
                                             </ul>
                                         </li> -->
-                                        <li class="menu-item-has-children"><a href="#">Blog</a>
-                                            <!-- <ul class="sub-menu">
+                                        <!-- <li class="menu-item-has-children"><a href="#">Blog</a>
+                                            <ul class="sub-menu">
                                                 <li><a href="blog.html">Blog Standard</a></li>
                                                 <li><a href="blog-2.html">Blog List</a></li>
                                                 <li><a href="blog-3.html">Blog Grid</a></li>
                                                 <li><a href="blog-details.html">Blog Details</a></li>
-                                            </ul> -->
-                                        </li>
-                                        <li class="menu-item-has"><a href="#">Contact Us</a>
+                                            </ul>
+                                        </li> -->
+                                        <li class="menu-item-has"><a href="contact.html">Contact Us</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -382,7 +777,7 @@
                     <div class="col-lg-6 col-md-9">
                         <div class="about__img-wrap wow img-custom-anim-left animated" data-wow-duration="1.5s"
                             data-wow-delay="0.1s">
-                            <img src="assets/img/images/about_img.jpg" alt="img">
+                            <img src="assets/img/images/work.png" alt="img">
                             <div class="about__img-content">
                                 <h4 class="title">Let’s work together</h4>
                                 <a href="contact.html" class="btn">Contact Us <img
@@ -1250,6 +1645,64 @@
     </footer>
     <!-- footer-area-end -->
 
+    <script>
+document.addEventListener('DOMContentLoaded', function () {
+
+  var productItem = document.querySelector('.navigation .menu-item-has-children');
+
+  // ── MOBILE: tap "Products" to toggle mega ──
+  if (productItem) {
+    var productLink = productItem.querySelector(':scope > a');
+    if (productLink) {
+      productLink.addEventListener('click', function (e) {
+        if (window.innerWidth < 1200) {
+          e.preventDefault();
+          e.stopPropagation();
+          productItem.classList.toggle('pd-mob-open');
+        }
+      });
+    }
+  }
+
+  // ── MOBILE: tap pd-title to toggle that group ──
+  document.querySelectorAll('.product-mega .pd-title').forEach(function (title) {
+    title.addEventListener('click', function () {
+      if (window.innerWidth < 1200) {
+        var ul = this.nextElementSibling;
+        var isOpen = ul.classList.contains('pd-mob-items-open');
+
+        // close all
+        document.querySelectorAll('.product-mega .pd-group ul').forEach(function (u) {
+          u.classList.remove('pd-mob-items-open');
+        });
+        document.querySelectorAll('.product-mega .pd-title').forEach(function (t) {
+          t.classList.remove('pd-mob-open');
+        });
+
+        // open clicked one
+        if (!isOpen) {
+          ul.classList.add('pd-mob-items-open');
+          this.classList.add('pd-mob-open');
+        }
+      }
+    });
+  });
+
+  // ── CLOSE on resize to desktop ──
+  window.addEventListener('resize', function () {
+    if (window.innerWidth >= 1200) {
+      if (productItem) productItem.classList.remove('pd-mob-open');
+      document.querySelectorAll('.product-mega .pd-group ul').forEach(function (u) {
+        u.classList.remove('pd-mob-items-open');
+      });
+      document.querySelectorAll('.product-mega .pd-title').forEach(function (t) {
+        t.classList.remove('pd-mob-open');
+      });
+    }
+  });
+
+});
+</script>
 
 
 

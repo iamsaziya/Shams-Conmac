@@ -8,7 +8,7 @@
     <meta name="description" content="Shams Conmac Pvt. Ltd.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/logo1.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/lOGO.jpg.jpeg">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
@@ -361,6 +361,241 @@
   transition: background .2s;
 }
 .product-mega .pd-quote:hover { background: #A87C10; }
+
+
+
+/* ===== SHAMS GALLERY SECTION ===== */
+
+.shams-gallery-section {
+  padding: 90px 0;
+  background: #f8f8f8;
+}
+
+.shams-gallery-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.shams-gallery-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.shams-gallery-tag {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #f8b300 ;
+  margin-bottom: 10px;
+}
+
+.shams-gallery-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 14px;
+  line-height: 1.2;
+}
+
+.shams-gallery-subtitle {
+  font-size: 15px;
+  color: #666;
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* Grid */
+.shams-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+/* Items */
+.shams-gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  aspect-ratio: 4 / 3;
+  cursor: pointer;
+  background: #222;
+
+  /* Entry animation state */
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.55s ease, transform 0.55s ease, box-shadow 0.3s ease;
+}
+
+.shams-gallery-item.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delays */
+.shams-gallery-item:nth-child(1) { transition-delay: 0s; }
+.shams-gallery-item:nth-child(2) { transition-delay: 0.07s; }
+.shams-gallery-item:nth-child(3) { transition-delay: 0.14s; }
+.shams-gallery-item:nth-child(4) { transition-delay: 0.21s; }
+.shams-gallery-item:nth-child(5) { transition-delay: 0.28s; }
+.shams-gallery-item:nth-child(6) { transition-delay: 0.35s; }
+.shams-gallery-item:nth-child(7) { transition-delay: 0.42s; }
+.shams-gallery-item:nth-child(8) { transition-delay: 0.49s; }
+.shams-gallery-item:nth-child(9) { transition-delay: 0.56s; }
+
+.shams-gallery-item:hover {
+  box-shadow: 0 12px 40px rgba(246, 99, 0, 0.25);
+}
+
+.shams-gallery-item img,
+.shams-gallery-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.shams-gallery-item:hover img,
+.shams-gallery-item:hover video {
+  transform: scale(1.07);
+}
+
+/* Overlay */
+.shams-gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: #f8b300;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  gap: 10px;
+}
+
+.shams-gallery-item:hover .shams-gallery-overlay {
+  opacity: 1;
+}
+
+.shams-gallery-overlay p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+  padding: 0 10px;
+  letter-spacing: 0.5px;
+}
+
+.shams-gallery-icon {
+  font-size: 26px;
+  color: #fff;
+  line-height: 1;
+}
+
+.shams-play-icon {
+  font-size: 36px;
+}
+
+/* Video badge */
+.shams-gallery-video::before {
+  content: "▶ VIDEO";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #f8b300 ;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 3px 8px;
+  border-radius: 3px;
+  z-index: 2;
+}
+
+/* Lightbox */
+.shams-lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  z-index: 99999;
+  align-items: center;
+  justify-content: center;
+  animation: shamsLBFadeIn 0.25s ease;
+}
+
+.shams-lightbox.active {
+  display: flex;
+}
+
+@keyframes shamsLBFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.shams-lightbox-content {
+  max-width: 90vw;
+  max-height: 85vh;
+  animation: shamsLBSlide 0.3s ease;
+}
+
+@keyframes shamsLBSlide {
+  from { transform: scale(0.92); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
+
+.shams-lightbox-content img,
+.shams-lightbox-content video,
+.shams-lightbox-content iframe {
+  max-width: 90vw;
+  max-height: 85vh;
+  border-radius: 6px;
+  display: block;
+}
+
+.shams-lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 28px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 44px;
+  line-height: 1;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s, color 0.2s;
+  padding: 0;
+}
+
+.shams-lightbox-close:hover {
+  opacity: 1;
+  color: #f8b300 ;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .shams-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .shams-gallery-title { font-size: 26px; }
+}
+
+@media (max-width: 480px) {
+  .shams-gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== END SHAMS GALLERY ===== */
     </style>
 </head>
 
@@ -370,7 +605,7 @@
     <div id="preloader">
         <div id="loader" class="loader">
             <div class="loader-container">
-                <div class="loader-icon"><img src="assets/img/logo/logo1.png" alt="Preloader"></div>
+                <div class="loader-icon"><img src="assets/img/logo/lOGO.jpg.jpeg" alt="Preloader"></div>
             </div>
         </div>
     </div>
@@ -428,7 +663,7 @@
                                 </div>
                                 <div class="logo">
                                     
-                                    <a href="index.html"><img src="assets/img/logo/logo3.png" alt="Logo"></a>
+                                    <a href="index.html"><img src="assets/img/logo/lOGO.jpg.jpeg" alt="Logo"></a>
                                 </div>
                                 <div class="tgmenu__navbar-wrap tgmenu__main-menu d-none d-xl-flex">
                                     <ul class="navigation">
@@ -557,7 +792,7 @@
             <nav class="tgmobile__menu-box">
                 <div class="close-btn"><i class="tg-flaticon-close-1"></i></div>
                 <div class="nav-logo">
-                    <a href="index.html"><img src="assets/img/logo/logo3.png" alt="Logo"></a>
+                    <a href="index.html"><img src="assets/img/logo/lOGO.jpg.jpeg" alt="Logo"></a>
                 </div>
 
                 <div class="tgmobile__menu-outer">
@@ -628,7 +863,7 @@
                 <button><i class="far fa-window-close"></i></button>
             </div>
             <div class="offCanvas__logo mb-30">
-                <a href="index.html"><img src="assets/img/logo/logo3.png" alt="Logo"></a>
+                <a href="index.html"><img src="assets/img/logo/lOGO.jpg.jpeg" alt="Logo"></a>
             </div>
             <div class="offCanvas__side-info mb-30">
                 <div class="contact-list mb-30">
@@ -666,7 +901,7 @@
     <main class="main-area fix">
 
         <!-- breadcrumb-area -->
-        <div class="breadcrumb__area breadcrumb__bg" data-background="assets/img/bg/breadcrumb_bg.jpg">
+        <div class="breadcrumb__area breadcrumb__bg" data-background="assets/img/images/bitumen.jpg">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -687,7 +922,7 @@
         <!-- breadcrumb-area-end -->
 
         <!-- services-area -->
-        <section class="services__area-two section-pt-120 section-pb-95">
+        <!-- <section class="services__area-two section-pt-120 section-pb-95">
             <div class="container">
                 <div class="row gutter-24 justify-content-center">
                     <div class="col-lg-4 col-md-6">
@@ -848,12 +1083,194 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- services-area-end -->
+
+        <!-- ===== GALLERY SECTION ===== -->
+<section class="shams-gallery-section">
+  <div class="shams-gallery-container">
+
+    <div class="shams-gallery-header">
+      <span class="shams-gallery-tag">Our Work</span>
+      <h2 class="shams-gallery-title">Gallery</h2>
+      <p class="shams-gallery-subtitle">A glimpse into our projects, machinery, and on-site operations across India.</p>
+    </div>
+
+    <div class="shams-gallery-grid">
+
+      <!-- IMAGE ITEMS — replace src with your actual images -->
+      <div class="shams-gallery-item" data-type="image">
+        <img src="assets/img/services/bit.jpeg" alt="Samruddhi Mahamarg Project" loading="lazy">
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon">&#128269;</span>
+          <!-- <p>Samruddhi Mahamarg</p> -->
+        </div>
+      </div>
+
+      <div class="shams-gallery-item" data-type="image">
+        <img src="assets/img/services/constrct.jpeg" alt="Concrete Mixer on Site" loading="lazy">
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon">&#128269;</span>
+          <!-- <p>Concrete Mixer on Site</p> -->
+        </div>
+      </div>
+      <div class="shams-gallery-item" data-type="image">
+        <img src="assets/img/services/lift.jpeg" alt="Dhule Solapur Highway" loading="lazy">
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon">&#128269;</span>
+          <!-- <p>Dhule–Solapur Highway</p> -->
+        </div>
+      </div>
+
+      <div class="shams-gallery-item" data-type="image">
+        <img src="assets/img/services/safe.jpeg" alt="Safety Equipment Supply" loading="lazy">
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon">&#128269;</span>
+          <!-- <p>Safety Equipment</p> -->
+        </div>
+      </div>
+
+      <div class="shams-gallery-item" data-type="image">
+        <img src="assets/img/services/WhatsApp Image 2026-05-27 at 5.52.26 PM.jpeg" alt="Railway Yard Project Bhopal" loading="lazy">
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon">&#128269;</span>
+          <!-- <p>Railway Yard — Bhopal</p> -->
+        </div>
+      </div>
+
+      <div class="shams-gallery-item" data-type="image">
+        <img src="assets/img/services/WhatsApp Image 2026-05-27 at 5.52.46 PM.jpeg" alt="Flyover Construction Aurangabad" loading="lazy">
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon">&#128269;</span>
+          <!-- <p>Flyover Construction</p> -->
+        </div>
+      </div>
+
+      <div class="shams-gallery-item" data-type="image">
+        <img src="assets/img/services/WhatsApp Image 2026-05-27 at 5.53.50 PM.jpeg" alt="Bar Bender Equipment" loading="lazy">
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon">&#128269;</span>
+          <!-- <p>Bar Bender Equipment</p> -->
+        </div>
+      </div>
+
+        <div class="shams-gallery-item" data-type="image">
+        <img src="assets/img/services/WhatsApp Image 2026-05-27 at 5.55.29 PM.jpeg" alt="Bar Bender Equipment" loading="lazy">
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon">&#128269;</span>
+          <!-- <p>Bar Bender Equipment</p> -->
+        </div>
+      </div>
+
+        <div class="shams-gallery-item" data-type="image">
+        <img src="assets/img/services/WhatsApp Image 2026-05-27 at 5.55.53 PM.jpeg" alt="Bar Bender Equipment" loading="lazy">
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon">&#128269;</span>
+          <!-- <p>Bar Bender Equipment</p> -->
+        </div>
+      </div>
+
+        <div class="shams-gallery-item" data-type="image">
+        <img src="assets/img/services/WhatsApp Image 2026-05-27 at 5.56.29 PM.jpeg" alt="Bar Bender Equipment" loading="lazy">
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon">&#128269;</span>
+          <!-- <p>Bar Bender Equipment</p> -->
+        </div>
+      </div>
+
+        <div class="shams-gallery-item" data-type="image">
+        <img src="assets/img/services/WhatsApp Image 2026-05-27 at 5.57.13 PM.jpeg" alt="Bar Bender Equipment" loading="lazy">
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon">&#128269;</span>
+          <!-- <p>Bar Bender Equipment</p> -->
+        </div>
+      </div>
+
+        <div class="shams-gallery-item" data-type="image">
+        <img src="assets/img/services/WhatsApp Image 2026-05-27 at 5.57.46 PM.jpeg" alt="Bar Bender Equipment" loading="lazy">
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon">&#128269;</span>
+          <!-- <p>Bar Bender Equipment</p> -->
+        </div>
+      </div>
+
+        <div class="shams-gallery-item" data-type="image">
+        <img src="assets/img/services/WhatsApp Image 2026-05-27 at 5.58.01 PM.jpeg" alt="Bar Bender Equipment" loading="lazy">
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon">&#128269;</span>
+          <!-- <p>Bar Bender Equipment</p> -->
+        </div>
+      </div>
+
+        <div class="shams-gallery-item" data-type="image">
+        <img src="assets/img/services/WhatsApp Image 2026-05-27 at 6.00.02 PM.jpeg" alt="Bar Bender Equipment" loading="lazy">
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon">&#128269;</span>
+          <!-- <p>Bar Bender Equipment</p> -->
+        </div>
+      </div>
+
+        <div class="shams-gallery-item" data-type="image">
+        <img src="assets/img/services/WhatsApp Image 2026-05-27 at 6.00.55 PM.jpeg" alt="Bar Bender Equipment" loading="lazy">
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon">&#128269;</span>
+          <p>Bar Bender Equipment</p>
+        </div>
+      </div>
+
+        <div class="shams-gallery-item" data-type="image">
+        <img src="assets/img/services/WhatsApp Image 2026-05-27 at 6.02.12 PM.jpeg" alt="Bar Bender Equipment" loading="lazy">
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon">&#128269;</span>
+          <!-- <p>Bar Bender Equipment</p> -->
+        </div>
+      </div>
+
+        <div class="shams-gallery-item" data-type="image">
+        <img src="assets/img/services/WhatsApp Image 2026-05-27 at 6.03.41 PM.jpeg" alt="Bar Bender Equipment" loading="lazy">
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon">&#128269;</span>
+          <!-- <p>Bar Bender Equipment</p> -->
+        </div>
+      </div>
+
+      <!-- VIDEO ITEM -->
+      <!-- <div class="shams-gallery-item shams-gallery-video" data-type="video">
+        <video src="videos/gallery/site-video-2.mp4" muted loop playsinline poster="assets/img/services/video-thumb-2.jpg"></video>
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon shams-play-icon">&#9654;</span>
+          <p>Lifting Equipment Demo</p>
+        </div>
+      </div>
+            
+      <div class="shams-gallery-item shams-gallery-video" data-type="video">
+        <video src="videos/gallery/site-video-1.mp4" muted loop playsinline poster="images/gallery/video-thumb-1.jpg"></video>
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon shams-play-icon">&#9654;</span>
+          <p>Site Operations</p>
+        </div>
+      </div> -->
+
+      
+
+    </div><!-- /.shams-gallery-grid -->
+
+  </div><!-- /.shams-gallery-container -->
+
+  <!-- LIGHTBOX MODAL -->
+  <div class="shams-lightbox" id="shamsLightbox">
+    <button class="shams-lightbox-close" id="shamsLightboxClose">&times;</button>
+    <div class="shams-lightbox-content" id="shamsLightboxContent"></div>
+  </div>
+
+</section>
+<!-- ===== END GALLERY SECTION ===== -->
+
+
 
         <!-- cta-area -->
         <section class="cta__area fix">
-            <div class="cta__bg" data-background="assets/img/bg/cta_bg.jpg"></div>
+            <div class="cta__bg" data-background="assets/img/images/abou1.jpg"></div>
             <div class="container">
                 <div class="row align-items-end">
                     <div class="col-lg-8">
@@ -897,7 +1314,7 @@
                     <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                         <div class="footer__widget">
                             <div class="footer__logo">
-                                <a href="index.html"><img src="assets/img/logo/logo3.png" alt="logo"></a>
+                                <a href="index.html"><img src="assets/img/logo/lOGO.jpg.jpeg" alt="logo"></a>
                             </div>
                             <div class="footer__content">
                                 <p>Your trusted partner for anything in hardware and construction machinery — serving contractors across Maharashtra since 1969.
@@ -1035,7 +1452,81 @@
     <!-- footer-area-end -->
 
 
+<script>
+    /* ===== SHAMS GALLERY JS ===== */
+(function () {
 
+  // --- Scroll-in animation ---
+  const galleryItems = document.querySelectorAll('.shams-gallery-item');
+
+  const observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  galleryItems.forEach(function (item) {
+    observer.observe(item);
+  });
+
+  // --- Lightbox ---
+  const lightbox    = document.getElementById('shamsLightbox');
+  const lbContent   = document.getElementById('shamsLightboxContent');
+  const lbClose     = document.getElementById('shamsLightboxClose');
+
+  galleryItems.forEach(function (item) {
+    item.addEventListener('click', function () {
+      var type = item.getAttribute('data-type');
+      lbContent.innerHTML = '';
+
+      if (type === 'video') {
+        var vid = item.querySelector('video');
+        if (vid) {
+          var newVid = document.createElement('video');
+          newVid.src      = vid.src;
+          newVid.controls = true;
+          newVid.autoplay = true;
+          newVid.style.maxWidth  = '90vw';
+          newVid.style.maxHeight = '85vh';
+          lbContent.appendChild(newVid);
+        }
+      } else {
+        var img = item.querySelector('img');
+        if (img) {
+          var newImg = document.createElement('img');
+          newImg.src = img.src;
+          newImg.alt = img.alt;
+          lbContent.appendChild(newImg);
+        }
+      }
+
+      lightbox.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  function closeLightbox() {
+    lightbox.classList.remove('active');
+    lbContent.innerHTML = '';
+    document.body.style.overflow = '';
+  }
+
+  lbClose.addEventListener('click', closeLightbox);
+
+  lightbox.addEventListener('click', function (e) {
+    if (e.target === lightbox) closeLightbox();
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeLightbox();
+  });
+
+})();
+/* ===== END SHAMS GALLERY JS ===== */
+</script>
 
     <!-- JS here -->
     <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>

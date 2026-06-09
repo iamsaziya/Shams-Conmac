@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e ' *)",
+      "Bash(sed -n '625,640p' /home/saziya/Desktop/Work/shamconmac/assets/css/main.css)",
+      "Bash(sed -n '1795,1810p' /home/saziya/Desktop/Work/shamconmac/assets/css/main.css)"
+    ]
+  }
+}

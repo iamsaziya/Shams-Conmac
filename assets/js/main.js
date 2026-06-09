@@ -222,6 +222,10 @@ var brandSwiper = new Swiper('.brand-active', {
     slidesPerView: 5,
     spaceBetween: 24,
     loop: true,
+    navigation: {
+        nextEl: '.brand-button-next',
+        prevEl: '.brand-button-prev',
+    },
     breakpoints: {
         '1500': {
             slidesPerView: 5,

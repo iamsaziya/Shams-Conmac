@@ -11920,6 +11920,44 @@ textarea {
 .brand__item img {
   cursor: pointer;
 }
+.brand__nav-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.brand__nav-wrap .brand-active {
+  flex: 1;
+  min-width: 0;
+}
+.brand-button-prev,
+.brand-button-next {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid #f8b300;
+  background: transparent;
+  color: #f8b300;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  line-height: 1;
+}
+.brand-button-prev:hover,
+.brand-button-next:hover {
+  background: #f8b300;
+  color: #fff;
+}
+.brand-button-prev.swiper-button-disabled,
+.brand-button-next.swiper-button-disabled {
+  opacity: 0.3;
+  cursor: default;
+  pointer-events: none;
+}
 
 /*=============================
         27. Contact

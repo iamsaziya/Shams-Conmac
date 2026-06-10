@@ -710,24 +710,25 @@
         </ul>
       </div>
       <div class="pd-group">
-        <span class="pd-title">Cutting &amp; Testing</span>
+        <span class="pd-title">Cutting &amp; Civil Lab</span>
         <ul>
           <li><a href="products.html#g7">Concrete Groove Cutter</a></li>
           <li><a href="products.html#g7">Brick Cutting Machine</a></li>
-          <li><a href="products.html#g8">Cube Moulds</a></li>
-          <li><a href="products.html#g8">Steel Beam Mould</a></li>
-          <li><a href="products.html#g8">Cube Testing Machine</a></li>
+          <li><a href="products.html#g8">Total Station &amp; Auto Level</a></li>
+          <li><a href="products.html#g8">Cube Moulds &amp; CTM Machine</a></li>
+          <li><a href="products.html#g8">Slump Cone &amp; Lab Tools</a></li>
         </ul>
       </div>
       <div class="pd-group">
-        <span class="pd-title">Lifting &amp; Pumps</span>
+        <span class="pd-title">Lifting, Winches &amp; Pumps</span>
         <ul>
           <li><a href="products.html#g9">Hoist &amp; Mini Crane</a></li>
-          <li><a href="products.html#g9">Suspended Platform</a></li>
-          <li><a href="products.html#g9">Tough Riders</a></li>
-          <li><a href="products.html#g10">Grout Pumps</a></li>
-          <li><a href="products.html#g10">Dewatering Pumps</a></li>
-          <li><a href="products.html#g10">Water Pump</a></li>
+          <li><a href="products.html#g9">Chain Blocks</a></li>
+          <li><a href="products.html#g9">Electric Winch</a></li>
+          <li><a href="products.html#g9">Lifting Accessories</a></li>
+          <li><a href="products.html#g10">Grout &amp; Dewatering Pumps</a></li>
+          <li><a href="products.html#g11">Accessories &amp; Ropes</a></li>
+          <li><a href="products.html#g11">Expansion Joint Boards</a></li>
         </ul>
       </div>
       <a href="products.html" class="pd-quote">View All Products →</a>
@@ -1007,12 +1008,16 @@
 
         <div class="sbg">
           <button class="sbg-btn" onclick="toggleSbG(this,'sg8')">
-            Testing Equipment <span class="sbg-arr">&#9660;</span>
+            Civil Lab Equipment <span class="sbg-arr">&#9660;</span>
           </button>
           <div class="sb-sub" id="sg8">
-            <a href="#g8" onclick="filterGroup('testing',null,true)">Cube Moulds</a>
-            <a href="#g8" onclick="filterGroup('testing',null,true)">Steel Beam Mould</a>
-            <a href="#g8" onclick="filterGroup('testing',null,true)">Cube Testing Machine</a>
+            <a href="#g8" onclick="filterGroup('testing',null,true)">Total Station</a>
+            <a href="#g8" onclick="filterGroup('testing',null,true)">Auto Level NL24</a>
+            <a href="#g8" onclick="filterGroup('testing',null,true)">Cube Moulds (ISI &amp; Non-ISI)</a>
+            <a href="#g8" onclick="filterGroup('testing',null,true)">CTM Machine</a>
+            <a href="#g8" onclick="filterGroup('testing',null,true)">Slump Cone</a>
+            <a href="#g8" onclick="filterGroup('testing',null,true)">Mini Concrete Mixer (Lab)</a>
+            <a href="#g8" onclick="filterGroup('testing',null,true)">Grouting Pumps</a>
           </div>
         </div>
 
@@ -1024,6 +1029,11 @@
             <a href="#g9" onclick="filterGroup('lifting',null,true)">Hoist &amp; Mini Crane</a>
             <a href="#g9" onclick="filterGroup('lifting',null,true)">Suspended Platform</a>
             <a href="#g9" onclick="filterGroup('lifting',null,true)">Tough Riders</a>
+            <a href="#g9" onclick="filterGroup('lifting',null,true)">Chain Blocks</a>
+            <a href="#g9" onclick="filterGroup('lifting',null,true)">Electric Winch / Hoist</a>
+            <a href="#g9" onclick="filterGroup('lifting',null,true)">Manual Winch</a>
+            <a href="#g9" onclick="filterGroup('lifting',null,true)">Lifting Accessories</a>
+            <a href="#g9" onclick="filterGroup('lifting',null,true)">Mini Lift</a>
           </div>
         </div>
 
@@ -1035,6 +1045,16 @@
             <a href="#g10" onclick="filterGroup('pumps',null,true)">Grout Pumps</a>
             <a href="#g10" onclick="filterGroup('pumps',null,true)">Dewatering Pumps</a>
             <a href="#g10" onclick="filterGroup('pumps',null,true)">Water Pump</a>
+          </div>
+        </div>
+
+        <div class="sbg">
+          <button class="sbg-btn" onclick="toggleSbG(this,'sg11')">
+            Construction Accessories <span class="sbg-arr">&#9660;</span>
+          </button>
+          <div class="sb-sub" id="sg11">
+            <a href="#g11" onclick="filterGroup('accessories',null,true)">Expansion Joint Boards</a>
+            <a href="#g11" onclick="filterGroup('accessories',null,true)">Ropes &amp; Safety Nets</a>
           </div>
         </div>
 
@@ -1056,7 +1076,7 @@
       <div class="ptopbar">
         <div>
           <h2>All <span>Products</span></h2>
-          <div class="rcount" id="rcount">Showing all 10 product categories — 40+ products</div>
+          <div class="rcount" id="rcount">Showing all 12 product categories — 50+ products</div>
         </div>
         <button class="btn btn-dark" onclick="filterGroup('all')">Show All</button>
       </div>
@@ -1071,9 +1091,10 @@
         <div class="chip" onclick="filterGroup('compaction',this)">Soil Compaction</div>
         <div class="chip" onclick="filterGroup('finishing',this)">Surface Finishing</div>
         <div class="chip" onclick="filterGroup('cutting',this)">Cutting</div>
-        <div class="chip" onclick="filterGroup('testing',this)">Testing</div>
+        <div class="chip" onclick="filterGroup('testing',this)">Civil Lab</div>
         <div class="chip" onclick="filterGroup('lifting',this)">Lifting</div>
         <div class="chip" onclick="filterGroup('pumps',this)">Pumps</div>
+        <div class="chip" onclick="filterGroup('accessories',this)">Accessories</div>
       </div>
 
       <!-- GROUP 1: Concrete & Mixing Equipment -->
@@ -1081,7 +1102,7 @@
         <div class="gh"><div class="gnum">01</div><div><div class="glbl">Category 01</div><div class="gtitle">Concrete & Mixing Equipment</div></div></div>
         <div class="pgrid">
           <div class="pcard" onclick="openModal(this)">
-            <div class="cimg"><img src="assets/img/products/concrete-mixer.png" alt="Concrete Mixer"><div class="ccat">Mixing</div></div>
+            <div class="cimg"><img src="assets/img/services/concreteM.jpeg" alt="Concrete Mixer"><div class="ccat">Mixing</div></div>
             <div class="cbody"><h4>Concrete Mixer</h4><p>ABLE 250L VET Mixer With 2HP 1PH Crompton Electric Motor (Tilting Type) · ABLE Mini Mixer With 2HP 1PH Crompton / Godrej Electric Motor (Tilting Type) (Metal Wheel) · ORANGE Mini Mixer 240L With Electric Motor</p><button class="cenq">Enquire Now ›</button></div>
           </div>
           <div class="pcard" onclick="openModal(this)">
@@ -1096,11 +1117,11 @@
         <div class="gh"><div class="gnum">02</div><div><div class="glbl">Category 02</div><div class="gtitle">Steel & Bar Working Machines</div></div></div>
         <div class="pgrid">
           <div class="pcard" onclick="openModal(this)">
-            <div class="cimg"><img src="assets/img/products/bar-bender.jpg" alt="Bar Bending Machine"><div class="ccat">Steel</div></div>
+            <div class="cimg"><img src="assets/img/services/barB.jpeg" alt="Bar Bending Machine"><div class="ccat">Steel</div></div>
             <div class="cbody"><h4>Bar Bending Machine</h4><p>BLUELINE Bar Bending B-50/GW50 (upto 40mm) · BLUELINE Bar Bending B-42/GW42-A (STANDARD) (upto 32mm) · BLUELINE HB-32 Hydraulic Steel Bar Bending &amp; Crimping Power Pack Model (upto 32mm)</p><button class="cenq">Enquire Now ›</button></div>
           </div>
           <div class="pcard" onclick="openModal(this)">
-            <div class="cimg"><img src="assets/img/products/bar-cutter.jpg" alt="Bar Cutting Machine"><div class="ccat">Steel</div></div>
+            <div class="cimg"><img src="assets/img/services/barcutting.jpeg" alt="Bar Cutting Machine"><div class="ccat">Steel</div></div>
             <div class="cbody"><h4>Bar Cutting Machine</h4><p>BLUELINE Bar Cutting C-50/GQ50 With Base Frame &amp; Siemens Starter (upto 40mm) · BLUELINE Bar Cutting C-40/GQ40 (Heavy) With Base Frame &amp; Starter (upto 32mm) · BLUELINE Bar Cutting C-40/GQ40I (INDIAN MAKE) (upto 32mm)</p><button class="cenq">Enquire Now ›</button></div>
           </div>
           <div class="pcard" onclick="openModal(this)">
@@ -1112,15 +1133,15 @@
             <div class="cbody"><h4>CNC Steel Bar Stirrup Bender</h4><p>BLUELINE CNC STEEL BAR STIRRUP BENDER ORW14A (Chinese Servo Motor) Without Pay Off (Upto 12mm) · BLUELINE CNC STEEL BAR STIRRUP BENDER ORW10A (Without Pay Off) (Upto 10mm) · BLUELINE CNC STEEL BAR STIRRUP BENDER ORW12A Inbuilt Compressor (Without Pay Off) (Upto 10mm)</p><button class="cenq">Enquire Now ›</button></div>
           </div>
           <div class="pcard" onclick="openModal(this)">
-            <div class="cimg"><img src="assets/img/products/thread-rolling.png" alt="Thread Rolling Machine"><div class="ccat">Steel</div></div>
+            <div class="cimg"><img src="assets/img/services/barTreading.jpeg" alt="Thread Rolling Machine"><div class="ccat">Steel</div></div>
             <div class="cbody"><h4>Thread Rolling Machine</h4><p>SMT-40 Threading Machine, Max Thread Length (80-120)mm. (SENSOR TYPE) (Heavy Model) (3 Set Roller) · SMT-40 Threading Machine, Max Thread Length (80-120)mm. (LIMIT TYPE) (Eco Model) (2 Set Roller) · SEMI AUTOMATIC Threading Machine (Sensor Type) (Automatic Forward &amp; Reverse) (3 Set Roller)</p><button class="cenq">Enquire Now ›</button></div>
           </div>
           <div class="pcard" onclick="openModal(this)">
-            <div class="cimg"><img src="assets/img/product/de.png" alt="Decoiling Machine"><div class="ccat">Steel</div></div>
+            <div class="cimg"><img src="assets/img/services/barstraightM.jpeg" alt="Decoiling Machine"><div class="ccat">Steel</div></div>
             <div class="cbody"><h4>Decoiling Machine</h4><p>GTQ4-12A Decoiling &amp; Straightening 7.5KW upto 12mm · GTQ4-14 Decoiling &amp; Straightening 16KW 14mm · GTQ4-12A Decoiling &amp; Straightening 7.5KW Economical upto 10mm</p><button class="cenq">Enquire Now ›</button></div>
           </div>
           <div class="pcard" onclick="openModal(this)">
-            <div class="cimg"><img src="assets/img/product/scrap.png" alt="Scrap Straightening Machine"><div class="ccat">Steel</div></div>
+            <div class="cimg"><img src="assets/img/services/barcutter.jpeg" alt="Scrap Straightening Machine"><div class="ccat">Steel</div></div>
             <div class="cbody"><h4>Scrap Straightening Machine</h4><p>Scrap Straightening Upto 6-14mm (With Cutter) · Scrap Straightening upto 14-25mm (No Cutter)</p><button class="cenq">Enquire Now ›</button></div>
           </div>
           <div class="pcard" onclick="openModal(this)">
@@ -1154,7 +1175,7 @@
         <div class="gh"><div class="gnum">04</div><div><div class="glbl">Category 04</div><div class="gtitle">Vibrators & Compaction Equipment</div></div></div>
         <div class="pgrid">
           <div class="pcard" onclick="openModal(this)">
-            <div class="cimg"><img src="assets/img/products/petrol-vibrator.jpg" alt="Concrete Vibrators"><div class="ccat">Vibrators</div></div>
+            <div class="cimg"><img src="assets/img/services/vibr.jpeg" alt="Concrete Vibrators"><div class="ccat">Vibrators</div></div>
             <div class="cbody"><h4>Concrete Vibrators</h4><p>ABLE Concrete Diesel Engine Concrete Vibrator · Concrete Vibrator Greaves 2HP MK12 Petrol Engine · Concrete Vibrator Honda GX - Petrol Engine</p><button class="cenq">Enquire Now ›</button></div>
           </div>
           <div class="pcard" onclick="openModal(this)">
@@ -1189,19 +1210,19 @@
         <div class="gh"><div class="gnum">05</div><div><div class="glbl">Category 05</div><div class="gtitle">Soil Compaction & Ground Work</div></div></div>
         <div class="pgrid">
           <div class="pcard" onclick="openModal(this)">
-            <div class="cimg"><img src="assets/img/products/compactor.png" alt="Soil Compactors"><div class="ccat">Compaction</div></div>
+            <div class="cimg"><img src="assets/img/services/earthpowercom.jpeg" alt="Soil Compactors"><div class="ccat">Compaction</div></div>
             <div class="cbody"><h4>Soil Compactors</h4><p>ABLE AVC 40 (5TON) COMPACTOR With Greaves 5HP 1520 Diesel Engine · ORANGE OR-25 (3TON) COMPACTOR WITH WATER TANK With 3HP 3Phase Hindustan / Eltek Electric Motor · ABLE AVC 40 (5TON) COMPACTOR With 5HP 3Phase Crompton Electric Motor</p><button class="cenq">Enquire Now ›</button></div>
           </div>
           <div class="pcard" onclick="openModal(this)">
-            <div class="cimg"><img src="assets/img/products/tamping-rammer.jpg" alt="Tamping Rammer"><div class="ccat">Compaction</div></div>
+            <div class="cimg"><img src="assets/img/services/tamp.jpeg" alt="Tamping Rammer"><div class="ccat">Compaction</div></div>
             <div class="cbody"><h4>Tamping Rammer</h4><p>OR-80 Tamping Rammer (Heavy Model) With Honda GX160 5HP Petrol Engine · OR-80 Tamping Rammer (Economical Model) With HONDA (INDIAN) GX160 5HP Petrol Engine · OR-80 Tamping Rammer (Heavy Model) With Diesel Engine Rope Start</p><button class="cenq">Enquire Now ›</button></div>
           </div>
           <div class="pcard" onclick="openModal(this)">
-            <div class="cimg"><img src="assets/img/products/earth-compactor.png" alt="Earth Compactor"><div class="ccat">Compaction</div></div>
+            <div class="cimg"><img src="assets/img/services/earthcom.jpeg" alt="Earth Compactor"><div class="ccat">Compaction</div></div>
             <div class="cbody"><h4>Earth Compactor / Mini Compactor</h4><p>Earth Compactor · Mini Compactor — Engine-powered vibratory plate compactors for granular soils, gravel, and sub-base layers on site.</p><button class="cenq">Enquire Now ›</button></div>
           </div>
           <div class="pcard" onclick="openModal(this)">
-            <div class="cimg"><img src="assets/img/product/roller.jpg" alt="Vibrator Roller"><div class="ccat">Compaction</div></div>
+            <div class="cimg"><img src="assets/img/services/minirolll.jpeg" alt="Vibrator Roller"><div class="ccat">Compaction</div></div>
             <div class="cbody"><h4>Vibrator Roller</h4><p>SMT-600 ORANGE Single Drum Roller With Greaves 5HP Diesel Engine · SMT-600 ORANGE Single Drum Roller With Honda GX160 5HP Petrol Engine · SMT-600 ORANGE DOUBLE DRUM ROLLER, 6.5HP CF178 CHANGFA DIESEL ENGINE</p><button class="cenq">Enquire Now ›</button></div>
           </div>
           <div class="pcard" onclick="openModal(this)">
@@ -1216,7 +1237,7 @@
         <div class="gh"><div class="gnum">06</div><div><div class="glbl">Category 06</div><div class="gtitle">Surface Finishing Equipment</div></div></div>
         <div class="pgrid">
           <div class="pcard" onclick="openModal(this)">
-            <div class="cimg"><img src="assets/img/products/power-trowel.jpg" alt="Power Trowels"><div class="ccat">Finishing</div></div>
+            <div class="cimg"><img src="assets/img/services/powertroll.jpeg" alt="Power Trowels"><div class="ccat">Finishing</div></div>
             <div class="cbody"><h4>Power Trowels</h4><p>OR PTF-1000mm Power Trowel (Light Model) (Oil Type) With 3HP 3PH Hindustan / Eltek Motor · Power Trowel Double Speed Motor 60/120 RPM · RPT-80 RIDE-ON TROWEL (4+4 BLADE TYPE) With Honda GX-390 13HP Petrol Engine (800mm Disc)</p><button class="cenq">Enquire Now ›</button></div>
           </div>
           <div class="pcard" onclick="openModal(this)">
@@ -1239,31 +1260,47 @@
         <div class="gh"><div class="gnum">07</div><div><div class="glbl">Category 07</div><div class="gtitle">Cutting Machines</div></div></div>
         <div class="pgrid">
           <div class="pcard" onclick="openModal(this)">
-            <div class="cimg"><img src="assets/img/products/concrete-cutter.jpg" alt="Concrete Groove Cutters"><div class="ccat">Cutting</div></div>
+            <div class="cimg"><img src="assets/img/services/conCutter.jpeg" alt="Concrete Groove Cutters"><div class="ccat">Cutting</div></div>
             <div class="cbody"><h4>Concrete Groove Cutters</h4><p>AB-150 D Concrete Groove Cutter Greaves 8.3HP Diesel Engine (Rope Start) Cutter 16" X 4mm · ORANGE OR-150 Concrete Groove Cutter (PVC Tank) Greaves 5HP 1520 Diesel Engine (Rope Start) · ORANGE / 4 Square OR-150 Concrete Groove Cutter Honda GX-390 13HP Petrol Engine (Metal Tank)</p><button class="cenq">Enquire Now ›</button></div>
           </div>
           <div class="pcard" onclick="openModal(this)">
-            <div class="cimg"><img src="assets/img/product/briiuck.png" alt="Brick Cutting Machine"><div class="ccat">Cutting</div></div>
+            <div class="cimg"><img src="assets/img/services/brickcu.jpeg" alt="Brick Cutting Machine"><div class="ccat">Cutting</div></div>
             <div class="cbody"><h4>Brick Cutting Machine</h4><p>ORANGE Brick Cutting Machine — Heavy-duty brick and block cutting machine for clean, precise cuts on AAC blocks, bricks, and masonry on construction sites.</p><button class="cenq">Enquire Now ›</button></div>
           </div>
         </div>
       </div>
 
-      <!-- GROUP 8: Testing Equipment -->
+      <!-- GROUP 8: Civil Lab Equipment -->
       <div class="pgroup" id="g8" data-group="testing">
-        <div class="gh"><div class="gnum">08</div><div><div class="glbl">Category 08</div><div class="gtitle">Testing Equipment</div></div></div>
+        <div class="gh"><div class="gnum">08</div><div><div class="glbl">Category 08</div><div class="gtitle">Civil Lab Equipment</div></div></div>
         <div class="pgrid">
           <div class="pcard" onclick="openModal(this)">
-            <div class="cimg"><img src="assets/img/product/cub.png" alt="Cube Moulds"><div class="ccat">Testing</div></div>
-            <div class="cbody"><h4>Cube Moulds (C.I)</h4><p>Cast Iron Cube Moulds for standard concrete compressive strength testing as per IS and BIS codes — available in 150mm and 100mm sizes.</p><button class="cenq">Enquire Now ›</button></div>
+            <div class="cimg"><img src="assets/img/services/civillab.jpeg" alt="Total Station"><div class="ccat">Civil Lab</div></div>
+            <div class="cbody"><h4>Total Station</h4><p>Total Station Gm-101 &amp; Gm-55 — High-precision electronic total stations for land surveying, setting out, and construction layout. Accurate angular and distance measurement for civil engineering fieldwork.</p><button class="cenq">Enquire Now ›</button></div>
           </div>
           <div class="pcard" onclick="openModal(this)">
-            <div class="cimg"><img src="assets/img/product/cub.png" alt="Steel Beam Mould"><div class="ccat">Testing</div></div>
-            <div class="cbody"><h4>Steel Beam Mould</h4><p>Steel Beam Mould 150 X 150 X 700mm — for flexural strength testing of concrete beam specimens as per IS 516 standards.</p><button class="cenq">Enquire Now ›</button></div>
+            <div class="cimg"><img src="assets/img/services/civillab.jpeg" alt="Auto Level"><div class="ccat">Civil Lab</div></div>
+            <div class="cbody"><h4>Auto Level NL24 with Stand</h4><p>Automatic optical level NL24 with aluminium tripod stand — for differential levelling, height measurement, and benchmarking on construction sites and surveying projects.</p><button class="cenq">Enquire Now ›</button></div>
           </div>
           <div class="pcard" onclick="openModal(this)">
-            <div class="cimg"><img src="assets/img/product/cub.png" alt="Cube Testing Machine"><div class="ccat">Testing</div></div>
-            <div class="cbody"><h4>Cube Testing Machine</h4><p>Cube Testing Machine 1000 KN Manual — Manual compression testing machine for determining the compressive strength of concrete cube specimens on-site or in laboratories.</p><button class="cenq">Enquire Now ›</button></div>
+            <div class="cimg"><img src="assets/img/services/civillab.jpeg" alt="Cube Moulds"><div class="ccat">Civil Lab</div></div>
+            <div class="cbody"><h4>Cube Moulds (ISI &amp; Non-ISI)</h4><p>ISI Cube Mould 150×150mm and Non-ISI Cube Moulds — Cast iron and MS cube moulds for standard concrete compressive strength testing as per IS 516 and BIS codes. Available in 150mm and 100mm sizes.</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/services/civillab.jpeg" alt="CTM Machine"><div class="ccat">Civil Lab</div></div>
+            <div class="cbody"><h4>CTM Machine (Compression Testing)</h4><p>CTM Machine 2000kN — Motorised compression testing machine for determining compressive strength of concrete cube and cylinder specimens. Available in 1000kN manual and 2000kN motorised models.</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/services/civillab.jpeg" alt="Slump Cone"><div class="ccat">Civil Lab</div></div>
+            <div class="cbody"><h4>Slump Cone &amp; Workability Tools</h4><p>Slump cone, tamping rod, and base plate set for measuring concrete workability as per IS 1199. Also includes steel beam mould 150×150×700mm for flexural strength testing per IS 516.</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/services/civillab.jpeg" alt="Mini Concrete Mixer Lab"><div class="ccat">Civil Lab</div></div>
+            <div class="cbody"><h4>Mini Concrete Mixer (Lab)</h4><p>Mini Concrete Mixer 200 ltr &amp; 230 ltr — compact portable mixers for laboratory trial mixes, small-batch concrete preparation, and mortar mixing on site or in civil testing labs.</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/services/civillab.jpeg" alt="Grouting Pumps"><div class="ccat">Civil Lab</div></div>
+            <div class="cbody"><h4>Cement &amp; Epoxy Grouting Pump</h4><p>Cement Grouting Pump and Epoxy Grouting Pump — for crack injection, anchor bolt grouting, underpinning, and post-tensioning duct grouting applications in structural repair and construction.</p><button class="cenq">Enquire Now ›</button></div>
           </div>
         </div>
       </div>
@@ -1273,8 +1310,8 @@
         <div class="gh"><div class="gnum">09</div><div><div class="glbl">Category 09</div><div class="gtitle">Lifting & Access Equipment</div></div></div>
         <div class="pgrid">
           <div class="pcard" onclick="openModal(this)">
-            <div class="cimg"><img src="assets/img/products/mini-crane.png" alt="Hoist & Mini Crane"><div class="ccat">Lifting</div></div>
-            <div class="cbody"><h4>Hoist &amp; Mini Crane</h4><p>JK Mini 300 Crane With 1 Bucket · JK Mini 150 Crane With 1 Bucket · JK Mini 500 Crane With 1 Bucket Wire Rope Guide Type Remote Controlled</p><button class="cenq">Enquire Now ›</button></div>
+            <div class="cimg"><img src="assets/img/services/tower.jpeg" alt="Hoist & Mini Crane"><div class="ccat">Lifting</div></div>
+            <div class="cbody"><h4>Tower crane buckets</h4><p>JK Mini 300 Crane With 1 Bucket · JK Mini 150 Crane With 1 Bucket · JK Mini 500 Crane With 1 Bucket Wire Rope Guide Type Remote Controlled</p><button class="cenq">Enquire Now ›</button></div>
           </div>
           <div class="pcard" onclick="openModal(this)">
             <div class="cimg"><img src="assets/img/products/suspended-platform.png" alt="Suspended Platform"><div class="ccat">Lifting</div></div>
@@ -1284,6 +1321,26 @@
           <div class="pcard" onclick="openModal(this)">
             <div class="cimg"><img src="assets/img/product/tough.jpg" alt="Tough Riders"><div class="ccat">Lifting</div></div>
             <div class="cbody"><h4>Tough Riders</h4><p>Trolley Type Tough Rider · 3 Door Type Tough Rider — Material transport platform riders for moving heavy loads on flat and inclined surfaces at construction sites.</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/services/chian.jpeg" alt="Chain Blocks"><div class="ccat">Lifting</div></div>
+            <div class="cbody"><h4>Chain Blocks</h4><p>Manual chain hoists in 1T, 2T, and 3T capacities — compact, durable chain pulley blocks for lifting, rigging, and load positioning on construction sites and industrial applications.</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/services/eltrowinch.jpeg" alt="Electric Winch"><div class="ccat">Lifting</div></div>
+            <div class="cbody"><h4>Electric Winch / Hoist</h4><p>PA Electric Hoist 200kg–1000kg range · Mini Crane with Clutch — Motor-driven wire rope hoists and electric winches for fast vertical lifting at construction floors and warehouses.</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/services/winch.jpeg" alt="Manual Winch"><div class="ccat">Lifting</div></div>
+            <div class="cbody"><h4>Manual Winch</h4><p>Hand-operated wire rope winches in various capacities — robust manual winches with clutch mechanism for controlled lifting, pulling, and cable tensioning on site.</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/services/lifitngtools.jpeg" alt="Lifting Accessories"><div class="ccat">Lifting</div></div>
+            <div class="cbody"><h4>Lifting Accessories &amp; Rigging Tools</h4><p>Chain slings, wire rope slings, shackles, hooks, eye bolts, lever hoists, clamps, plate lifters, and complete rigging hardware for safe heavy lifting operations.</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/services/minilift.jpeg" alt="Mini Lift"><div class="ccat">Lifting</div></div>
+            <div class="cbody"><h4>Mini lift and lifting equipments</h4><p>Compact electric mini-lift and power trolley systems for moving and raising materials on construction floors — ideal for slab casting, material shifting, and floor-to-floor lifting.</p><button class="cenq">Enquire Now ›</button></div>
           </div>
         </div>
       </div>
@@ -1307,20 +1364,35 @@
         </div>
       </div>
 
-      <!-- GROUP 14: Agri Products -->
-      <!-- <div class="pgroup" id="g14" data-group="agri">
-        <div class="gh"><div class="gnum">11</div><div><div class="glbl">Category 11</div><div class="gtitle">Agri Products</div></div></div>
+      <!-- GROUP 11: Construction Accessories -->
+      <div class="pgroup" id="g11" data-group="accessories">
+        <div class="gh"><div class="gnum">11</div><div><div class="glbl">Category 11</div><div class="gtitle">Construction Accessories</div></div></div>
         <div class="pgrid">
           <div class="pcard" onclick="openModal(this)">
-            <div class="cimg"><img src="assets/img/images/harvest.jpg" alt="Green Shade Nets"><div class="ccat">Agri</div></div>
-            <div class="cbody"><h4>Green Shade Nets &amp; Tarpaulins</h4><p>UV-stabilised green shade nets and heavy-duty tarpaulins for crop protection, greenhouse covering, and agricultural use.</p><button class="cenq">Enquire Now ›</button></div>
+            <div class="cimg"><img src="assets/img/services/joint.jpeg" alt="Expansion Joint Filler Boards"><div class="ccat">Accessories</div></div>
+            <div class="cbody"><h4>Expansion Joint Filler Boards</h4><p>Bituminous fibre and polystyrene expansion joint filler boards in 20mm &amp; 25mm thickness for concrete slab joints, road joints, bridge decks, and RCC structures per IS 1838 standards.</p><button class="cenq">Enquire Now ›</button></div>
           </div>
           <div class="pcard" onclick="openModal(this)">
-            <div class="cimg"><img src="assets/img/images/harvest.jpg" alt="Bird Nets Sports Nets"><div class="ccat">Agri</div></div>
-            <div class="cbody"><h4>Bird Nets &amp; Sports Nets</h4><p>High-quality HDPE bird protection nets for orchards and farms, plus custom sports nets for cricket, football, and tennis.</p><button class="cenq">Enquire Now ›</button></div>
+            <div class="cimg"><img src="assets/img/services/ropes.jpeg" alt="Ropes & Safety Nets"><div class="ccat">Accessories</div></div>
+            <div class="cbody"><h4>Ropes, Safety Nets &amp; Tarpaulins</h4><p>Polypropylene and HDPE twisted ropes, construction safety nets, green shade nets, and heavy-duty tarpaulins — complete range for site safety, scaffolding, and material protection.</p><button class="cenq">Enquire Now ›</button></div>
           </div>
         </div>
-      </div> -->
+      </div>
+
+      <!-- GROUP 12: Agri Products -->
+      <!-- <div class="pgroup" id="g14" data-group="agri">
+        <div class="gh"><div class="gnum">12</div><div><div class="glbl">Category 12</div><div class="gtitle">Agri Products</div></div></div>
+        <div class="pgrid">
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/services/ropes.jpeg" alt="Green Shade Nets"><div class="ccat">Agri</div></div>
+            <div class="cbody"><h4>Green Shade Nets &amp; Tarpaulins</h4><p>UV-stabilised green shade nets and heavy-duty tarpaulins for crop protection, greenhouse covering, and agricultural use.</p><button class="cenq">Enquire Now ›</button></div>
+          </div> -->
+          <!-- <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/images/harvest.jpg" alt="Bird Nets Sports Nets"><div class="ccat">Agri</div></div>
+            <div class="cbody"><h4>Bird Nets &amp; Sports Nets</h4><p>High-quality HDPE bird protection nets for orchards and farms, plus custom sports nets for cricket, football, and tennis.</p><button class="cenq">Enquire Now ›</button></div>
+          </div> -->
+        </div>
+      </div>
 
     </main>
   </div>
@@ -1541,9 +1613,10 @@ var labelMap = {
   'compaction': 'Soil Compaction & Ground Work',
   'finishing':  'Surface Finishing Equipment',
   'cutting':    'Cutting Machines',
-  'testing':    'Testing Equipment',
+  'testing':    'Civil Lab Equipment',
   'lifting':    'Lifting & Access Equipment',
   'pumps':      'Pumps & Water Equipment',
+  'accessories':'Construction Accessories',
   'agri':       'Agri Products'
 };
 
@@ -1562,7 +1635,7 @@ function filterGroup(g, chip, fromSb) {
   });
 
   var rc = document.getElementById('rcount');
-  if (g === 'all') { rc.textContent = 'Showing all 10 product categories — 40+ products'; }
+  if (g === 'all') { rc.textContent = 'Showing all 12 product categories — 50+ products'; }
   else { rc.textContent = 'Showing: ' + (labelMap[g] || g); }
 
   if (g !== 'all') {

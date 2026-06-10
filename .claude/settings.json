@@ -3,7 +3,11 @@
     "allow": [
       "Bash(node -e ' *)",
       "Bash(sed -n '625,640p' /home/saziya/Desktop/Work/shamconmac/assets/css/main.css)",
-      "Bash(sed -n '1795,1810p' /home/saziya/Desktop/Work/shamconmac/assets/css/main.css)"
+      "Bash(sed -n '1795,1810p' /home/saziya/Desktop/Work/shamconmac/assets/css/main.css)",
+      "Bash(sed -n '501,535p' /home/saziya/Desktop/Work/shamconmac/index.html)",
+      "Bash(sed -n '761,795p' /home/saziya/Desktop/Work/shamconmac/about.html)",
+      "Bash(sed -n '734,768p' /home/saziya/Desktop/Work/shamconmac/gallery.html)",
+      "Bash(sed -n '502,536p' /home/saziya/Desktop/Work/shamconmac/contact.html)"
     ]
   }
 }

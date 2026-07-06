@@ -2898,17 +2898,17 @@ textarea {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  padding: 95px 80px 100px;
+  padding: 65px 70px 90px;
   width: 100%;
 }
 @media (max-width: 1500px) {
   .slider__content {
-    padding: 75px 80px 80px;
+    padding: 60px 65px 85px;
   }
 }
 @media (max-width: 1199.98px) {
   .slider__content {
-    padding: 45px 50px 50px;
+    padding: 40px 45px 65px;
   }
 }
 @media (max-width: 991.98px) {
@@ -2918,7 +2918,7 @@ textarea {
 }
 @media (max-width: 767.98px) {
   .slider__content {
-    padding: 35px 25px 40px;
+    padding: 30px 25px 55px;
   }
 }
 .slider__content::before {
@@ -5734,7 +5734,7 @@ textarea {
 .col-custom {
   flex: 0.4;
   width: 220px;
-  height: 542px;
+  height: 620px;
   margin: 25px;
   transition: 0.3s;
   cursor: pointer;

@@ -62,19 +62,19 @@
         position: relative;
         overflow: hidden;
         z-index: 1;
-        padding: 95px 80px 100px;
+        padding: 65px 70px 90px;
         width: 100%;
         @media #{$xl} {
-            padding: 75px 80px 80px;
+            padding: 60px 65px 85px;
         }
         @media #{$lg} {
-            padding: 45px 50px 50px;
+            padding: 40px 45px 65px;
         }
         @media #{$md} {
             text-align: center;
         }
         @media #{$xs} {
-            padding: 35px 25px 40px;
+            padding: 30px 25px 55px;
         }
         &::before {
             content: "";

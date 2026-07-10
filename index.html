@@ -1,0 +1,1814 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Shams Conmac Pvt. Ltd.</title>
+    <meta name="description" content="Shams Conmac Pvt. Ltd.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/lOGO.jpg.jpeg">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/fontello.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/default-icons.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/odometer.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/tg-cursor.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+
+
+/* ── MEGA MENU DESKTOP ── */
+.navigation .product-mega {
+  display: none;
+  position: absolute !important;
+  top: 100% !important;
+  left: 0 !important;
+  width: 660px !important;
+  flex-direction: row !important;
+  background: #fff !important;
+  border-top: 3px solid #f8b300 !important;
+  box-shadow: 0 16px 50px rgba(0,0,0,0.15) !important;
+  padding: 0 !important;
+  z-index: 9999 !important;
+}
+
+.navigation .menu-item-has-children:hover > .product-mega {
+  display: flex !important;
+}
+
+.product-mega > .pd-col {
+  flex: 1;
+  padding: 22px 18px;
+  border-right: 1px solid rgba(0,0,0,0.08);
+  display: block !important;
+  width: auto !important;
+  float: none !important;
+  position: static !important;
+}
+.product-mega > .pd-col:last-child { border-right: none; }
+
+.product-mega .pd-group { margin-bottom: 18px; }
+.product-mega .pd-group:last-of-type { margin-bottom: 0; }
+
+.product-mega .pd-title {
+  display: block;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #f8b300;
+  margin-bottom: 10px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  cursor: default;
+}
+
+.product-mega .pd-group ul {
+  display: block !important;
+  position: static !important;
+  background: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: auto !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  min-width: auto !important;
+}
+
+.product-mega .pd-group ul li {
+  margin-bottom: 7px;
+  padding: 0 !important;
+  border: none !important;
+}
+
+.product-mega .pd-group ul li a {
+  font-size: 12.5px !important;
+  color: #2C2C2A !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 5px !important;
+  padding: 0 !important;
+  line-height: 1.4 !important;
+  background: none !important;
+  transition: color .15s, padding-left .15s !important;
+  white-space: normal !important;
+}
+
+.product-mega .pd-group ul li a::before {
+  content: '›';
+  color: #f8b300;
+  font-size: 15px;
+  line-height: 1.2;
+  flex-shrink: 0;
+}
+
+.product-mega .pd-group ul li a:hover {
+  color: #f8b300 !important;
+  padding-left: 3px !important;
+  background: none !important;
+}
+
+.product-mega .pd-quote {
+  display: block;
+  margin-top: 16px;
+  background: #f8b300;
+  color: #fff !important;
+  text-align: center;
+  padding: 10px 14px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background .2s;
+}
+.product-mega .pd-quote:hover { background: #cc4f00; }
+
+/* ── MOBILE OVERRIDES (below 1200px) ── */
+@media (max-width: 1199px) {
+
+  /* reset positioning — stack vertically */
+  .navigation .product-mega,
+  .navigation .menu-item-has-children:hover > .product-mega {
+    display: none !important;
+    position: static !important;
+    width: 100% !important;
+    flex-direction: column !important;
+    box-shadow: none !important;
+    border-top: 2px solid #f8b300 !important;
+    padding: 0 !important;
+    background: #fafafa !important;
+  }
+
+  /* shown via JS class */
+  .navigation .menu-item-has-children.pd-mob-open > .product-mega {
+    display: flex !important;
+  }
+
+  .product-mega > .pd-col {
+    padding: 0 !important;
+    border-right: none !important;
+    border-bottom: 1px solid rgba(0,0,0,0.07) !important;
+    width: 100% !important;
+  }
+  .product-mega > .pd-col:last-child { border-bottom: none !important; }
+
+  /* group title — tappable on mobile */
+  .product-mega .pd-title {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 18px !important;
+    margin: 0 !important;
+    border-bottom: 1px solid rgba(0,0,0,0.06) !important;
+    background: #f0ede6;
+    font-size: 11px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .product-mega .pd-title::after {
+    content: '+';
+    font-size: 18px;
+    color: #f8b300;
+    font-weight: 300;
+    flex-shrink: 0;
+    line-height: 1;
+  }
+
+  .product-mega .pd-title.pd-mob-open::after {
+    content: '−';
+  }
+
+  /* hide items by default on mobile */
+  .product-mega .pd-group ul {
+    display: none !important;
+  }
+
+  /* show when open */
+  .product-mega .pd-group ul.pd-mob-items-open {
+    display: flex !important;
+    flex-direction: column;
+    padding: 6px 0 10px 0 !important;
+    background: #fff !important;
+  }
+
+  .product-mega .pd-group ul li {
+    margin: 0 !important;
+    border-bottom: 1px solid rgba(0,0,0,0.04) !important;
+  }
+
+  .product-mega .pd-group ul li a {
+    padding: 9px 18px 9px 32px !important;
+    font-size: 13px !important;
+    color: #555 !important;
+  }
+
+  .product-mega .pd-group ul li a::before {
+    content: '—' !important;
+    font-size: 9px !important;
+    margin-top: 2px;
+  }
+
+  .product-mega .pd-group ul li a:hover {
+    color: #f8b300 !important;
+    padding-left: 36px !important;
+    background: #fdf6ee !important;
+  }
+
+  .product-mega .pd-group {
+    margin-bottom: 0 !important;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+  }
+  .product-mega .pd-group:last-of-type { border-bottom: none; }
+
+  /* hide quote button on mobile */
+  .product-mega .pd-quote { display: none !important; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* Override theme sub-menu for mega menu only */
+.navigation .product-mega {
+  display: none;
+  position: absolute !important;
+  top: 100% !important;
+  left: 0 !important;
+  width: 660px !important;
+  flex-direction: row !important;
+  background: #fff !important;
+  border-top: 3px solid #f8b300 !important;
+  box-shadow: 0 16px 50px rgba(0,0,0,0.15) !important;
+  padding: 0 !important;
+  z-index: 9999 !important;
+}
+
+/* Show on hover — override theme */
+.navigation .menu-item-has-children:hover > .product-mega {
+  display: flex !important;
+}
+
+/* 3 equal columns */
+.product-mega > .pd-col {
+  flex: 1;
+  padding: 22px 18px;
+  border-right: 1px solid rgba(0,0,0,0.08);
+  display: block !important;
+  width: auto !important;
+  float: none !important;
+  position: static !important;
+}
+.product-mega > .pd-col:last-child { border-right: none; }
+
+/* group spacing */
+.product-mega .pd-group { margin-bottom: 18px; }
+.product-mega .pd-group:last-of-type { margin-bottom: 0; }
+
+/* column title */
+.product-mega .pd-title {
+  display: block;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #f8b300;
+  margin-bottom: 10px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+/* reset theme ul inside mega */
+.product-mega .pd-group ul {
+  display: block !important;
+  position: static !important;
+  background: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: auto !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  min-width: auto !important;
+}
+
+/* links */
+.product-mega .pd-group ul li {
+  margin-bottom: 7px;
+  padding: 0 !important;
+  border: none !important;
+}
+.product-mega .pd-group ul li a {
+  font-size: 12.5px !important;
+  color: #2C2C2A !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 5px !important;
+  padding: 0 !important;
+  line-height: 1.4 !important;
+  background: none !important;
+  transition: color .15s, padding-left .15s !important;
+  white-space: normal !important;
+}
+.product-mega .pd-group ul li a::before {
+  content: '›';
+  color: #f8b300;
+  font-size: 15px;
+  line-height: 1.2;
+  flex-shrink: 0;
+}
+.product-mega .pd-group ul li a:hover {
+  color: #f8b300 !important;
+  padding-left: 3px !important;
+  background: none !important;
+}
+
+/* quote button */
+.product-mega .pd-quote {
+  display: block;
+  margin-top: 16px;
+  background: #f8b300;
+  color: #111 !important;
+  text-align: center;
+  padding: 10px 14px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background .2s;
+}
+.product-mega .pd-quote:hover { background: #A87C10; }
+
+/* Hero section mobile fixes */
+@media (max-width: 767.98px) {
+  .slider__content {
+    padding: 18px 18px 22px !important;
+  }
+  .slider__content .sub-title::before {
+    display: none !important;
+  }
+  .slider__content .sub-title {
+    padding-right: 0 !important;
+  }
+}
+    </style>
+
+</head>
+
+<body>
+
+    <!--Preloader-->
+    <div id="preloader">
+        <div id="loader" class="loader">
+            <div class="loader-container">
+                <div class="loader-icon"><img src="assets/img/logo/lOGO.jpg.jpeg" alt="Preloader"></div>
+            </div>
+        </div>
+    </div>
+    <!--Preloader-end -->
+
+    <!-- Scroll-top -->
+    <button class="scroll__top scroll-to-target" data-target="html">
+        <i class="renova-up-arrow"></i>
+    </button>
+    <!-- Scroll-top-end-->
+
+    <!-- header-area -->
+    <header>
+        <!-- <div class="tg-header__top">
+            <div class="container custom-container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4">
+                        <div class="tg-header__top-menu">
+                            <ul class="list-wrap">
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="contact.html">Careers</a></li>
+                                <li><a href="contact.html">Insights</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="tg-header__top-delivery">
+                            <p>Express delivery and free returns within 24 hours</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="tg-header__top-social">
+                            <ul class="list-wrap">
+                                <li><a href="https://www.facebook.com/" target="_blank">FB</a></li>
+                                <li><a href="https://twitter.com/home" target="_blank">TW</a></li>
+                                <li><a href="https://www.linkedin.com/" target="_blank">LI</a></li>
+                                <li><a href="https://www.instagram.com/" target="_blank">IN</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div id="header-fixed-height"></div>
+        <div id="sticky-header" class="tg-header__area">
+            <div class="container custom-container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="tgmenu__wrap">
+                            <nav class="tgmenu__nav">
+                                <div class="offCanvas-toggle">
+                                    <a href="javascript:void(0)" class="menu-tigger">
+                                        <img src="assets/img/icons/bar_icon.svg" alt="" class="injectable">
+                                    </a>
+                                </div>
+                                <div class="logo">
+                                    
+                                    <a href="index.html"><img src="assets/img/logo/lOGO.jpg.jpeg" alt="Logo" style="max-height:70px;"></a>
+                                </div>
+                                <div class="tgmenu__navbar-wrap tgmenu__main-menu d-none d-xl-flex">
+                                    <ul class="navigation">
+                                        <li class="active menu-item-has"><a href="index.html">Home</a>
+                                        </li>
+                                        <li class="menu-item-has"><a href="about.html">About Us</a>
+                                        </li>
+                                        <li class="menu-item-has"><a href="gallery.html">Gallery</a>
+                                        </li>
+                                        
+                                        <li class="menu-item-has-children">
+  <a href="products.html">Products</a>
+  <ul class="sub-menu product-mega">
+    <li class="pd-col">
+      <div class="pd-group">
+        <span class="pd-title">Concrete &amp; Mixing</span>
+        <ul>
+          <li><a href="products.html#g1">Concrete Mixer</a></li>
+          <li><a href="products.html#g1">Mortar Mixer</a></li>
+        </ul>
+      </div>
+      <div class="pd-group">
+        <span class="pd-title">Steel &amp; Bar Working</span>
+        <ul>
+          <li><a href="products.html#g2">Bar Bending Machine</a></li>
+          <li><a href="products.html#g2">Bar Cutting Machine</a></li>
+          <li><a href="products.html#g2">Ring Making Machine</a></li>
+          <li><a href="products.html#g2">CNC Stirrup Bender</a></li>
+          <li><a href="products.html#g2">Thread Rolling Machine</a></li>
+          <li><a href="products.html#g2">Decoiling Machine</a></li>
+          <li><a href="products.html#g2">Scrap Straightening Machine</a></li>
+          <li><a href="products.html#g2">Rebar Tying Tool</a></li>
+        </ul>
+      </div>
+      <div class="pd-group">
+        <span class="pd-title">Rail Track Tools</span>
+        <ul>
+          <li><a href="products.html#g3">Rail Track Cutting Machine</a></li>
+          <li><a href="products.html#g3">Rail Track Jack</a></li>
+          <li><a href="products.html#g3">Rail Track Drilling Machine</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="pd-col">
+      <div class="pd-group">
+        <span class="pd-title">Vibrators</span>
+        <ul>
+          <li><a href="products.html#g4">Concrete Vibrators</a></li>
+          <li><a href="products.html#g4">High Frequency Vibrators</a></li>
+          <li><a href="products.html#g4">Portable Needle Vibrator</a></li>
+          <li><a href="products.html#g4">Platform Vibrators</a></li>
+          <li><a href="products.html#g4">Screed Vibrators</a></li>
+          <li><a href="products.html#g4">Shutter Vibrators</a></li>
+          <li><a href="products.html#g4">Wacker Neuson</a></li>
+        </ul>
+      </div>
+      <div class="pd-group">
+        <span class="pd-title">Soil Compaction</span>
+        <ul>
+          <li><a href="products.html#g5">Soil Compactors</a></li>
+          <li><a href="products.html#g5">Tamping Rammer</a></li>
+          <li><a href="products.html#g5">Earth Compactor</a></li>
+          <li><a href="products.html#g5">Vibrator Roller</a></li>
+          <li><a href="products.html#g5">Vibratory Paver Roller</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="pd-col">
+      <div class="pd-group">
+        <span class="pd-title">Surface Finishing</span>
+        <ul>
+          <li><a href="products.html#g6">Power Trowels</a></li>
+          <li><a href="products.html#g6">Bullfloat</a></li>
+          <li><a href="products.html#g6">Truss Screed</a></li>
+          <li><a href="products.html#g6">Plaster Spray Machine</a></li>
+        </ul>
+      </div>
+      <div class="pd-group">
+        <span class="pd-title">Cutting &amp; Civil Lab</span>
+        <ul>
+          <li><a href="products.html#g7">Concrete Groove Cutter</a></li>
+          <li><a href="products.html#g7">Brick Cutting Machine</a></li>
+          <li><a href="products.html#g8">Total Station &amp; Auto Level</a></li>
+          <li><a href="products.html#g8">Cube Moulds &amp; CTM Machine</a></li>
+          <li><a href="products.html#g8">Slump Cone &amp; Lab Tools</a></li>
+        </ul>
+      </div>
+      <div class="pd-group">
+        <span class="pd-title">Lifting, Winches &amp; Pumps</span>
+        <ul>
+          <li><a href="products.html#g9">Hoist &amp; Mini Crane</a></li>
+          <li><a href="products.html#g9">Chain Blocks</a></li>
+          <li><a href="products.html#g9">Electric Winch</a></li>
+          <li><a href="products.html#g9">Lifting Accessories</a></li>
+          <li><a href="products.html#g10">Grout &amp; Dewatering Pumps</a></li>
+          <li><a href="products.html#g11">Accessories &amp; Ropes</a></li>
+          <li><a href="products.html#g11">Expansion Joint Boards</a></li>
+        </ul>
+      </div>
+      <a href="products.html" class="pd-quote">View All Products →</a>
+    </li>
+  </ul>
+</li>
+
+
+                                        <!-- <li class="menu-item-has-children"><a href="#">Shop</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="shop.html">Shop Page</a></li>
+                                                <li><a href="shop-details.html">Shop Details</a></li>
+                                            </ul>
+                                        </li> -->
+                                        <!-- <li class="menu-item-has-children"><a href="#">Portfolio</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="products.html">Portfolio Page</a></li>
+                                                <li><a href="project-details.html">Portfolio Details</a></li>
+                                            </ul>
+                                        </li> -->
+                                        <!-- <li class="menu-item-has-children"><a href="#">Blog</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="blog.html">Blog Standard</a></li>
+                                                <li><a href="blog-2.html">Blog List</a></li>
+                                                <li><a href="blog-3.html">Blog Grid</a></li>
+                                                <li><a href="blog-details.html">Blog Details</a></li>
+                                            </ul>
+                                        </li> -->
+                                        <li class="menu-item-has"><a href="contact.html">Contact Us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- <div class="tgmenu__action">
+                                    <ul class="list-wrap">
+
+
+                                        <li class="header-btn">
+                                            <a href="contact.html" class="btn border-btn">Get In Touch</a>
+                                        </li>
+                                    </ul>
+                                </div> -->
+                                <div class="mobile-nav-toggler"><i class="tg-flaticon-menu-1"></i></div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu  -->
+        <div class="tgmobile__menu">
+            <nav class="tgmobile__menu-box">
+                <div class="close-btn"><i class="tg-flaticon-close-1"></i></div>
+                <div class="nav-logo">
+                    <a href="index.html"><img src="assets/img/logo/lOGO.jpg.jpeg" alt="Logo"></a>
+                </div>
+
+                <div class="tgmobile__menu-outer">
+                    <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+                </div>
+                <div class="social-links">
+                    <ul class="list-wrap">
+                        <li><a href="https://www.facebook.com/profile.php?id=61590381431714"><i class="fab fa-facebook-f"></i></a></li>
+                        <!-- <li><a href="#"><i class="fab fa-twitter"></i></a></li> -->
+                        <li><a href="https://www.instagram.com/shamsconmac_pvt_ltd/"><i class="fab fa-instagram"></i></a></li>
+                                <!-- <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube"></i></a></li> -->
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="tgmobile__menu-backdrop"></div>
+        <!-- End Mobile Menu -->
+
+        <!-- header-search -->
+        <div class="search__popup">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="search__wrapper">
+                            <div class="search__close">
+                                <button type="button" class="search-close-btn">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17 1L1 17" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M1 1L17 17" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="search__form">
+                                <form action="#">
+                                    <div class="search__input">
+                                        <input class="search-input-field" type="text" placeholder="Type keywords here">
+                                        <span class="search-focus-border"></span>
+                                        <button>
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.55 18.1C14.272 18.1 18.1 14.272 18.1 9.55C18.1 4.82797 14.272 1 9.55 1C4.82797 1 1 4.82797 1 9.55C1 14.272 4.82797 18.1 9.55 18.1Z"
+                                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                                <path d="M19.0002 19.0002L17.2002 17.2002" stroke="currentColor"
+                                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search-popup-overlay"></div>
+        <!-- header-search-end -->
+
+        <!-- offCanvas-menu -->
+        <div class="offCanvas__info">
+            <div class="offCanvas__close-icon menu-close">
+                <button><i class="far fa-window-close"></i></button>
+            </div>
+            <div class="offCanvas__logo mb-30">
+                <a href="index.html"><img src="assets/img/logo/lOGO.jpg.jpeg" alt="Logo"></a>
+            </div>
+            <div class="offCanvas__side-info mb-30">
+                <div class="contact-list mb-30">
+                    <h4>Address</h4>
+                    <p><strong>Main:</strong> Gut No 31, Mitmita, Sharnapur Phata, Near Daultabad Tee Point, Chh. Sambhajinagar 431002</p>
+                    <p><strong>City Shop:</strong> 4-6-59/60, Old Mondha Road, Jaffer Gate, Chh. Sambhajinagar 431001</p>
+                </div>
+                <div class="contact-list mb-30">
+                    <h4>Phone Number</h4>
+                    <p>
+Main Office <br>
+
++91 954541752 <br>
++91 8007991752
+<br>
+Sales
+
++91 8805441752</p>
+                </div>
+                <div class="contact-list mb-30">
+                    <h4>Email Address</h4>
+                    <p>shamsconmac@gmail.com</p>
+                </div>
+            </div>
+            <div class="offCanvas__social-icon mt-30">
+                <a href="https://www.facebook.com/profile.php?id=61590381431714"><i class="fab fa-facebook-f"></i></a>
+                <!-- <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
+                <a href="javascript:void(0)"><i class="fab fa-google-plus-g"></i></a> -->
+                <a href="https://www.instagram.com/shamsconmac_pvt_ltd/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="offCanvas__overly"></div>
+        <!-- offCanvas-menu-end -->
+
+    </header>
+    <!-- header-area-end -->
+
+
+
+    <!-- main-area -->
+    <main class="main-area fix">
+
+        <!-- slider-area -->
+        <section class="slider__area">
+            <div class="swiper slider-active">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slider__bg" data-background="assets/img/banner/heroo.png">
+                        <div class="container custom-container-two">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-7">
+                                    <div class="slider__content">
+                                        <span class="sub-title">Founded in 1969</span>
+                                        <h2 class="title" style="font-size:32px;">Helping build the future safely.</h2>
+                                        <a href="contact.html" class="btn">Learn More <img
+                                                src="assets/img/icons/right_arrow.svg" alt="" class="injectable"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slider__bg" data-background="assets/img/images/hero4.png">
+                        <div class="container custom-container-two">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-7">
+                                    <div class="slider__content">
+                                        <span class="sub-title">55+ Years of Legacy</span>
+                                        <h2 class="title" style="font-size:20px;">Trusted partner of contractors in India and across the globe.</h2>
+                                        <a href="contact.html" class="btn">Learn More <img
+                                                src="assets/img/icons/right_arrow.svg" alt="" class="injectable"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slider__bg" data-background="assets/img/images/hero4.png">
+                        <div class="container custom-container-two">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-7">
+                                    <div class="slider__content">
+                                        <span class="sub-title">Legacy · Standard · Value</span>
+                                        <h2 class="title" style="font-size:36px;">Building Your Vision, Together</h2>
+                                        <a href="contact.html" class="btn">Learn More <img
+                                                src="assets/img/icons/right_arrow.svg" alt="" class="injectable"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- slider-area-end -->
+
+        <!-- features-area -->
+        <section class="features__area section-pt-120 section-pb-90">
+            <div class="container">
+                <div class="row justify-content-center gutter-24">
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="features__item">
+                            <div class="features__icon">
+                                <i class="renova-rocket"></i>
+                            </div>
+                            <div class="features__content">
+                                <h3 class="title">Our Mission</h3>
+                                <p>To be the most trusted one-stop Supply for construction machine, Expansion joints,...
+
+Across India and global</p>
+                                <a href="about.html" class="btn">Learn More <img src="assets/img/icons/right_arrow.svg"
+                                        alt="" class="injectable"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="features__item">
+                            <div class="features__icon">
+                                <i class="renova-flag"></i>
+                            </div>
+                            <div class="features__content">
+                                <h3 class="title">Our Core Values</h3>
+                                <p>Legacy. Standard. Value. These three pillars have guided every product we source and
+                                    every client relationship we've built over 55 years.</p>
+                                <a href="about.html" class="btn">Learn More <img src="assets/img/icons/right_arrow.svg"
+                                        alt="" class="injectable"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                        <div class="features__item">
+                            <div class="features__icon">
+                                <i class="renova-book"></i>
+                            </div>
+                            <div class="features__content">
+                                <h3 class="title">Our Story</h3>
+                                <p>Established in 1969 in Chh. Sambhajinagar, Shams Conmac has grown from a small hardware shop
+                                    into India's most trusted name                                                                                                                        .</p>
+                                <a href="about.html" class="btn">Learn More <img src="assets/img/icons/right_arrow.svg"
+                                        alt="" class="injectable"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- features-area-end -->
+
+        <!-- about-area -->
+        <section class="about__area section-pb-120">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-6 col-md-9">
+                        <div class="about__img-wrap wow img-custom-anim-left animated" data-wow-duration="1.5s"
+                            data-wow-delay="0.1s">
+                            <img src="assets/img/images/bitumen.jpg" alt="img">
+                            <div class="about__img-content">
+                                <h4 class="title">Let’s work together</h4>
+                                <a href="contact.html" class="btn">Contact Us <img
+                                        src="assets/img/icons/right_arrow.svg" alt="" class="injectable"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about__content">
+                            <div class="section__title mb-20">
+                                <h2 class="title">Delivering our clients the right machinery and materials, every time.
+                                </h2>
+                                <h4 class="number">01</h4>
+                            </div>
+                            <p>With over 55 years of experience, Shams Conmac Pvt. Ltd. is Chh. Sambhajinagar's most reliable
+                                source for Construction machine, Expansion joints, lifting equipment, safety products, and hardware. We
+                                are authorised channel partners of Garware Technical Fibers Ltd.,
+Esquire Construction Pvt. Ltd,
+Tiki Tar Donsa Pvt. Ltd.,
+Kepro tools and lifting equipments Pvt. Ltd — so every product you buy from us is
+                                genuine, brand-certified, and backed by the manufacturer.</p>
+                            <div class="about__list-box-wrap">
+                                <div class="about__list-box" data-aos="fade-up" data-aos-delay="400">
+                                    <div class="icon">
+                                        <i class="renova-user-rating"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h4 class="title">We Have a Dedicated Expert Team</h4>
+                                        <p>Our experienced team helps contractors find exactly the right machinery and
+                                            materials for every type of project — from a single item to a full site
+                                            package.</p>
+                                    </div>
+                                </div>
+                                <div class="about__list-box" data-aos="fade-up" data-aos-delay="600">
+                                    <div class="icon">
+                                        <i class="renova-brick"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h4 class="title">Serving All Construction Sectors</h4>
+                                        <p>Road, railway, bridge, irrigation, and electrical contractors across
+                                              India and Global trust us for consistent, quality supply — project after project.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about-area-end -->
+
+        <!-- counter-area -->
+        <section class="counter__area">
+            <div class="container">
+                <div class="counter__item-wrap">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="counter__item">
+                                <div class="counter__icon">
+                                    <i class="renova-happy"></i>
+                                </div>
+                                <div class="counter__content">
+                                    <h3 class="count"><span class="odometer" data-count="1000"></span>+</h3>
+                                    <p>Satisfied Client</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="counter__item">
+                                <div class="counter__icon">
+                                    <i class="renova-brick"></i>
+                                </div>
+                                <div class="counter__content">
+                                    <h3 class="count"><span class="odometer" data-count="500"></span>+</h3>
+                                    <p>Projects Supplied</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="counter__item">
+                                <div class="counter__icon">
+                                    <i class=" renova-user-rating-2"></i>
+                                </div>
+                                <div class="counter__content">
+                                    <h3 class="count"><span class="odometer" data-count="55"></span>+</h3>
+                                    <p>Years in Business</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="counter__item">
+                                <div class="counter__icon">
+                                    <i class="renova-badge"></i>
+                                </div>
+                                <div class="counter__content">
+                                    <h3 class="count"><span class="odometer" data-count="16"></span></h3>
+                                    <p>Brand partners across the globe</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- counter-area-end -->
+
+        <!-- services-area -->
+        <section class="services__area section-pt-120 section-pb-90">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="section__title mb-60">
+                            <h2 class="title">Our Products</h2>
+                            <h1 class="number">02</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-custom">
+                    <div class="col-custom active">
+                        <div class="services__item">
+                            <div class="services__arrow">
+                                <i class="renova-top-right"></i>
+                            </div>
+                            <div class="services__content">
+                                <h4 class="title">Concrete Mixing Equipment</h4>
+                                <div class="services__icon">
+                                    <i class="renova-flag"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__item-hidden">
+                            <div class="services__thumb">
+                                <a href="products.html#g1"><img src="assets/img/services/concreteM.jpeg"
+                                        alt="img"></a>
+                            </div>
+                            <div class="services__content-hidden">
+                                <h2 class="title"><a href="products.html#g1">Concrete Mixing Equipment</a></h2>
+                                <p>High-performance concrete mixers and mortar mixers for construction sites of all
+                                    sizes — reliable, durable, and built for demanding site conditions.</p>
+                                <div class="services__btn">
+                                    <a href="products.html#g1" class="btn">Learn More <img
+                                            src="assets/img/icons/right_arrow.svg" alt="" class="injectable"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-custom">
+                        <div class="services__item">
+                            <div class="services__arrow">
+                                <i class="renova-top-right"></i>
+                            </div>
+                            <div class="services__content">
+                                <h4 class="title">Steel & Bar Machinery</h4>
+                                <div class="services__icon">
+                                    <i class="renova-idea"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__item-hidden">
+                            <div class="services__thumb">
+                                <a href="products.html#g2"><img src="assets/img/products/bar-cutter.jpg"
+                                        alt="img"></a>
+                            </div>
+                            <div class="services__content-hidden">
+                                <h2 class="title"><a href="products.html#g2">Steel & Bar Machinery</a></h2>
+                                <p>Bar benders, bar cutters, CNC stirrup benders, decoiling machines, ring making
+                                    machines, and thread rolling machines for precise steel reinforcement work.</p>
+                                <div class="services__btn">
+                                    <a href="products.html#g2" class="btn">Learn More <img
+                                            src="assets/img/icons/right_arrow.svg" alt="" class="injectable"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-custom">
+                        <div class="services__item">
+                            <div class="services__arrow">
+                                <i class="renova-top-right"></i>
+                            </div>
+                            <div class="services__content">
+                                <h4 class="title">Vibrators & Compaction</h4>
+                                <div class="services__icon">
+                                    <i class="renova-thumb-screw"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__item-hidden">
+                            <div class="services__thumb">
+                                <a href="products.html#g4"><img src="assets/img/products/petrol-vibrator.jpg"
+                                        alt="img"></a>
+                            </div>
+                            <div class="services__content-hidden">
+                                <h2 class="title"><a href="products.html#g4">Vibrators & Compaction</a></h2>
+                                <p>Concrete vibrators, needle vibrators, platform vibrators, tamping rammers, and
+                                    vibratory rollers to achieve perfect compaction and consolidation on every pour.</p>
+                                <div class="services__btn">
+                                    <a href="products.html#g4" class="btn">Learn More <img
+                                            src="assets/img/icons/right_arrow.svg" alt="" class="injectable"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-custom">
+                        <div class="services__item">
+                            <div class="services__arrow">
+                                <i class="renova-top-right"></i>
+                            </div>
+                            <div class="services__content">
+                                <h4 class="title">Lifting & Access Equipment</h4>
+                                <div class="services__icon">
+                                    <i class="renova-brick"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__item-hidden">
+                            <div class="services__thumb">
+                                <a href="products.html#g9"><img src="assets/img/images/lift.jpeg"
+                                        alt="img"></a>
+                            </div>
+                            <div class="services__content-hidden">
+                                <h2 class="title"><a href="products.html#g9">Lifting & Access Equipment</a></h2>
+                                <p>Hoists, mini cranes, suspended platforms, and tough riders engineered for safe
+                                    vertical material movement and work-at-height operations across construction sites.</p>
+                                <div class="services__btn">
+                                    <a href="products.html#g9" class="btn">Learn More <img
+                                            src="assets/img/icons/right_arrow.svg" alt="" class="injectable"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-custom">
+                        <div class="services__item">
+                            <div class="services__arrow">
+                                <i class="renova-top-right"></i>
+                            </div>
+                            <div class="services__content">
+                                <h4 class="title">Expansion Joints</h4>
+                                <div class="services__icon">
+                                    <i class="renova-construction"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__item-hidden">
+                            <div class="services__thumb">
+                                <a href="products.html#g11"><img src="assets/img/images/joints.jpeg"
+                                        alt="img"></a>
+                            </div>
+                            <div class="services__content-hidden">
+                                <h2 class="title"><a href="products.html#g11">Expansion Joints</a></h2>
+                                <p>Bituminous fibre and polystyrene expansion joint filler boards in 20mm & 25mm thickness for concrete slab joints, road joints, bridge decks, and RCC structures per IS 1838 standards.</p>
+                                <div class="services__btn">
+                                    <a href="products.html#g11" class="btn">Learn More <img
+                                            src="assets/img/icons/right_arrow.svg" alt="" class="injectable"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- services-area-end -->
+
+        <!-- cta-area -->
+        <section class="cta__area fix">
+            <div class="cta__bg" data-background="assets/img/images/abou1.jpg"></div>
+            <div class="container">
+                <div class="row align-items-end">
+                    <div class="col-lg-8">
+                        <div class="cta__content">
+                            <h2 class="title">Ready to work with <br> our team?</h2>
+                            <div class="cta__btn">
+                                <a href="contact.html" class="btn btn-two">Let’s build together <img
+                                        src="assets/img/icons/right_arrow.svg" alt="" class="injectable"></a>
+                                <a href="contact.html" class="btn transparent-btn">Contact With Us <img
+                                        src="assets/img/icons/right_arrow.svg" alt="" class="injectable"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="cta__content-right" data-aos="fade-up" data-aos-delay="600">
+                            <h4 class="title">Trusted Supplier of Construction Machinery & Hardware Across India
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cta__shape">
+                <img src="assets/img/images/cta_shape.png" alt="shape" data-aos="fade-down-left" data-aos-delay="400">
+            </div>
+        </section>
+        <!-- cta-area-end -->
+
+        <!-- team-area -->
+        <!-- <section class="team__area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section__title section__title-two text-center mb-60">
+                            <h2 class="title">Meet our Contractor</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center gutter-24">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="team__item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="team__thumb">
+                                <img src="assets/img/team/team_img01.jpg" alt="img">
+                                <div class="team__social">
+                                    <ul class="list-wrap">
+                                        <li><a href="https://www.facebook.com/" target="_blank"><i
+                                                    class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="https://twitter.com/home" target="_blank"><i
+                                                    class="fab fa-twitter"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/" target="_blank"><i
+                                                    class="fab fa-linkedin-in"></i></a></li>
+                                        <li><a href="https://www.instagram.com/" target="_blank"><i
+                                                    class="fab fa-youtube"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="team__content">
+                                <h2 class="title"><a href="team-details.html">Samuel Alexander</a></h2>
+                                <span>Head of Construction</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="team__item" data-aos="fade-up" data-aos-delay="400">
+                            <div class="team__thumb">
+                                <img src="assets/img/team/team_img02.jpg" alt="img">
+                                <div class="team__social">
+                                    <ul class="list-wrap">
+                                        <li><a href="https://www.facebook.com/" target="_blank"><i
+                                                    class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="https://twitter.com/home" target="_blank"><i
+                                                    class="fab fa-twitter"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/" target="_blank"><i
+                                                    class="fab fa-linkedin-in"></i></a></li>
+                                        <li><a href="https://www.instagram.com/" target="_blank"><i
+                                                    class="fab fa-youtube"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="team__content">
+                                <h2 class="title"><a href="team-details.html">Edward Steven</a></h2>
+                                <span>Head of Construction</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="team__item" data-aos="fade-up" data-aos-delay="600">
+                            <div class="team__thumb">
+                                <img src="assets/img/team/team_img03.jpg" alt="img">
+                                <div class="team__social">
+                                    <ul class="list-wrap">
+                                        <li><a href="https://www.facebook.com/" target="_blank"><i
+                                                    class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="https://twitter.com/home" target="_blank"><i
+                                                    class="fab fa-twitter"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/" target="_blank"><i
+                                                    class="fab fa-linkedin-in"></i></a></li>
+                                        <li><a href="https://www.instagram.com/" target="_blank"><i
+                                                    class="fab fa-youtube"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="team__content">
+                                <h2 class="title"><a href="team-details.html">Samuel Robert</a></h2>
+                                <span>Head of Construction</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- team-area-end -->
+
+        <!-- project-area -->
+        <!-- <section class="project__area project__bg" data-background="assets/img/bg/project__bg.jpg">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-5 col-lg-6 col-md-8">
+                        <div class="section__title white-title mb-70">
+                            <h2 class="title">Project we’ve done in very recent time</h2>
+                            <h1 class="number">03</h1>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-4">
+                        <div class="project__nav">
+                            <button class="project-button-prev"><i class="renova-left-arrow"></i></button>
+                            <button class="project-button-next"><i class="renova-right-arrow"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper project-active">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="project__item">
+                                <div class="project__thumb">
+                                    <a href="project-details.html"><img src="assets/img/project/project_img01.jpg"
+                                            alt="img"></a>
+                                </div>
+                                <div class="project__content">
+                                    <div class="content">
+                                        <h2 class="title"><a href="project-details.html">Retro Service Company
+                                                Building</a></h2>
+                                        <span>December 2023 - March 2024</span>
+                                    </div>
+                                    <div class="project__icon">
+                                        <a href="project-details.html"><i class="fas fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="project__item">
+                                <div class="project__thumb">
+                                    <a href="project-details.html"><img src="assets/img/project/project_img02.jpg"
+                                            alt="img"></a>
+                                </div>
+                                <div class="project__content">
+                                    <div class="content">
+                                        <h2 class="title"><a href="project-details.html">Retro Service Company
+                                                Building</a></h2>
+                                        <span>December 2023 - March 2024</span>
+                                    </div>
+                                    <div class="project__icon">
+                                        <a href="project-details.html"><i class="fas fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="project__item">
+                                <div class="project__thumb">
+                                    <a href="project-details.html"><img src="assets/img/project/project_img01.jpg"
+                                            alt="img"></a>
+                                </div>
+                                <div class="project__content">
+                                    <div class="content">
+                                        <h2 class="title"><a href="project-details.html">Retro Service Company
+                                                Building</a></h2>
+                                        <span>December 2023 - March 2024</span>
+                                    </div>
+                                    <div class="project__icon">
+                                        <a href="project-details.html"><i class="fas fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- project-area-end -->
+
+        <!-- faq-area -->
+        <section class="faq__area section-py-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-7">
+                        <div class="section__title mb-70">
+                            <h2 class="title">Trusted Supplier of Construction Machinery & Hardware</h2>
+                            <h1 class="number">04</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-6 col-md-10">
+                        <div class="faq__img wow img-custom-anim-left animated" data-wow-duration="1.5s"
+                            data-wow-delay="0.1s">
+                            <img src="assets/img/images/ban3.jpeg" alt="img">
+                            <div class="faq__img-content">
+                                <h5 class="title">We are the expert in <br> construction machinery & hardware supply
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="faq__wrap">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            What types of construction machinery does Shams Conmac supply?
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>We supply a complete range of construction machinery including concrete
+                                                mixers, bar benders, bar cutters, concrete vibrators, tamping rammers,
+                                                road rollers, power trowels, groove cutters, generators, expansion joints and fillers , abad -Chh. Sambhajinagar</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            Are you an authorised dealer for these products?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>Yes. We are authorised channel partners of Garware Technical Fibres Ltd.,
+                                                Esquire machines pvt ltd,
+Kepro tools and lifting equipments pvt ltd and Tiki Tar Donsa Pvt.
+                                                Ltd. Every product we sell is genuine and backed by the manufacturer.
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Which sectors and contractors do you supply to?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>We serve road contractors, railway contractors, bridge contractors,
+                                                irrigation contractors, electrical contractors, and industrial buyers
+                                                across India. We also supply the agricultural sector for shade
+                                                nets and tarpaulins.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                            aria-expanded="false" aria-controls="collapseFour">
+                                            Where are your locations in Chh. Sambhajinagar?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p><strong>Main:</strong> Gut No 31, Mitmita, Sharnapur Phata, Near Daultabad Tee Point, Chh. Sambhajinagar 431002</p>
+                                            <p><strong>City Shop:</strong> 4-6-59/60, Old Mondha Road, Jaffer Gate, Chh. Sambhajinagar 431001</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- faq-area-end -->
+
+        <!-- work-area -->
+        <section class="work__area tg-motion-effects">
+            <div class="container">
+                <div class="work__wrapper">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6">
+                            <div class="work__content">
+                                <h2 class="title">Ready to work with our team?</h2>
+                                <div class="work__btn">
+                                    <!-- <a href="contact.html" class="btn btn-two">Contact Us <img
+                                            src="assets/img/icons/right_arrow.svg" alt="" class="injectable"></a> -->
+                                    <a href="contact.html" class="btn btn-three">Contact With Us <img
+                                            src="assets/img/icons/right_arrow.svg" alt="" class="injectable"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work__img-wrap">
+                        <ul class="list-wrap">
+                            <li data-aos="zoom-in" data-aos-delay="200">
+                                <img src="assets/img/services/bit.jpeg" alt="img" class="tg-motion-effects2">
+                            </li>
+                            <li data-aos="zoom-in" data-aos-delay="300">
+                                <img src="assets/img/images/hook.jpg" alt="img" class="tg-motion-effects3">
+                            </li>
+                            <li data-aos="zoom-in" data-aos-delay="400">
+                                <img src="assets/img/images/ban3.jpeg" alt="img" class="tg-motion-effects3">
+                            </li>
+                            <li data-aos="zoom-in" data-aos-delay="200">
+                                <img src="assets/img/services/constrct.jpeg" alt="img" class="tg-motion-effects2">
+                            </li>
+                            <li data-aos="zoom-in" data-aos-delay="300">
+                                <img src="assets/img/images/abou1.jpg" alt="img" class="tg-motion-effects3">
+                            </li>
+                            <li data-aos="zoom-in" data-aos-delay="400">
+                                <img src="assets/img/images/dril.jpg" alt="img" class="tg-motion-effects3">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- work-area-end -->
+
+        <!-- blog-post-area -->
+        <!-- <section class="blog__post-area section-pt-120 section-pb-90">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-8">
+                        <div class="section__title mb-70">
+                            <h2 class="title">Publishing The most demanding Blog Insights</h2>
+                            <h1 class="number">05</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center gutter-24">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog__post-item shine__animate-item">
+                            <div class="blog__post-thumb">
+                                <a href="blog-details.html" class="shine__animate-link">
+                                    <img src="assets/img/blog/blog_img01.jpg" alt="img">
+                                </a>
+                            </div>
+                            <div class="blog__post-content">
+                                <div class="blog__post-meta">
+                                    <ul class="list-wrap">
+                                        <li>By <a href="blog-details.html">david Smith</a></li>
+                                        <li>03 January, 2024</li>
+                                    </ul>
+                                </div>
+                                <h4 class="title"><a href="blog-details.html">The Ultimate Guide to Sustainable
+                                        Building Practices for Eco...</a></h4>
+                                <a href="blog-details.html" class="btn">Read Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog__post-item shine__animate-item">
+                            <div class="blog__post-thumb">
+                                <a href="blog-details.html" class="shine__animate-link">
+                                    <img src="assets/img/blog/blog_img02.jpg" alt="img">
+                                </a>
+                            </div>
+                            <div class="blog__post-content">
+                                <div class="blog__post-meta">
+                                    <ul class="list-wrap">
+                                        <li>By <a href="blog-details.html">david Smith</a></li>
+                                        <li>03 January, 2024</li>
+                                    </ul>
+                                </div>
+                                <h4 class="title"><a href="blog-details.html">Comprehensive Look at Foundation
+                                        Types and Construction</a></h4>
+                                <a href="blog-details.html" class="btn">Read Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog__post-item shine__animate-item">
+                            <div class="blog__post-thumb">
+                                <a href="blog-details.html" class="shine__animate-link">
+                                    <img src="assets/img/blog/blog_img03.jpg" alt="img">
+                                </a>
+                            </div>
+                            <div class="blog__post-content">
+                                <div class="blog__post-meta">
+                                    <ul class="list-wrap">
+                                        <li>By <a href="blog-details.html">david Smith</a></li>
+                                        <li>03 January, 2024</li>
+                                    </ul>
+                                </div>
+                                <h4 class="title"><a href="blog-details.html">Building a Culture of Construction Site
+                                        Safety and Compliance</a></h4>
+                                <a href="blog-details.html" class="btn">Read Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- blog-post-area-end -->
+
+        <!-- brand-area -->
+         <div class="brand__area section-pb-120">
+            <div class="container">
+                <div class="brand__nav-wrap">
+                <button class="brand-button-prev"><i class="renova-left-arrow"></i></button>
+                <div class="swiper brand-active">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="brand__item" style="margin-top: 30px;">
+                                <img src="assets/img/brand/97.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand__item" style="margin-top: 20px;">
+                                <img src="assets/img/brand/img151.jpg" alt="img">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand__item" style="margin-top: 45px;">
+                                <img src="assets/img/brand/img147.jpg" alt="img">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand__item"style="margin-top: 20px;">
+                                <img src="assets/img/brand/100.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand__item"style="margin-top: 30px;" >
+                                <img src="assets/img/brand/6a724b9501764fd83a4abcd37b58144d-removebg-preview.png" alt="img" style="height: 130px;">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand__item"style="margin-top: 20px;">
+                                <img src="assets/img/brand/JSW_Group_Logo-removebg-preview.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand__item" style="margin-top: 45px;">
+                                <img src="assets/img/brand/toyota-logo-png_seeklogo-141405-removebg-preview-removebg-preview.png" alt="img">
+                            </div>
+                        </div>
+                         <div class="swiper-slide">
+                            <div class="brand__item"style="margin-top: 30px;" >
+                                <img src="assets/img/brand/logo-removebg-preview.png" alt="img" style="height: 120px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="brand-button-next"><i class="renova-right-arrow"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- brand-area-end -->
+
+
+    </main>
+    <!-- main-area-end -->
+
+
+
+    <!-- footer-area -->
+    <footer class="footer__area">
+        <div class="container">
+            <!-- <div class="footer__features">
+                <a href="contact.html">Commercial Building</a>
+                <a href="contact.html">Remodeling Building</a>
+                <a href="contact.html">Residential Development</a>
+                <a href="contact.html">Architectural Development</a>
+            </div> -->
+            <div class="footer__top">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+                        <div class="footer__widget">
+                            <div class="footer__logo">
+                                <a href="index.html"><img src="assets/img/logo/lOGO.jpg.jpeg" alt="logo" style="max-height:55px;"></a>
+                            </div>
+                            <div class="footer__content">
+                                <p>Your trusted partner for anything in hardware and construction machinery — serving contractors across India since 1969.
+
+                                    </p>
+                            </div>
+                            <div class="footer__social">
+                                <ul class="list-wrap">
+                                    <li><a href="https://www.facebook.com/profile.php?id=61590381431714" target="_blank"><i
+                                                class="fab fa-facebook-f"></i></a></li>
+                                    <!-- <li><a href="https://twitter.com/home" target="_blank"><i
+                                                class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/" target="_blank"><i
+                                                class="fab fa-linkedin-in"></i></a></li> -->
+                                    <li><a href="https://www.instagram.com/shamsconmac_pvt_ltd/" target="_blank"><i
+                                                class="fab fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                            <p style="margin-top:8px;font-size:13px;"><a href="mailto:shamsconmac@gmail.com">shamsconmac@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-3 col-sm-4">
+                        <div class="footer__widget">
+                            <h4 class="footer__widget-title">Useful Links</h4>
+                            <div class="footer__widget-link">
+                                <ul class="list-wrap">
+                                    <li>
+                                        <a href="about.html"><i class="renova-right-arrow"></i><span>About Us</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="products.html"><i class="renova-right-arrow"></i><span>Our
+                                                Products</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="gallery.html"><i class="renova-right-arrow"></i><span>Our
+                                                Gallery</span></a>
+                                    </li>
+                                    <!-- <li>
+                                        <a href="team.html"><i class="renova-right-arrow"></i><span>Our Team</span></a>
+                                    </li> -->
+                                    <li>
+                                        <a href="contact.html"><i class="renova-right-arrow"></i><span>Contact
+                                                Us</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-3 col-sm-6">
+                        <div class="footer__widget">
+                            <h4 class="footer__widget-title">Our Products</h4>
+                            <div class="footer__widget-link">
+                                <ul class="list-wrap">
+                                    <li>
+                                        <a href="products.html"><i
+                                                class="renova-right-arrow"></i><span>Construction Machinery</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="products.html"><i
+                                                class="renova-right-arrow"></i><span>Lifting Equipment</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="products.html"><i
+                                                class="renova-right-arrow"></i><span>Safety Products & Nets</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="products.html"><i
+                                                class="renova-right-arrow"></i><span>Bitumen & Waterproofing</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="products.html"><i
+                                                class="renova-right-arrow"></i><span>Garware Ropes & Tarpaulins</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
+                        <div class="footer__widget">
+                            <h4 class="footer__widget-title">Quick Info</h4>
+                            <div class="footer__widget-link">
+                                <ul class="list-wrap">
+                                    <li>
+                                        <a href="about.html"><i class="renova-right-arrow"></i><span>Our
+                                                Story</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html"><i
+                                                class="renova-right-arrow"></i><span>Appointment</span></a>
+                                    </li>
+                                   
+                                    <li>
+                                        <a href="contact.html"><i class="renova-right-arrow"></i><span>Get in
+                                                touch</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="products.html"><i class="renova-right-arrow"></i><span> Our Products</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-8">
+                        <div class="footer__widget">
+                            <h4 class="footer__widget-title">Newsletter</h4>
+                            <div class="footer__newsletter">
+                                <p>Stay updated with new products, brand arrivals, and special offers from Shams Conmac.</p>
+                                <form action="assets/newsletter.php" class="footer__newsletter-form" id="newsletter-form">
+                                    <input type="email" name="email" placeholder="Email Address" required>
+                                    <button type="submit" class="btn btn-two">Subscribe</button>
+                                    <p class="newsletter-response mb-0"></p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-7">
+                        <div class="copyright-text">
+                            <p>© 2026 Shams Conmac Pvt. Ltd. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                    <!-- <div class="col-md-5">
+                        <div class="footer__bottom-menu">
+                            <ul class="list-wrap">
+                                <li><a href="contact.html">Terms and Conditions</a></li>
+                                <li><a href="contact.html">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer-area-end -->
+
+    <script>
+document.addEventListener('DOMContentLoaded', function () {
+
+  var productItem = document.querySelector('.navigation .menu-item-has-children');
+
+  // ── MOBILE: tap "Products" to toggle mega ──
+  if (productItem) {
+    var productLink = productItem.querySelector(':scope > a');
+    if (productLink) {
+      productLink.addEventListener('click', function (e) {
+        if (window.innerWidth < 1200) {
+          e.preventDefault();
+          e.stopPropagation();
+          productItem.classList.toggle('pd-mob-open');
+        }
+      });
+    }
+  }
+
+  // ── MOBILE: tap pd-title to toggle that group ──
+  document.querySelectorAll('.product-mega .pd-title').forEach(function (title) {
+    title.addEventListener('click', function () {
+      if (window.innerWidth < 1200) {
+        var ul = this.nextElementSibling;
+        var isOpen = ul.classList.contains('pd-mob-items-open');
+
+        // close all
+        document.querySelectorAll('.product-mega .pd-group ul').forEach(function (u) {
+          u.classList.remove('pd-mob-items-open');
+        });
+        document.querySelectorAll('.product-mega .pd-title').forEach(function (t) {
+          t.classList.remove('pd-mob-open');
+        });
+
+        // open clicked one
+        if (!isOpen) {
+          ul.classList.add('pd-mob-items-open');
+          this.classList.add('pd-mob-open');
+        }
+      }
+    });
+  });
+
+  // ── CLOSE on resize to desktop ──
+  window.addEventListener('resize', function () {
+    if (window.innerWidth >= 1200) {
+      if (productItem) productItem.classList.remove('pd-mob-open');
+      document.querySelectorAll('.product-mega .pd-group ul').forEach(function (u) {
+        u.classList.remove('pd-mob-items-open');
+      });
+      document.querySelectorAll('.product-mega .pd-title').forEach(function (t) {
+        t.classList.remove('pd-mob-open');
+      });
+    }
+  });
+
+});
+</script>
+
+
+
+    <!-- JS here -->
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.odometer.min.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.marquee.min.js"></script>
+    <script src="assets/js/tg-cursor.min.js"></script>
+    <script src="assets/js/ajax-form.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/svg-inject.min.js"></script>
+    <script src="assets/js/tween-max.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        SVGInject(document.querySelectorAll("img.injectable"));
+    </script>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/918805441752" target="_blank" rel="noopener noreferrer"
+       style="position:fixed;left:20px;bottom:30px;z-index:9999;display:flex;align-items:center;justify-content:center;width:56px;height:56px;background:#25D366;border-radius:50%;box-shadow:0 4px 12px rgba(0,0,0,0.25);transition:transform 0.2s;"
+       onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="#fff">
+        <path d="M16 2C8.268 2 2 8.268 2 16c0 2.478.649 4.942 1.883 7.115L2 30l7.115-1.867A13.94 13.94 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2zm0 25.6a11.55 11.55 0 0 1-5.892-1.613l-.422-.252-4.222 1.108 1.126-4.107-.276-.435A11.562 11.562 0 0 1 4.4 16C4.4 9.593 9.593 4.4 16 4.4S27.6 9.593 27.6 16 22.407 27.6 16 27.6zm6.34-8.64c-.347-.174-2.055-1.014-2.374-1.13-.319-.116-.551-.174-.783.174-.232.347-.9 1.13-1.103 1.362-.203.232-.406.26-.753.087-.347-.174-1.464-.54-2.788-1.72-1.031-.919-1.727-2.053-1.93-2.4-.203-.347-.022-.535.152-.708.157-.156.347-.406.52-.61.174-.203.232-.347.347-.578.116-.232.058-.435-.029-.61-.087-.174-.783-1.888-1.073-2.587-.283-.68-.57-.587-.783-.598l-.667-.011c-.232 0-.61.087-.928.435-.319.347-1.218 1.19-1.218 2.9s1.247 3.364 1.42 3.597c.174.232 2.452 3.745 5.942 5.252.83.359 1.479.573 1.984.733.833.265 1.592.228 2.191.138.668-.1 2.055-.84 2.345-1.652.29-.812.29-1.508.203-1.652-.086-.145-.318-.232-.665-.406z"/>
+      </svg>
+    </a>
+</body>
+
+</html>

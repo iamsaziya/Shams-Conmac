@@ -1,0 +1,1790 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Shams Conmac Pvt. Ltd.</title>
+    <meta name="description" content="Shams Conmac Pvt. Ltd.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/lOGO.jpg.jpeg">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/fontello.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/default-icons.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/odometer.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/tg-cursor.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <style>
+        /* ── MEGA MENU DESKTOP ── */
+.navigation .product-mega {
+  display: none;
+  position: absolute !important;
+  top: 100% !important;
+  left: 0 !important;
+  width: 660px !important;
+  flex-direction: row !important;
+  background: #fff !important;
+  border-top: 3px solid #f8b300 !important;
+  box-shadow: 0 16px 50px rgba(0,0,0,0.15) !important;
+  padding: 0 !important;
+  z-index: 9999 !important;
+}
+
+.navigation .menu-item-has-children:hover > .product-mega {
+  display: flex !important;
+}
+
+.product-mega > .pd-col {
+  flex: 1;
+  padding: 22px 18px;
+  border-right: 1px solid rgba(0,0,0,0.08);
+  display: block !important;
+  width: auto !important;
+  float: none !important;
+  position: static !important;
+}
+.product-mega > .pd-col:last-child { border-right: none; }
+
+.product-mega .pd-group { margin-bottom: 18px; }
+.product-mega .pd-group:last-of-type { margin-bottom: 0; }
+
+.product-mega .pd-title {
+  display: block;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #f8b300;
+  margin-bottom: 10px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  cursor: default;
+}
+
+.product-mega .pd-group ul {
+  display: block !important;
+  position: static !important;
+  background: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: auto !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  min-width: auto !important;
+}
+
+.product-mega .pd-group ul li {
+  margin-bottom: 7px;
+  padding: 0 !important;
+  border: none !important;
+}
+
+.product-mega .pd-group ul li a {
+  font-size: 12.5px !important;
+  color: #2C2C2A !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 5px !important;
+  padding: 0 !important;
+  line-height: 1.4 !important;
+  background: none !important;
+  transition: color .15s, padding-left .15s !important;
+  white-space: normal !important;
+}
+
+.product-mega .pd-group ul li a::before {
+  content: '›';
+  color: #f8b300;
+  font-size: 15px;
+  line-height: 1.2;
+  flex-shrink: 0;
+}
+
+.product-mega .pd-group ul li a:hover {
+  color: #f8b300 !important;
+  padding-left: 3px !important;
+  background: none !important;
+}
+
+.product-mega .pd-quote {
+  display: block;
+  margin-top: 16px;
+  background: #f8b300;
+  color: #fff !important;
+  text-align: center;
+  padding: 10px 14px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background .2s;
+}
+.product-mega .pd-quote:hover { background: #cc4f00; }
+
+/* ── MOBILE OVERRIDES (below 1200px) ── */
+@media (max-width: 1199px) {
+
+  /* reset positioning — stack vertically */
+  .navigation .product-mega,
+  .navigation .menu-item-has-children:hover > .product-mega {
+    display: none !important;
+    position: static !important;
+    width: 100% !important;
+    flex-direction: column !important;
+    box-shadow: none !important;
+    border-top: 2px solid #f8b300 !important;
+    padding: 0 !important;
+    background: #fafafa !important;
+  }
+
+  /* shown via JS class */
+  .navigation .menu-item-has-children.pd-mob-open > .product-mega {
+    display: flex !important;
+  }
+
+  .product-mega > .pd-col {
+    padding: 0 !important;
+    border-right: none !important;
+    border-bottom: 1px solid rgba(0,0,0,0.07) !important;
+    width: 100% !important;
+  }
+  .product-mega > .pd-col:last-child { border-bottom: none !important; }
+
+  /* group title — tappable on mobile */
+  .product-mega .pd-title {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 18px !important;
+    margin: 0 !important;
+    border-bottom: 1px solid rgba(0,0,0,0.06) !important;
+    background: #f0ede6;
+    font-size: 11px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .product-mega .pd-title::after {
+    content: '+';
+    font-size: 18px;
+    color: #f8b300;
+    font-weight: 300;
+    flex-shrink: 0;
+    line-height: 1;
+  }
+
+  .product-mega .pd-title.pd-mob-open::after {
+    content: '−';
+  }
+
+  /* hide items by default on mobile */
+  .product-mega .pd-group ul {
+    display: none !important;
+  }
+
+  /* show when open */
+  .product-mega .pd-group ul.pd-mob-items-open {
+    display: flex !important;
+    flex-direction: column;
+    padding: 6px 0 10px 0 !important;
+    background: #fff !important;
+  }
+
+  .product-mega .pd-group ul li {
+    margin: 0 !important;
+    border-bottom: 1px solid rgba(0,0,0,0.04) !important;
+  }
+
+  .product-mega .pd-group ul li a {
+    padding: 9px 18px 9px 32px !important;
+    font-size: 13px !important;
+    color: #555 !important;
+  }
+
+  .product-mega .pd-group ul li a::before {
+    content: '—' !important;
+    font-size: 9px !important;
+    margin-top: 2px;
+  }
+
+  .product-mega .pd-group ul li a:hover {
+    color: #f8b300 !important;
+    padding-left: 36px !important;
+    background: #fdf6ee !important;
+  }
+
+  .product-mega .pd-group {
+    margin-bottom: 0 !important;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+  }
+  .product-mega .pd-group:last-of-type { border-bottom: none; }
+
+  /* hide quote button on mobile */
+  .product-mega .pd-quote { display: none !important; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* Override theme sub-menu for mega menu only */
+.navigation .product-mega {
+  display: none;
+  position: absolute !important;
+  top: 100% !important;
+  left: 0 !important;
+  width: 660px !important;
+  flex-direction: row !important;
+  background: #fff !important;
+  border-top: 3px solid #f8b300 !important;
+  box-shadow: 0 16px 50px rgba(0,0,0,0.15) !important;
+  padding: 0 !important;
+  z-index: 9999 !important;
+}
+
+/* Show on hover — override theme */
+.navigation .menu-item-has-children:hover > .product-mega {
+  display: flex !important;
+}
+
+/* 3 equal columns */
+.product-mega > .pd-col {
+  flex: 1;
+  padding: 22px 18px;
+  border-right: 1px solid rgba(0,0,0,0.08);
+  display: block !important;
+  width: auto !important;
+  float: none !important;
+  position: static !important;
+}
+.product-mega > .pd-col:last-child { border-right: none; }
+
+/* group spacing */
+.product-mega .pd-group { margin-bottom: 18px; }
+.product-mega .pd-group:last-of-type { margin-bottom: 0; }
+
+/* column title */
+.product-mega .pd-title {
+  display: block;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #f8b300;
+  margin-bottom: 10px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+/* reset theme ul inside mega */
+.product-mega .pd-group ul {
+  display: block !important;
+  position: static !important;
+  background: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: auto !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  min-width: auto !important;
+}
+
+/* links */
+.product-mega .pd-group ul li {
+  margin-bottom: 7px;
+  padding: 0 !important;
+  border: none !important;
+}
+.product-mega .pd-group ul li a {
+  font-size: 12.5px !important;
+  color: #2C2C2A !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 5px !important;
+  padding: 0 !important;
+  line-height: 1.4 !important;
+  background: none !important;
+  transition: color .15s, padding-left .15s !important;
+  white-space: normal !important;
+}
+.product-mega .pd-group ul li a::before {
+  content: '›';
+  color: #f8b300;
+  font-size: 15px;
+  line-height: 1.2;
+  flex-shrink: 0;
+}
+.product-mega .pd-group ul li a:hover {
+  color: #f8b300 !important;
+  padding-left: 3px !important;
+  background: none !important;
+}
+
+/* quote button */
+.product-mega .pd-quote {
+  display: block;
+  margin-top: 16px;
+  background: #f8b300;
+  color: #111 !important;
+  text-align: center;
+  padding: 10px 14px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background .2s;
+}
+.product-mega .pd-quote:hover { background: #A87C10; }
+
+
+
+/* ===== SHAMS GALLERY SECTION ===== */
+
+.shams-gallery-section {
+  padding: 90px 0;
+  background: #f8f8f8;
+}
+
+.shams-gallery-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.shams-gallery-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.shams-gallery-tag {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #f8b300 ;
+  margin-bottom: 10px;
+}
+
+.shams-gallery-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 14px;
+  line-height: 1.2;
+}
+
+.shams-gallery-subtitle {
+  font-size: 15px;
+  color: #666;
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* Grid */
+.shams-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+/* Items */
+.shams-gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  aspect-ratio: 4 / 3;
+  cursor: pointer;
+  background: #222;
+
+  /* Entry animation state */
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.55s ease, transform 0.55s ease, box-shadow 0.3s ease;
+}
+
+.shams-gallery-item.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delays */
+.shams-gallery-item:nth-child(1) { transition-delay: 0s; }
+.shams-gallery-item:nth-child(2) { transition-delay: 0.07s; }
+.shams-gallery-item:nth-child(3) { transition-delay: 0.14s; }
+.shams-gallery-item:nth-child(4) { transition-delay: 0.21s; }
+.shams-gallery-item:nth-child(5) { transition-delay: 0.28s; }
+.shams-gallery-item:nth-child(6) { transition-delay: 0.35s; }
+.shams-gallery-item:nth-child(7) { transition-delay: 0.42s; }
+.shams-gallery-item:nth-child(8) { transition-delay: 0.49s; }
+.shams-gallery-item:nth-child(9) { transition-delay: 0.56s; }
+
+.shams-gallery-item:hover {
+  box-shadow: 0 12px 40px rgba(246, 99, 0, 0.25);
+}
+
+.shams-gallery-item img,
+.shams-gallery-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.shams-gallery-item:hover img,
+.shams-gallery-item:hover video {
+  transform: scale(1.07);
+}
+
+/* Overlay */
+.shams-gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: #f8b300;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  gap: 10px;
+}
+
+.shams-gallery-item:hover .shams-gallery-overlay {
+  opacity: 1;
+}
+
+.shams-gallery-overlay p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+  padding: 0 10px;
+  letter-spacing: 0.5px;
+}
+
+.shams-gallery-icon {
+  font-size: 26px;
+  color: #fff;
+  line-height: 1;
+}
+
+.shams-play-icon {
+  font-size: 36px;
+}
+
+/* Video badge */
+.shams-gallery-video::before {
+  content: "▶ VIDEO";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #f8b300 ;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 3px 8px;
+  border-radius: 3px;
+  z-index: 2;
+}
+
+/* Lightbox */
+.shams-lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  z-index: 99999;
+  align-items: center;
+  justify-content: center;
+  animation: shamsLBFadeIn 0.25s ease;
+}
+
+.shams-lightbox.active {
+  display: flex;
+}
+
+@keyframes shamsLBFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.shams-lightbox-content {
+  max-width: 90vw;
+  max-height: 85vh;
+  animation: shamsLBSlide 0.3s ease;
+}
+
+@keyframes shamsLBSlide {
+  from { transform: scale(0.92); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
+
+.shams-lightbox-content img,
+.shams-lightbox-content video,
+.shams-lightbox-content iframe {
+  max-width: 90vw;
+  max-height: 85vh;
+  border-radius: 6px;
+  display: block;
+}
+
+.shams-lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 28px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 44px;
+  line-height: 1;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s, color 0.2s;
+  padding: 0;
+}
+
+.shams-lightbox-close:hover {
+  opacity: 1;
+  color: #f8b300 ;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .shams-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .shams-gallery-title { font-size: 26px; }
+}
+
+@media (max-width: 480px) {
+  .shams-gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== END SHAMS GALLERY ===== */
+    </style>
+</head>
+
+<body>
+
+    <!--Preloader-->
+    <div id="preloader">
+        <div id="loader" class="loader">
+            <div class="loader-container">
+                <div class="loader-icon"><img src="assets/img/logo/lOGO.jpg.jpeg" alt="Preloader"></div>
+            </div>
+        </div>
+    </div>
+    <!--Preloader-end -->
+
+    <!-- Scroll-top -->
+    <button class="scroll__top scroll-to-target" data-target="html">
+        <i class="renova-up-arrow"></i>
+    </button>
+    <!-- Scroll-top-end-->
+
+    <!-- header-area -->
+       <header>
+        <!-- <div class="tg-header__top">
+            <div class="container custom-container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4">
+                        <div class="tg-header__top-menu">
+                            <ul class="list-wrap">
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="contact.html">Careers</a></li>
+                                <li><a href="contact.html">Insights</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="tg-header__top-delivery">
+                            <p>Express delivery and free returns within 24 hours</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="tg-header__top-social">
+                            <ul class="list-wrap">
+                                <li><a href="https://www.facebook.com/" target="_blank">FB</a></li>
+                                <li><a href="https://twitter.com/home" target="_blank">TW</a></li>
+                                <li><a href="https://www.linkedin.com/" target="_blank">LI</a></li>
+                                <li><a href="https://www.instagram.com/" target="_blank">IN</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div id="header-fixed-height"></div>
+        <div id="sticky-header" class="tg-header__area">
+            <div class="container custom-container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="tgmenu__wrap">
+                            <nav class="tgmenu__nav">
+                                <div class="offCanvas-toggle">
+                                    <a href="javascript:void(0)" class="menu-tigger">
+                                        <img src="assets/img/icons/bar_icon.svg" alt="" class="injectable">
+                                    </a>
+                                </div>
+                                <div class="logo">
+                                    
+                                    <a href="index.html"><img src="assets/img/logo/lOGO.jpg.jpeg" alt="Logo" style="max-height:70px;"></a>
+                                </div>
+                                <div class="tgmenu__navbar-wrap tgmenu__main-menu d-none d-xl-flex">
+                                    <ul class="navigation">
+                                        <li class="menu-item-has"><a href="index.html">Home</a>
+                                        </li>
+                                        <li class="menu-item-has"><a href="about.html">About Us</a>
+                                        </li>
+                                        <li class=" activemenu-item-has"><a href="gallery.html">Gallery</a>
+                                        </li>
+                                        
+                                        <li class="menu-item-has-children">
+  <a href="products.html">Products</a>
+  <ul class="sub-menu product-mega">
+    <li class="pd-col">
+      <div class="pd-group">
+        <span class="pd-title">Concrete &amp; Mixing</span>
+        <ul>
+          <li><a href="products.html#g1">Concrete Mixer</a></li>
+          <li><a href="products.html#g1">Mortar Mixer</a></li>
+        </ul>
+      </div>
+      <div class="pd-group">
+        <span class="pd-title">Steel &amp; Bar Working</span>
+        <ul>
+          <li><a href="products.html#g2">Bar Bending Machine</a></li>
+          <li><a href="products.html#g2">Bar Cutting Machine</a></li>
+          <li><a href="products.html#g2">Ring Making Machine</a></li>
+          <li><a href="products.html#g2">CNC Stirrup Bender</a></li>
+          <li><a href="products.html#g2">Thread Rolling Machine</a></li>
+          <li><a href="products.html#g2">Decoiling Machine</a></li>
+          <li><a href="products.html#g2">Scrap Straightening Machine</a></li>
+          <li><a href="products.html#g2">Rebar Tying Tool</a></li>
+        </ul>
+      </div>
+      <div class="pd-group">
+        <span class="pd-title">Rail Track Tools</span>
+        <ul>
+          <li><a href="products.html#g3">Rail Track Cutting Machine</a></li>
+          <li><a href="products.html#g3">Rail Track Jack</a></li>
+          <li><a href="products.html#g3">Rail Track Drilling Machine</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="pd-col">
+      <div class="pd-group">
+        <span class="pd-title">Vibrators</span>
+        <ul>
+          <li><a href="products.html#g4">Concrete Vibrators</a></li>
+          <li><a href="products.html#g4">High Frequency Vibrators</a></li>
+          <li><a href="products.html#g4">Portable Needle Vibrator</a></li>
+          <li><a href="products.html#g4">Platform Vibrators</a></li>
+          <li><a href="products.html#g4">Screed Vibrators</a></li>
+          <li><a href="products.html#g4">Shutter Vibrators</a></li>
+          <li><a href="products.html#g4">Wacker Neuson</a></li>
+        </ul>
+      </div>
+      <div class="pd-group">
+        <span class="pd-title">Soil Compaction</span>
+        <ul>
+          <li><a href="products.html#g5">Soil Compactors</a></li>
+          <li><a href="products.html#g5">Tamping Rammer</a></li>
+          <li><a href="products.html#g5">Earth Compactor</a></li>
+          <li><a href="products.html#g5">Vibrator Roller</a></li>
+          <li><a href="products.html#g5">Vibratory Paver Roller</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="pd-col">
+      <div class="pd-group">
+        <span class="pd-title">Surface Finishing</span>
+        <ul>
+          <li><a href="products.html#g6">Power Trowels</a></li>
+          <li><a href="products.html#g6">Bullfloat</a></li>
+          <li><a href="products.html#g6">Truss Screed</a></li>
+          <li><a href="products.html#g6">Plaster Spray Machine</a></li>
+        </ul>
+      </div>
+      <div class="pd-group">
+        <span class="pd-title">Cutting &amp; Civil Lab</span>
+        <ul>
+          <li><a href="products.html#g7">Concrete Groove Cutter</a></li>
+          <li><a href="products.html#g7">Brick Cutting Machine</a></li>
+          <li><a href="products.html#g8">Total Station &amp; Auto Level</a></li>
+          <li><a href="products.html#g8">Cube Moulds &amp; CTM Machine</a></li>
+          <li><a href="products.html#g8">Slump Cone &amp; Lab Tools</a></li>
+        </ul>
+      </div>
+      <div class="pd-group">
+        <span class="pd-title">Lifting, Winches &amp; Pumps</span>
+        <ul>
+          <li><a href="products.html#g9">Hoist &amp; Mini Crane</a></li>
+          <li><a href="products.html#g9">Chain Blocks</a></li>
+          <li><a href="products.html#g9">Electric Winch</a></li>
+          <li><a href="products.html#g9">Lifting Accessories</a></li>
+          <li><a href="products.html#g10">Grout &amp; Dewatering Pumps</a></li>
+          <li><a href="products.html#g11">Accessories &amp; Ropes</a></li>
+          <li><a href="products.html#g11">Expansion Joint Boards</a></li>
+        </ul>
+      </div>
+      <a href="products.html" class="pd-quote">View All Products →</a>
+    </li>
+  </ul>
+</li>
+
+
+                                        <!-- <li class="menu-item-has-children"><a href="#">Shop</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="shop.html">Shop Page</a></li>
+                                                <li><a href="shop-details.html">Shop Details</a></li>
+                                            </ul>
+                                        </li> -->
+                                        <!-- <li class="menu-item-has-children"><a href="#">Portfolio</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="products.html">Portfolio Page</a></li>
+                                                <li><a href="project-details.html">Portfolio Details</a></li>
+                                            </ul>
+                                        </li> -->
+                                        <!-- <li class="menu-item-has-children"><a href="#">Blog</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="blog.html">Blog Standard</a></li>
+                                                <li><a href="blog-2.html">Blog List</a></li>
+                                                <li><a href="blog-3.html">Blog Grid</a></li>
+                                                <li><a href="blog-details.html">Blog Details</a></li>
+                                            </ul>
+                                        </li> -->
+                                        <li class="menu-item-has"><a href="contact.html">Contact Us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- <div class="tgmenu__action">
+                                    <ul class="list-wrap">
+
+
+                                        <li class="header-btn">
+                                            <a href="contact.html" class="btn border-btn">Get In Touch</a>
+                                        </li>
+                                    </ul>
+                                </div> -->
+                                <div class="mobile-nav-toggler"><i class="tg-flaticon-menu-1"></i></div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu  -->
+        <div class="tgmobile__menu">
+            <nav class="tgmobile__menu-box">
+                <div class="close-btn"><i class="tg-flaticon-close-1"></i></div>
+                <div class="nav-logo">
+                    <a href="index.html"><img src="assets/img/logo/lOGO.jpg.jpeg" alt="Logo"></a>
+                </div>
+
+                <div class="tgmobile__menu-outer">
+                    <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+                </div>
+                <div class="social-links">
+                    <ul class="list-wrap">
+                        <li><a href="https://www.facebook.com/profile.php?id=61590381431714"><i class="fab fa-facebook-f"></i></a></li>
+                        <!-- <li><a href="#"><i class="fab fa-twitter"></i></a></li> -->
+                        <li><a href="https://www.instagram.com/shamsconmac_pvt_ltd/"><i class="fab fa-instagram"></i></a></li>
+                                <!-- <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube"></i></a></li> -->
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="tgmobile__menu-backdrop"></div>
+        <!-- End Mobile Menu -->
+
+        <!-- header-search -->
+        <div class="search__popup">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="search__wrapper">
+                            <div class="search__close">
+                                <button type="button" class="search-close-btn">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17 1L1 17" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M1 1L17 17" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="search__form">
+                                <form action="#">
+                                    <div class="search__input">
+                                        <input class="search-input-field" type="text" placeholder="Type keywords here">
+                                        <span class="search-focus-border"></span>
+                                        <button>
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.55 18.1C14.272 18.1 18.1 14.272 18.1 9.55C18.1 4.82797 14.272 1 9.55 1C4.82797 1 1 4.82797 1 9.55C1 14.272 4.82797 18.1 9.55 18.1Z"
+                                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                                <path d="M19.0002 19.0002L17.2002 17.2002" stroke="currentColor"
+                                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search-popup-overlay"></div>
+        <!-- header-search-end -->
+
+        <!-- offCanvas-menu -->
+        <div class="offCanvas__info">
+            <div class="offCanvas__close-icon menu-close">
+                <button><i class="far fa-window-close"></i></button>
+            </div>
+            <div class="offCanvas__logo mb-30">
+                <a href="index.html"><img src="assets/img/logo/lOGO.jpg.jpeg" alt="Logo"></a>
+            </div>
+            <div class="offCanvas__side-info mb-30">
+                <div class="contact-list mb-30">
+                    <h4>Address</h4>
+                    <p><strong>Main:</strong> Gut No 31, Mitmita, Sharnapur Phata, Near Daultabad Tee Point, Chh. Sambhajinagar 431002</p>
+                    <p><strong>City Shop:</strong> 4-6-59/60, Old Mondha Road, Jaffer Gate, Chh. Sambhajinagar 431001</p>
+                </div>
+                <div class="contact-list mb-30">
+                    <h4>Phone Number</h4>
+                    <p>
+Main Office <br>
+
++91 954541752 <br>
++91 8007991752
+<br>
+Sales
+
++91 8805441752</p>
+                </div>
+                <div class="contact-list mb-30">
+                    <h4>Email Address</h4>
+                    <p>shamsindia1@gmail.com</p>
+                </div>
+            </div>
+            <!-- <div class="offCanvas__social-icon mt-30">
+                <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
+                <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
+                <a href="javascript:void(0)"><i class="fab fa-google-plus-g"></i></a>
+                <a href="javascript:void(0)"><i class="fab fa-instagram"></i></a>
+            </div> -->
+        </div>
+        <div class="offCanvas__overly"></div>
+        <!-- offCanvas-menu-end -->
+
+    </header>
+    <!-- header-area-end -->
+
+
+
+    <!-- main-area -->
+    <main class="main-area fix">
+
+        <!-- breadcrumb-area -->
+        <div class="breadcrumb__area breadcrumb__bg" data-background="assets/img/images/gallery.jpeg" >
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="breadcrumb__content">
+                            <h2 class="title">Our Gallery</h2>
+                            <nav class="breadcrumb">
+                                <span property="itemListElement" typeof="ListItem">
+                                    <a href="index.html">Home</a>
+                                </span>
+                                <span class="breadcrumb-separator">/</span>
+                                <span property="itemListElement" typeof="ListItem">Our Gallery</span>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- breadcrumb-area-end -->
+
+        <!-- services-area -->
+        <!-- <section class="services__area-two section-pt-120 section-pb-95">
+            <div class="container">
+                <div class="row gutter-24 justify-content-center">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="services__item-two shine__animate-item">
+                            <div class="services__thumb-two">
+                                <a href="services-details.html" class="shine__animate-link">
+                                    <img src="assets/img/services/services_img01.jpg" alt="img">
+                                </a>
+                            </div>
+                            <div class="services__content-two">
+                                <h4 class="title"><a href="services-details.html">Construction Machinery Supply</a></h4>
+                                <p>We supply a complete range of construction machinery including bar benders, bar cutters, concrete mixers, concrete vibrators, road rollers, power trowels, tamping rammers, and concrete groove cutters for all types of infrastructure projects.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="services__item-two shine__animate-item">
+                            <div class="services__thumb-two">
+                                <a href="services-details.html" class="shine__animate-link">
+                                    <img src="assets/img/services/services_img02.jpg" alt="img">
+                                </a>
+                            </div>
+                            <div class="services__content-two">
+                                <h4 class="title"><a href="services-details.html">Automatic Concrete Batching Plant</a></h4>
+                                <p>We supply fully automatic concrete batching plants designed for large-scale infrastructure projects. These plants ensure precise mix ratios, consistent concrete output, and faster production — ideal for road, bridge, and building contractors.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="services__item-two shine__animate-item">
+                            <div class="services__thumb-two">
+                                <a href="services-details.html" class="shine__animate-link">
+                                    <img src="assets/img/services/services_img03.jpg" alt="img">
+                                </a>
+                            </div>
+                            <div class="services__content-two">
+                                <h4 class="title"><a href="services-details.html">Expansion Joints</a></h4>
+                                <p>We provide high-quality expansion joints engineered for bridges, flyovers, and road surfaces. Designed to absorb structural movement and thermal expansion, our expansion joints ensure long-term durability and performance of infrastructure.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="services__item-two shine__animate-item">
+                            <div class="services__thumb-two">
+                                <a href="services-details.html" class="shine__animate-link">
+                                    <img src="assets/img/services/services_img04.jpg" alt="img">
+                                </a>
+                            </div>
+                            <div class="services__content-two">
+                                <h4 class="title"><a href="services-details.html">Lifting Material & Magnetic Lifters</a></h4>
+                                <p>Our lifting range includes chain pulley blocks, webbing slings, wire ropes, magnetic lifters, tower crane buckets, and material hoists — giving contractors everything needed for safe and efficient lifting operations on site.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="services__item-two shine__animate-item">
+                            <div class="services__thumb-two">
+                                <a href="services-details.html" class="shine__animate-link">
+                                    <img src="assets/img/services/services_img05.jpg" alt="img">
+                                </a>
+                            </div>
+                            <div class="services__content-two">
+                                <h4 class="title"><a href="services-details.html">Safety Products & Nets</a></h4>
+                                <p>Site safety is non-negotiable. We stock a complete PPE range including helmets, gloves, safety harnesses, high-visibility vests, rubber boots, goggles, safety nets, and traffic barriers — keeping your workforce protected at every stage.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="services__item-two shine__animate-item">
+                            <div class="services__thumb-two">
+                                <a href="services-details.html" class="shine__animate-link">
+                                    <img src="assets/img/services/services_img06.jpg" alt="img">
+                                </a>
+                            </div>
+                            <div class="services__content-two">
+                                <h4 class="title"><a href="services-details.html">Bitumen Products</a></h4>
+                                <p>We supply a comprehensive range of bitumen products through our partnership with Tiki Tar Donsa Pvt. Ltd. — including bitumen drums, road-grade bitumen, and surface treatment materials trusted across India's road and highway projects.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="services__item-two shine__animate-item">
+                            <div class="services__thumb-two">
+                                <a href="services-details.html" class="shine__animate-link">
+                                    <img src="assets/img/services/services_img07.jpg" alt="img">
+                                </a>
+                            </div>
+                            <div class="services__content-two">
+                                <h4 class="title"><a href="services-details.html">Pipe Wrap & Corrosion Protection</a></h4>
+                                <p>We offer pipe wrap tapes and corrosion protection products from Tiki Tar Donsa Pvt. Ltd. — essential for protecting underground pipelines, water mains, and structural steel from moisture, rust, and chemical damage.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="services__item-two shine__animate-item">
+                            <div class="services__thumb-two">
+                                <a href="services-details.html" class="shine__animate-link">
+                                    <img src="assets/img/services/services_img08.jpg" alt="img">
+                                </a>
+                            </div>
+                            <div class="services__content-two">
+                                <h4 class="title"><a href="services-details.html">Tarpaulins & Curing Hessian Cloth</a></h4>
+                                <p>We provide heavy-duty tarpaulins and curing hessian cloth rolls essential for concrete curing, material storage, and weather protection. Available in multiple sizes to suit small residential sites as well as large infrastructure projects.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="services__item-two shine__animate-item">
+                            <div class="services__thumb-two">
+                                <a href="services-details.html" class="shine__animate-link">
+                                    <img src="assets/img/services/services_img09.jpg" alt="img">
+                                </a>
+                            </div>
+                            <div class="services__content-two">
+                                <h4 class="title"><a href="services-details.html">Centring Materials</a></h4>
+                                <p>We stock a full range of centring materials including shuttering plates, props, H-frames, and accessories — supporting formwork requirements for columns, slabs, beams, and other concrete structural elements.</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="services__item-two shine__animate-item">
+                            <div class="services__thumb-two">
+                                <a href="services-details.html" class="shine__animate-link">
+                                    <img src="assets/img/services/services_img09.jpg" alt="img">
+                                </a>
+                            </div>
+                            <div class="services__content-two">
+                                <h4 class="title"><a href="services-details.html">Membrane & Water Stopper</a></h4>
+                                <p>Our waterproofing range includes bituminous membranes and PVC water stoppers for basements, underground structures, water-retaining tanks, and tunnels — providing a reliable barrier against water ingress and structural damage.</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="services__item-two shine__animate-item">
+                            <div class="services__thumb-two">
+                                <a href="services-details.html" class="shine__animate-link">
+                                    <img src="assets/img/services/services_img09.jpg" alt="img">
+                                </a>
+                            </div>
+                            <div class="services__content-two">
+                                <h4 class="title"><a href="services-details.html">Garware Ropes & Technical Fibers</a></h4>
+                                <p>As authorised channel partners of Garware Technical Fibers Ltd., we supply industrial-grade ropes, safety nets, nylon nets, and technical fiber products used widely across construction, irrigation, bridge, and marine projects.</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="services__item-two shine__animate-item">
+                            <div class="services__thumb-two">
+                                <a href="services-details.html" class="shine__animate-link">
+                                    <img src="assets/img/services/services_img09.jpg" alt="img">
+                                </a>
+                            </div>
+                            <div class="services__content-two">
+                                <h4 class="title"><a href="services-details.html">Survey & Civil Lab Equipment & Grease Pumps</a></h4>
+                                <p>From total stations and auto levels to cube moulds, compaction equipment, and testing sieves — we supply complete civil lab and survey instruments. We also stock grease pumps and maintenance tools to keep your machinery running at peak performance.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- services-area-end -->
+
+        <!-- ===== GALLERY SECTION ===== -->
+<section class="shams-gallery-section">
+  <div class="shams-gallery-container">
+
+    <div class="shams-gallery-header">
+      <span class="shams-gallery-tag">Our Work</span>
+      <h2 class="shams-gallery-title">Gallery</h2>
+      <p class="shams-gallery-subtitle">A glimpse into our projects, machinery, and on-site operations across India.</p>
+    </div>
+
+    <div class="shams-gallery-grid">
+
+      <!-- IMAGE ITEMS — replace src with your actual images -->
+      <div class="shams-gallery-item" data-type="image">
+        <img src="assets/img/services/bit.jpeg" alt="Samruddhi Mahamarg Project" loading="lazy">
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon">&#128269;</span>
+          <!-- <p>Samruddhi Mahamarg</p> -->
+        </div>
+      </div>
+
+      <div class="shams-gallery-item" data-type="image">
+        <img src="assets/img/services/constrct.jpeg" alt="Concrete Mixer on Site" loading="lazy">
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon">&#128269;</span>
+          <!-- <p>Concrete Mixer on Site</p> -->
+        </div>
+      </div>
+      <div class="shams-gallery-item" data-type="image">
+        <img src="assets/img/services/lift.jpeg" alt="Dhule Solapur Highway" loading="lazy">
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon">&#128269;</span>
+          <!-- <p>Dhule–Solapur Highway</p> -->
+        </div>
+      </div>
+
+      <div class="shams-gallery-item" data-type="image">
+        <img src="assets/img/services/safe.jpeg" alt="Safety Equipment Supply" loading="lazy">
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon">&#128269;</span>
+          <!-- <p>Safety Equipment</p> -->
+        </div>
+      </div>
+
+      <div class="shams-gallery-item" data-type="image">
+        <img src="assets/img/services/WhatsApp Image 2026-05-27 at 5.52.26 PM.jpeg" alt="Railway Yard Project Bhopal" loading="lazy">
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon">&#128269;</span>
+          <!-- <p>Railway Yard — Bhopal</p> -->
+        </div>
+      </div>
+
+      <div class="shams-gallery-item" data-type="image">
+        <img src="assets/img/services/WhatsApp Image 2026-05-27 at 5.52.46 PM.jpeg" alt="Flyover Construction Chh. Sambhajinagar" loading="lazy">
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon">&#128269;</span>
+          <!-- <p>Flyover Construction</p> -->
+        </div>
+      </div>
+
+      <div class="shams-gallery-item" data-type="image">
+        <img src="assets/img/services/WhatsApp Image 2026-05-27 at 5.53.50 PM.jpeg" alt="Bar Bender Equipment" loading="lazy">
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon">&#128269;</span>
+          <!-- <p>Bar Bender Equipment</p> -->
+        </div>
+      </div>
+
+        <div class="shams-gallery-item" data-type="image">
+        <img src="assets/img/services/WhatsApp Image 2026-05-27 at 5.55.29 PM.jpeg" alt="Bar Bender Equipment" loading="lazy">
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon">&#128269;</span>
+          <!-- <p>Bar Bender Equipment</p> -->
+        </div>
+      </div>
+
+        <div class="shams-gallery-item" data-type="image">
+        <img src="assets/img/services/WhatsApp Image 2026-05-27 at 5.55.53 PM.jpeg" alt="Bar Bender Equipment" loading="lazy">
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon">&#128269;</span>
+          <!-- <p>Bar Bender Equipment</p> -->
+        </div>
+      </div>
+
+        <div class="shams-gallery-item" data-type="image">
+        <img src="assets/img/services/WhatsApp Image 2026-05-27 at 5.56.29 PM.jpeg" alt="Bar Bender Equipment" loading="lazy">
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon">&#128269;</span>
+          <!-- <p>Bar Bender Equipment</p> -->
+        </div>
+      </div>
+
+        <div class="shams-gallery-item" data-type="image">
+        <img src="assets/img/services/WhatsApp Image 2026-05-27 at 5.57.13 PM.jpeg" alt="Bar Bender Equipment" loading="lazy">
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon">&#128269;</span>
+          <!-- <p>Bar Bender Equipment</p> -->
+        </div>
+      </div>
+
+        <div class="shams-gallery-item" data-type="image">
+        <img src="assets/img/services/WhatsApp Image 2026-05-27 at 5.57.46 PM.jpeg" alt="Bar Bender Equipment" loading="lazy">
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon">&#128269;</span>
+          <!-- <p>Bar Bender Equipment</p> -->
+        </div>
+      </div>
+
+        <div class="shams-gallery-item" data-type="image">
+        <img src="assets/img/services/WhatsApp Image 2026-05-27 at 5.58.01 PM.jpeg" alt="Bar Bender Equipment" loading="lazy">
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon">&#128269;</span>
+          <!-- <p>Bar Bender Equipment</p> -->
+        </div>
+      </div>
+
+        <div class="shams-gallery-item" data-type="image">
+        <img src="assets/img/services/WhatsApp Image 2026-05-27 at 6.00.02 PM.jpeg" alt="Bar Bender Equipment" loading="lazy">
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon">&#128269;</span>
+          <!-- <p>Bar Bender Equipment</p> -->
+        </div>
+      </div>
+
+        <div class="shams-gallery-item" data-type="image">
+        <img src="assets/img/services/WhatsApp Image 2026-05-27 at 6.00.55 PM.jpeg" alt="Bar Bender Equipment" loading="lazy">
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon">&#128269;</span>
+          <p>Bar Bender Equipment</p>
+        </div>
+      </div>
+
+        <div class="shams-gallery-item" data-type="image">
+        <img src="assets/img/services/WhatsApp Image 2026-05-27 at 6.02.12 PM.jpeg" alt="Bar Bender Equipment" loading="lazy">
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon">&#128269;</span>
+          <!-- <p>Bar Bender Equipment</p> -->
+        </div>
+      </div>
+
+        <div class="shams-gallery-item" data-type="image">
+        <img src="assets/img/services/WhatsApp Image 2026-05-27 at 6.03.41 PM.jpeg" alt="Bar Bender Equipment" loading="lazy">
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon">&#128269;</span>
+          <!-- <p>Bar Bender Equipment</p> -->
+        </div>
+      </div>
+
+      <!-- VIDEO ITEMS -->
+      <div class="shams-gallery-item shams-gallery-video" data-type="video">
+        <video src="https://adn.nestortech.io/api/va/6760306e5bb856bae7716ca8/video1/PROD/web" muted loop playsinline preload="metadata"></video>
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon shams-play-icon">&#9654;</span>
+        </div>
+      </div>
+
+      <div class="shams-gallery-item shams-gallery-video" data-type="video">
+        <video src="https://ik.imagekit.io/tkwyy9ull/WhatsApp%20Unknown%202026-07-10%20at%202.46.23%20PM/WhatsApp%20Video%202026-07-09%20at%203.48.22%20PM.mp4?updatedAt=1783675277802" muted loop playsinline preload="metadata"></video>
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon shams-play-icon">&#9654;</span>
+        </div>
+      </div>
+
+      <div class="shams-gallery-item shams-gallery-video" data-type="video">
+        <video src="https://ik.imagekit.io/tkwyy9ull/WhatsApp%20Unknown%202026-07-10%20at%202.46.23%20PM/WhatsApp%20Video%202026-07-09%20at%203.48.34%20PM%20(2).mp4?updatedAt=1783675277303" muted loop playsinline preload="metadata"></video>
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon shams-play-icon">&#9654;</span>
+        </div>
+      </div>
+
+      <div class="shams-gallery-item shams-gallery-video" data-type="video">
+        <video src="https://ik.imagekit.io/tkwyy9ull/WhatsApp%20Unknown%202026-07-10%20at%202.46.23%20PM/WhatsApp%20Video%202026-07-09%20at%203.48.35%20PM.mp4?updatedAt=1783675270496" muted loop playsinline preload="metadata"></video>
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon shams-play-icon">&#9654;</span>
+        </div>
+      </div>
+
+      <div class="shams-gallery-item shams-gallery-video" data-type="video">
+        <video src="https://ik.imagekit.io/tkwyy9ull/WhatsApp%20Unknown%202026-07-10%20at%202.46.23%20PM/WhatsApp%20Video%202026-07-09%20at%203.48.35%20PM%20(2).mp4?updatedAt=1783675269029" muted loop playsinline preload="metadata"></video>
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon shams-play-icon">&#9654;</span>
+        </div>
+      </div>
+
+      <div class="shams-gallery-item shams-gallery-video" data-type="video">
+        <video src="https://ik.imagekit.io/tkwyy9ull/WhatsApp%20Unknown%202026-07-10%20at%202.46.23%20PM/WhatsApp%20Video%202026-07-09%20at%203.48.35%20PM%20(1).mp4?updatedAt=1783675266324" muted loop playsinline preload="metadata"></video>
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon shams-play-icon">&#9654;</span>
+        </div>
+      </div>
+
+      <div class="shams-gallery-item shams-gallery-video" data-type="video">
+        <video src="https://ik.imagekit.io/tkwyy9ull/WhatsApp%20Unknown%202026-07-10%20at%202.46.23%20PM/WhatsApp%20Video%202026-07-09%20at%203.48.22%20PM%20(3).mp4?updatedAt=1783675263692" muted loop playsinline preload="metadata"></video>
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon shams-play-icon">&#9654;</span>
+        </div>
+      </div>
+
+      <div class="shams-gallery-item shams-gallery-video" data-type="video">
+        <video src="https://ik.imagekit.io/tkwyy9ull/WhatsApp%20Unknown%202026-07-10%20at%202.46.23%20PM/WhatsApp%20Video%202026-07-09%20at%203.48.34%20PM%20(1).mp4?updatedAt=1783675259219" muted loop playsinline preload="metadata"></video>
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon shams-play-icon">&#9654;</span>
+        </div>
+      </div>
+
+      <div class="shams-gallery-item shams-gallery-video" data-type="video">
+        <video src="https://ik.imagekit.io/tkwyy9ull/WhatsApp%20Unknown%202026-07-10%20at%202.46.23%20PM/WhatsApp%20Video%202026-07-09%20at%203.48.35%20PM%20(21).mp4?updatedAt=1783675257563" muted loop playsinline preload="metadata"></video>
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon shams-play-icon">&#9654;</span>
+        </div>
+      </div>
+
+      <div class="shams-gallery-item shams-gallery-video" data-type="video">
+        <video src="https://ik.imagekit.io/tkwyy9ull/WhatsApp%20Unknown%202026-07-10%20at%202.46.23%20PM/WhatsApp%20Video%202026-07-09%20at%203.48.22%20PM%20(1).mp4?updatedAt=1783675256631" muted loop playsinline preload="metadata"></video>
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon shams-play-icon">&#9654;</span>
+        </div>
+      </div>
+
+      <div class="shams-gallery-item shams-gallery-video" data-type="video">
+        <video src="https://ik.imagekit.io/tkwyy9ull/WhatsApp%20Unknown%202026-07-10%20at%202.46.23%20PM/WhatsApp%20Video%202026-07-09%20at%203.48.22%20PM%20(4).mp4?updatedAt=1783675256304" muted loop playsinline preload="metadata"></video>
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon shams-play-icon">&#9654;</span>
+        </div>
+      </div>
+
+      <div class="shams-gallery-item shams-gallery-video" data-type="video">
+        <video src="https://ik.imagekit.io/tkwyy9ull/WhatsApp%20Unknown%202026-07-10%20at%202.46.23%20PM/WhatsApp%20Video%202026-07-09%20at%203.48.22%20PM%20(2).mp4?updatedAt=1783675252309" muted loop playsinline preload="metadata"></video>
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon shams-play-icon">&#9654;</span>
+        </div>
+      </div>
+
+      <div class="shams-gallery-item shams-gallery-video" data-type="video">
+        <video src="https://ik.imagekit.io/tkwyy9ull/WhatsApp%20Unknown%202026-07-10%20at%202.46.23%20PM/WhatsApp%20Video%202026-07-09%20at%203.48.35%20PM%20(3).mp4?updatedAt=1783675249692" muted loop playsinline preload="metadata"></video>
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon shams-play-icon">&#9654;</span>
+        </div>
+      </div>
+
+    
+
+      <div class="shams-gallery-item shams-gallery-video" data-type="video">
+        <video src="https://ik.imagekit.io/tkwyy9ull/WhatsApp%20Unknown%202026-07-10%20at%202.46.23%20PM/WhatsApp%20Video%202026-07-09%20at%203.48.35%20PM%20(4).mp4?updatedAt=1783675248792" muted loop playsinline preload="metadata"></video>
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon shams-play-icon">&#9654;</span>
+        </div>
+      </div>
+
+      <div class="shams-gallery-item shams-gallery-video" data-type="video">
+        <video src="https://ik.imagekit.io/tkwyy9ull/WhatsApp%20Unknown%202026-07-10%20at%202.46.23%20PM/WhatsApp%20Video%202026-07-09%20at%203.48.35%20PM%20(14).mp4?updatedAt=1783675247678" muted loop playsinline preload="metadata"></video>
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon shams-play-icon">&#9654;</span>
+        </div>
+      </div>
+
+      <div class="shams-gallery-item shams-gallery-video" data-type="video">
+        <video src="https://ik.imagekit.io/tkwyy9ull/WhatsApp%20Unknown%202026-07-10%20at%202.46.23%20PM/WhatsApp%20Video%202026-07-09%20at%203.48.35%20PM%20(13).mp4?updatedAt=1783675247327" muted loop playsinline preload="metadata"></video>
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon shams-play-icon">&#9654;</span>
+        </div>
+      </div>
+
+      <div class="shams-gallery-item shams-gallery-video" data-type="video">
+        <video src="https://ik.imagekit.io/tkwyy9ull/WhatsApp%20Unknown%202026-07-10%20at%202.46.23%20PM/WhatsApp%20Video%202026-07-09%20at%203.48.35%20PM%20(12).mp4?updatedAt=1783675246309" muted loop playsinline preload="metadata"></video>
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon shams-play-icon">&#9654;</span>
+        </div>
+      </div>
+
+      <div class="shams-gallery-item shams-gallery-video" data-type="video">
+        <video src="https://ik.imagekit.io/tkwyy9ull/WhatsApp%20Unknown%202026-07-10%20at%202.46.23%20PM/WhatsApp%20Video%202026-07-09%20at%203.48.35%20PM%20(19).mp4?updatedAt=1783675245500" muted loop playsinline preload="metadata"></video>
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon shams-play-icon">&#9654;</span>
+        </div>
+      </div>
+
+      <div class="shams-gallery-item shams-gallery-video" data-type="video">
+        <video src="https://ik.imagekit.io/tkwyy9ull/WhatsApp%20Unknown%202026-07-10%20at%202.46.23%20PM/WhatsApp%20Video%202026-07-09%20at%203.48.35%20PM%20(9).mp4?updatedAt=1783675241109" muted loop playsinline preload="metadata"></video>
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon shams-play-icon">&#9654;</span>
+        </div>
+      </div>
+
+      <div class="shams-gallery-item shams-gallery-video" data-type="video">
+        <video src="https://ik.imagekit.io/tkwyy9ull/WhatsApp%20Unknown%202026-07-10%20at%202.46.23%20PM/WhatsApp%20Video%202026-07-09%20at%203.48.35%20PM%20(20).mp4?updatedAt=1783675239381" muted loop playsinline preload="metadata"></video>
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon shams-play-icon">&#9654;</span>
+        </div>
+      </div>
+
+      <div class="shams-gallery-item shams-gallery-video" data-type="video">
+        <video src="https://ik.imagekit.io/tkwyy9ull/WhatsApp%20Unknown%202026-07-10%20at%202.46.23%20PM/WhatsApp%20Video%202026-07-09%20at%203.48.35%20PM%20(16).mp4?updatedAt=1783675238920" muted loop playsinline preload="metadata"></video>
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon shams-play-icon">&#9654;</span>
+        </div>
+      </div>
+
+      <div class="shams-gallery-item shams-gallery-video" data-type="video">
+        <video src="https://ik.imagekit.io/tkwyy9ull/WhatsApp%20Unknown%202026-07-10%20at%202.46.23%20PM/WhatsApp%20Video%202026-07-09%20at%203.48.35%20PM%20(11).mp4?updatedAt=1783675238474" muted loop playsinline preload="metadata"></video>
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon shams-play-icon">&#9654;</span>
+        </div>
+      </div>
+
+      <div class="shams-gallery-item shams-gallery-video" data-type="video">
+        <video src="https://ik.imagekit.io/tkwyy9ull/WhatsApp%20Unknown%202026-07-10%20at%202.46.23%20PM/WhatsApp%20Video%202026-07-09%20at%203.48.35%20PM%20(8).mp4?updatedAt=1783675236938" muted loop playsinline preload="metadata"></video>
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon shams-play-icon">&#9654;</span>
+        </div>
+      </div>
+
+      <div class="shams-gallery-item shams-gallery-video" data-type="video">
+        <video src="https://ik.imagekit.io/tkwyy9ull/WhatsApp%20Unknown%202026-07-10%20at%202.46.23%20PM/WhatsApp%20Video%202026-07-09%20at%203.48.35%20PM%20(10).mp4?updatedAt=1783675236496" muted loop playsinline preload="metadata"></video>
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon shams-play-icon">&#9654;</span>
+        </div>
+      </div>
+
+      <div class="shams-gallery-item shams-gallery-video" data-type="video">
+        <video src="https://ik.imagekit.io/tkwyy9ull/WhatsApp%20Unknown%202026-07-10%20at%202.46.23%20PM/WhatsApp%20Video%202026-07-09%20at%203.48.35%20PM%20(7).mp4?updatedAt=1783675236386" muted loop playsinline preload="metadata"></video>
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon shams-play-icon">&#9654;</span>
+        </div>
+      </div>
+
+      <div class="shams-gallery-item shams-gallery-video" data-type="video">
+        <video src="https://ik.imagekit.io/tkwyy9ull/WhatsApp%20Unknown%202026-07-10%20at%202.46.23%20PM/WhatsApp%20Video%202026-07-09%20at%203.48.35%20PM%20(5).mp4?updatedAt=1783675235814" muted loop playsinline preload="metadata"></video>
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon shams-play-icon">&#9654;</span>
+        </div>
+      </div>
+
+      <div class="shams-gallery-item shams-gallery-video" data-type="video">
+        <video src="https://ik.imagekit.io/tkwyy9ull/WhatsApp%20Unknown%202026-07-10%20at%202.46.23%20PM/WhatsApp%20Video%202026-07-09%20at%203.48.35%20PM%20(15).mp4?updatedAt=1783675233871" muted loop playsinline preload="metadata"></video>
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon shams-play-icon">&#9654;</span>
+        </div>
+      </div>
+
+      <div class="shams-gallery-item shams-gallery-video" data-type="video">
+        <video src="https://ik.imagekit.io/tkwyy9ull/WhatsApp%20Unknown%202026-07-10%20at%202.46.23%20PM/WhatsApp%20Video%202026-07-09%20at%203.48.35%20PM%20(6).mp4?updatedAt=1783675233458" muted loop playsinline preload="metadata"></video>
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon shams-play-icon">&#9654;</span>
+        </div>
+      </div>
+
+      <div class="shams-gallery-item shams-gallery-video" data-type="video">
+        <video src="https://ik.imagekit.io/tkwyy9ull/WhatsApp%20Unknown%202026-07-10%20at%202.46.23%20PM/WhatsApp%20Video%202026-07-09%20at%203.48.35%20PM%20(17).mp4?updatedAt=1783675233647" muted loop playsinline preload="metadata"></video>
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon shams-play-icon">&#9654;</span>
+        </div>
+      </div>
+
+      <div class="shams-gallery-item shams-gallery-video" data-type="video">
+        <video src="https://ik.imagekit.io/tkwyy9ull/WhatsApp%20Unknown%202026-07-10%20at%202.46.23%20PM/WhatsApp%20Video%202026-07-09%20at%203.48.35%20PM%20(18).mp4?updatedAt=1783675232425" muted loop playsinline preload="metadata"></video>
+        <div class="shams-gallery-overlay">
+          <span class="shams-gallery-icon shams-play-icon">&#9654;</span>
+        </div>
+      </div>
+
+
+
+    </div><!-- /.shams-gallery-grid -->
+
+  </div><!-- /.shams-gallery-container -->
+
+  <!-- LIGHTBOX MODAL -->
+  <div class="shams-lightbox" id="shamsLightbox">
+    <button class="shams-lightbox-close" id="shamsLightboxClose">&times;</button>
+    <div class="shams-lightbox-content" id="shamsLightboxContent"></div>
+  </div>
+
+</section>
+<!-- ===== END GALLERY SECTION ===== -->
+
+
+
+        <!-- cta-area -->
+        <section class="cta__area fix">
+            <div class="cta__bg" data-background="assets/img/images/abou1.jpg"></div>
+            <div class="container">
+                <div class="row align-items-end">
+                    <div class="col-lg-8">
+                        <div class="cta__content">
+                            <h2 class="title">Ready to work with <br> our team?</h2>
+                            <div class="cta__btn">
+                                <a href="contact.html" class="btn btn-two">Let’s build together <img
+                                        src="assets/img/icons/right_arrow.svg" alt="" class="injectable"></a>
+                                <a href="contact.html" class="btn transparent-btn">Contact With Us <img
+                                        src="assets/img/icons/right_arrow.svg" alt="" class="injectable"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="cta__content-right" data-aos="fade-up" data-aos-delay="600">
+                            <h4 class="title">Trusted Supplier of Construction Machinery & Hardware Across India</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cta__shape">
+                <img src="assets/img/images/cta_shape.png" alt="shape" data-aos="fade-down-left" data-aos-delay="400">
+            </div>
+        </section>
+        <!-- cta-area-end -->
+
+    </main>
+    <!-- main-area-end -->
+
+    <!-- footer-area -->
+         <footer class="footer__area">
+        <div class="container">
+            <!-- <div class="footer__features">
+                <a href="contact.html">Commercial Building</a>
+                <a href="contact.html">Remodeling Building</a>
+                <a href="contact.html">Residential Development</a>
+                <a href="contact.html">Architectural Development</a>
+            </div> -->
+            <div class="footer__top">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+                        <div class="footer__widget">
+                            <div class="footer__logo">
+                                <a href="index.html"><img src="assets/img/logo/lOGO.jpg.jpeg" alt="logo" style="max-height:55px;"></a>
+                            </div>
+                            <div class="footer__content">
+                                <p>Your trusted partner for anything in hardware and construction machinery — serving contractors across India since 1969.
+
+                                    </p>
+                            </div>
+                           <div class="footer__social">
+                                <ul class="list-wrap">
+                                    <li><a href="https://www.facebook.com/profile.php?id=61590381431714" target="_blank"><i
+                                                class="fab fa-facebook-f"></i></a></li>
+                                    <!-- <li><a href="https://twitter.com/home" target="_blank"><i
+                                                class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/" target="_blank"><i
+                                                class="fab fa-linkedin-in"></i></a></li> -->
+                                    <li><a href="https://www.instagram.com/shamsconmac_pvt_ltd/" target="_blank"><i
+                                                class="fab fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                            <p style="margin-top:8px;font-size:13px;"><a href="mailto:shamsconmac@gmail.com">shamsconmac@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-3 col-sm-4">
+                        <div class="footer__widget">
+                            <h4 class="footer__widget-title">Useful Links</h4>
+                            <div class="footer__widget-link">
+                                <ul class="list-wrap">
+                                    <li>
+                                        <a href="about.html"><i class="renova-right-arrow"></i><span>About Us</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="products.html"><i class="renova-right-arrow"></i><span>Our
+                                                Products</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="gallery.html"><i class="renova-right-arrow"></i><span>Our
+                                                Gallery</span></a>
+                                    </li>
+                                    <!-- <li>
+                                        <a href="team.html"><i class="renova-right-arrow"></i><span>Our Team</span></a>
+                                    </li> -->
+                                    <li>
+                                        <a href="contact.html"><i class="renova-right-arrow"></i><span>Contact
+                                                Us</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-3 col-sm-6">
+                        <div class="footer__widget">
+                            <h4 class="footer__widget-title">Our Services</h4>
+                            <div class="footer__widget-link">
+                                <ul class="list-wrap">
+                                    <li>
+                                        <a href="services.html"><i
+                                                class="renova-right-arrow"></i><span>Construction Machinery</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="services.html"><i
+                                                class="renova-right-arrow"></i><span>Lifting Equipment</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="services.html"><i
+                                                class="renova-right-arrow"></i><span>Safety Products & Nets</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="services.html"><i
+                                                class="renova-right-arrow"></i><span>Bitumen & Waterproofing</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="services.html"><i
+                                                class="renova-right-arrow"></i><span>Garware Ropes & Tarpaulins</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
+                        <div class="footer__widget">
+                            <h4 class="footer__widget-title">Quick Info</h4>
+                            <div class="footer__widget-link">
+                                <ul class="list-wrap">
+                                    <li>
+                                        <a href="about.html"><i class="renova-right-arrow"></i><span>Our
+                                                Story</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html"><i
+                                                class="renova-right-arrow"></i><span>Appointment</span></a>
+                                    </li>
+                                   
+                                    <li>
+                                        <a href="contact.html"><i class="renova-right-arrow"></i><span>Get in
+                                                touch</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="products.html"><i class="renova-right-arrow"></i><span> Our Products</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-8">
+                        <div class="footer__widget">
+                            <h4 class="footer__widget-title">Newsletter</h4>
+                            <div class="footer__newsletter">
+                                <p>Stay updated with new products, brand arrivals, and special offers from Shams Conmac.</p>
+                                <form action="assets/newsletter.php" class="footer__newsletter-form" id="newsletter-form">
+                                    <input type="email" name="email" placeholder="Email Address" required>
+                                    <button type="submit" class="btn btn-two">Subscribe</button>
+                                    <p class="newsletter-response mb-0"></p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-7">
+                        <div class="copyright-text">
+                            <p>© 2026 Shams Conmac Pvt. Ltd. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                    <!-- <div class="col-md-5">
+                        <div class="footer__bottom-menu">
+                            <ul class="list-wrap">
+                                <li><a href="contact.html">Terms and Conditions</a></li>
+                                <li><a href="contact.html">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer-area-end -->
+
+
+<script>
+    /* ===== SHAMS GALLERY JS ===== */
+(function () {
+
+  // --- Scroll-in animation ---
+  const galleryItems = document.querySelectorAll('.shams-gallery-item');
+
+  const observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  galleryItems.forEach(function (item) {
+    observer.observe(item);
+  });
+
+  // --- Lightbox ---
+  const lightbox    = document.getElementById('shamsLightbox');
+  const lbContent   = document.getElementById('shamsLightboxContent');
+  const lbClose     = document.getElementById('shamsLightboxClose');
+
+  galleryItems.forEach(function (item) {
+    item.addEventListener('click', function () {
+      var type = item.getAttribute('data-type');
+      lbContent.innerHTML = '';
+
+      if (type === 'video') {
+        var vid = item.querySelector('video');
+        if (vid) {
+          var newVid = document.createElement('video');
+          newVid.src      = vid.src;
+          newVid.controls = true;
+          newVid.autoplay = true;
+          newVid.style.maxWidth  = '90vw';
+          newVid.style.maxHeight = '85vh';
+          lbContent.appendChild(newVid);
+        }
+      } else {
+        var img = item.querySelector('img');
+        if (img) {
+          var newImg = document.createElement('img');
+          newImg.src = img.src;
+          newImg.alt = img.alt;
+          lbContent.appendChild(newImg);
+        }
+      }
+
+      lightbox.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  function closeLightbox() {
+    lightbox.classList.remove('active');
+    lbContent.innerHTML = '';
+    document.body.style.overflow = '';
+  }
+
+  lbClose.addEventListener('click', closeLightbox);
+
+  lightbox.addEventListener('click', function (e) {
+    if (e.target === lightbox) closeLightbox();
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeLightbox();
+  });
+
+})();
+/* ===== END SHAMS GALLERY JS ===== */
+</script>
+
+    <!-- JS here -->
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.odometer.min.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.marquee.min.js"></script>
+    <script src="assets/js/tg-cursor.min.js"></script>
+    <script src="assets/js/ajax-form.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/svg-inject.min.js"></script>
+    <script src="assets/js/tween-max.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        SVGInject(document.querySelectorAll("img.injectable"));
+    </script>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/918805441752" target="_blank" rel="noopener noreferrer"
+       style="position:fixed;left:20px;bottom:30px;z-index:9999;display:flex;align-items:center;justify-content:center;width:56px;height:56px;background:#25D366;border-radius:50%;box-shadow:0 4px 12px rgba(0,0,0,0.25);transition:transform 0.2s;"
+       onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="#fff">
+        <path d="M16 2C8.268 2 2 8.268 2 16c0 2.478.649 4.942 1.883 7.115L2 30l7.115-1.867A13.94 13.94 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2zm0 25.6a11.55 11.55 0 0 1-5.892-1.613l-.422-.252-4.222 1.108 1.126-4.107-.276-.435A11.562 11.562 0 0 1 4.4 16C4.4 9.593 9.593 4.4 16 4.4S27.6 9.593 27.6 16 22.407 27.6 16 27.6zm6.34-8.64c-.347-.174-2.055-1.014-2.374-1.13-.319-.116-.551-.174-.783.174-.232.347-.9 1.13-1.103 1.362-.203.232-.406.26-.753.087-.347-.174-1.464-.54-2.788-1.72-1.031-.919-1.727-2.053-1.93-2.4-.203-.347-.022-.535.152-.708.157-.156.347-.406.52-.61.174-.203.232-.347.347-.578.116-.232.058-.435-.029-.61-.087-.174-.783-1.888-1.073-2.587-.283-.68-.57-.587-.783-.598l-.667-.011c-.232 0-.61.087-.928.435-.319.347-1.218 1.19-1.218 2.9s1.247 3.364 1.42 3.597c.174.232 2.452 3.745 5.942 5.252.83.359 1.479.573 1.984.733.833.265 1.592.228 2.191.138.668-.1 2.055-.84 2.345-1.652.29-.812.29-1.508.203-1.652-.086-.145-.318-.232-.665-.406z"/>
+      </svg>
+    </a>
+</body>
+
+</html>

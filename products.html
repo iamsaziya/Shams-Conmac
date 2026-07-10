@@ -1,0 +1,1769 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Shams Conmac Pvt. Ltd.</title>
+    <meta name="description" content="Shams Conmac Pvt. Ltd.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/lOGO.jpg.jpeg">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/fontello.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/default-icons.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/odometer.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/tg-cursor.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    
+    <style>
+         /* ── MEGA MENU DESKTOP ── */
+.navigation .product-mega {
+  display: none;
+  position: absolute !important;
+  top: 100% !important;
+  left: 0 !important;
+  width: 820px !important;
+  flex-direction: row !important;
+  background: #fff !important;
+  border-top: 3px solid #f8b300!important;
+  box-shadow: 0 16px 50px rgba(0,0,0,0.15) !important;
+  padding: 0 !important;
+  z-index: 9999 !important;
+}
+
+.navigation .menu-item-has-children:hover > .product-mega {
+  display: flex !important;
+}
+
+.product-mega > .pd-col {
+  flex: 1;
+  padding: 22px 18px;
+  border-right: 1px solid rgba(0,0,0,0.08);
+  display: block !important;
+  width: auto !important;
+  float: none !important;
+  position: static !important;
+}
+.product-mega > .pd-col:last-child { border-right: none; }
+
+.product-mega .pd-group { margin-bottom: 18px; }
+.product-mega .pd-group:last-of-type { margin-bottom: 0; }
+
+.product-mega .pd-title {
+  display: block;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #f8b300;
+  margin-bottom: 10px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  cursor: default;
+}
+
+.product-mega .pd-group ul {
+  display: block !important;
+  position: static !important;
+  background: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: auto !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  min-width: auto !important;
+}
+
+.product-mega .pd-group ul li {
+  margin-bottom: 7px;
+  padding: 0 !important;
+  border: none !important;
+}
+
+.product-mega .pd-group ul li a {
+  font-size: 12.5px !important;
+  color: #2C2C2A !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 5px !important;
+  padding: 0 !important;
+  line-height: 1.4 !important;
+  background: none !important;
+  transition: color .15s, padding-left .15s !important;
+  white-space: normal !important;
+}
+
+.product-mega .pd-group ul li a::before {
+  content: '›';
+  color: #f8b300;
+  font-size: 15px;
+  line-height: 1.2;
+  flex-shrink: 0;
+}
+
+.product-mega .pd-group ul li a:hover {
+  color: #f8b300!important;
+  padding-left: 3px !important;
+  background: none !important;
+}
+
+.product-mega .pd-quote {
+  display: block;
+  margin-top: 16px;
+  background: #f8b300;
+  color: #fff !important;
+  text-align: center;
+  padding: 10px 14px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background .2s;
+}
+.product-mega .pd-quote:hover { background: #cc4f00; }
+
+/* ── MOBILE OVERRIDES (below 1200px) ── */
+@media (max-width: 1199px) {
+
+  /* reset positioning — stack vertically */
+  .navigation .product-mega,
+  .navigation .menu-item-has-children:hover > .product-mega {
+    display: none !important;
+    position: static !important;
+    width: 100% !important;
+    flex-direction: column !important;
+    box-shadow: none !important;
+    border-top: 2px solid #f8b300!important;
+    padding: 0 !important;
+    background: #fafafa !important;
+  }
+
+  /* shown via JS class */
+  .navigation .menu-item-has-children.pd-mob-open > .product-mega {
+    display: flex !important;
+  }
+
+  .product-mega > .pd-col {
+    padding: 0 !important;
+    border-right: none !important;
+    border-bottom: 1px solid rgba(0,0,0,0.07) !important;
+    width: 100% !important;
+  }
+  .product-mega > .pd-col:last-child { border-bottom: none !important; }
+
+  /* group title — tappable on mobile */
+  .product-mega .pd-title {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 18px !important;
+    margin: 0 !important;
+    border-bottom: 1px solid rgba(0,0,0,0.06) !important;
+    background: #f0ede6;
+    font-size: 11px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .product-mega .pd-title::after {
+    content: '+';
+    font-size: 18px;
+    color: #f8b300;
+    font-weight: 300;
+    flex-shrink: 0;
+    line-height: 1;
+  }
+
+  .product-mega .pd-title.pd-mob-open::after {
+    content: '−';
+  }
+
+  /* hide items by default on mobile */
+  .product-mega .pd-group ul {
+    display: none !important;
+  }
+
+  /* show when open */
+  .product-mega .pd-group ul.pd-mob-items-open {
+    display: flex !important;
+    flex-direction: column;
+    padding: 6px 0 10px 0 !important;
+    background: #fff !important;
+  }
+
+  .product-mega .pd-group ul li {
+    margin: 0 !important;
+    border-bottom: 1px solid rgba(0,0,0,0.04) !important;
+  }
+
+  .product-mega .pd-group ul li a {
+    padding: 9px 18px 9px 32px !important;
+    font-size: 13px !important;
+    color: #555 !important;
+  }
+
+  .product-mega .pd-group ul li a::before {
+    content: '—' !important;
+    font-size: 9px !important;
+    margin-top: 2px;
+  }
+
+  .product-mega .pd-group ul li a:hover {
+    color: #f8b300!important;
+    padding-left: 36px !important;
+    background: #fdf6ee !important;
+  }
+
+  .product-mega .pd-group {
+    margin-bottom: 0 !important;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+  }
+  .product-mega .pd-group:last-of-type { border-bottom: none; }
+
+  /* hide quote button on mobile */
+  .product-mega .pd-quote { display: none !important; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* Override theme sub-menu for mega menu only */
+.navigation .product-mega {
+  display: none;
+  position: absolute !important;
+  top: 100% !important;
+  left: 0 !important;
+  width: 820px !important;
+  flex-direction: row !important;
+  background: #fff !important;
+  border-top: 3px solid #f8b300!important;
+  box-shadow: 0 16px 50px rgba(0,0,0,0.15) !important;
+  padding: 0 !important;
+  z-index: 9999 !important;
+}
+
+/* Show on hover — override theme */
+.navigation .menu-item-has-children:hover > .product-mega {
+  display: flex !important;
+}
+
+/* 3 equal columns */
+.product-mega > .pd-col {
+  flex: 1;
+  padding: 22px 18px;
+  border-right: 1px solid rgba(0,0,0,0.08);
+  display: block !important;
+  width: auto !important;
+  float: none !important;
+  position: static !important;
+}
+.product-mega > .pd-col:last-child { border-right: none; }
+
+/* group spacing */
+.product-mega .pd-group { margin-bottom: 18px; }
+.product-mega .pd-group:last-of-type { margin-bottom: 0; }
+
+/* column title */
+.product-mega .pd-title {
+  display: block;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #f8b300;
+  margin-bottom: 10px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+/* reset theme ul inside mega */
+.product-mega .pd-group ul {
+  display: block !important;
+  position: static !important;
+  background: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: auto !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  min-width: auto !important;
+}
+
+/* links */
+.product-mega .pd-group ul li {
+  margin-bottom: 7px;
+  padding: 0 !important;
+  border: none !important;
+}
+.product-mega .pd-group ul li a {
+  font-size: 12.5px !important;
+  color: #2C2C2A !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 5px !important;
+  padding: 0 !important;
+  line-height: 1.4 !important;
+  background: none !important;
+  transition: color .15s, padding-left .15s !important;
+  white-space: normal !important;
+}
+.product-mega .pd-group ul li a::before {
+  content: '›';
+  color: #f8b300;
+  font-size: 15px;
+  line-height: 1.2;
+  flex-shrink: 0;
+}
+.product-mega .pd-group ul li a:hover {
+  color: #f8b300!important;
+  padding-left: 3px !important;
+  background: none !important;
+}
+
+/* quote button */
+.product-mega .pd-quote {
+  display: block;
+  margin-top: 16px;
+  background: #f8b300;
+  color: #111 !important;
+  text-align: center;
+  padding: 10px 14px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background .2s;
+}
+.product-mega .pd-quote:hover { background: #A87C10; }
+
+
+
+
+
+
+
+
+:root {
+  --gold: #f8b300;
+  --gold-dark: ##f8b300;
+  --black: #111111;
+  --white: #ffffff;
+  --light: #F5F3EE;
+  --muted: #888880;
+  --text: #2C2C2A;
+  --border: rgba(0,0,0,0.1);
+}
+
+.wrap { max-width: 1260px; margin: 0 auto; padding: 0 20px; }
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  font-family: 'Barlow Condensed', sans-serif; font-weight: 700;
+  font-size: 13px; letter-spacing: 1.5px; text-transform: uppercase;
+  cursor: pointer; border: none; padding: 11px 24px;
+  transition: all .2s; white-space: nowrap;
+}
+.btn-gold { background: var(--gold); color: var(--black); }
+.btn-gold:hover { background: var(--gold-dark); }
+.btn-dark { background: var(--black); color: var(--white); }
+.btn-dark:hover { background: #333; }
+
+
+/* LAYOUT */
+.playout { display: flex; flex-direction: column; gap: 28px; padding: 40px 0 70px; align-items: start; }
+@media(min-width: 1024px) { .playout { flex-direction: row; gap: 32px; } }
+
+/* SIDEBAR */
+.sidebar { width: 100%; flex-shrink: 0; }
+@media(min-width: 1024px) { .sidebar { width: 255px; position: sticky; top: 80px; } }
+
+.sb-tog {
+  width: 100%; display: flex; align-items: center; justify-content: space-between;
+  padding: 13px 18px; background: var(--black); color: var(--white);
+  font-family: 'Barlow Condensed', sans-serif; font-size: 14px; font-weight: 700;
+  letter-spacing: 2px; text-transform: uppercase; cursor: pointer; border: none;
+}
+.sb-tog .sta { transition: transform .3s; }
+.sb-tog.stopen .sta { transform: rotate(180deg); }
+@media(min-width: 1024px) { .sb-tog { display: none; } }
+
+.sb-body { display: none; border: 1px solid var(--border); border-top: none; }
+.sb-body.stopen { display: block; }
+@media(min-width: 1024px) { .sb-body { display: block; border: 1px solid var(--border); } }
+
+.sb-hd {
+  background: var(--black); color: var(--white); padding: 13px 18px;
+  font-family: 'Barlow Condensed', sans-serif; font-size: 12px; font-weight: 800;
+  letter-spacing: 3px; text-transform: uppercase; display: none; align-items: center; gap: 8px;
+}
+.sb-hd::before { content: ''; width: 18px; height: 2px; background: var(--gold); }
+@media(min-width: 1024px) { .sb-hd { display: flex; } }
+
+.sbg { border-bottom: 1px solid var(--border); }
+.sbg:last-of-type { border-bottom: none; }
+.sbg-btn {
+  width: 100%; padding: 12px 16px; background: none; border: none; cursor: pointer;
+  display: flex; justify-content: space-between; align-items: center;
+  font-family: 'Barlow Condensed', sans-serif; font-size: 14px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .5px; color: var(--text);
+  transition: background .2s, color .2s; text-align: left; gap: 8px;
+}
+.sbg-btn:hover, .sbg-btn.sopen { color: var(--gold); background: var(--light); }
+.sbg-arr { font-size: 10px; color: var(--muted); transition: transform .25s; flex-shrink: 0; }
+.sbg-btn.sopen .sbg-arr { transform: rotate(180deg); color: var(--gold); }
+
+.sb-sub { display: none; padding: 4px 0 10px 16px; background: var(--light); }
+.sb-sub.sopen { display: block; }
+.sb-sub a {
+  display: flex; align-items: center; gap: 5px;
+  padding: 6px 10px; font-size: 12.5px; color: var(--muted);
+  transition: color .15s; text-decoration: none;
+}
+.sb-sub a::before { content: '—'; font-size: 9px; color: var(--gold); }
+.sb-sub a:hover { color: var(--gold); }
+
+.sb-cta { padding: 16px 18px; background: var(--gold); text-align: center; margin-top: 14px; }
+.sb-cta p { font-size: 12.5px; font-weight: 600; color: var(--black); line-height: 1.5; margin-bottom: 10px; }
+.sb-cta a {
+  display: block; background: var(--black); color: var(--white); padding: 10px;
+  font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 11px;
+  letter-spacing: 2px; text-transform: uppercase; text-decoration: none; transition: background .2s;
+}
+.sb-cta a:hover { background: #333; }
+
+.sb-pdf { padding: 16px 18px; background: var(--light); border: 1px solid var(--border); margin-top: 12px; text-align: center; }
+.sb-pdf p { font-size: 13px; color: var(--text); margin-bottom: 10px; font-weight: 500; line-height: 1.5; }
+
+/* PRODUCTS MAIN */
+.pmain { flex: 1; min-width: 0; }
+
+.ptopbar { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 20px; }
+.ptopbar h2 { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(22px, 4vw, 32px); font-weight: 800; text-transform: uppercase; color: var(--black); }
+.ptopbar h2 span { color: var(--gold); }
+.rcount { font-size: 12.5px; color: var(--muted); margin-top: 2px; }
+
+/* CHIPS */
+.chips { display: flex; gap: 7px; flex-wrap: wrap; margin-bottom: 28px; overflow-x: auto; padding-bottom: 4px; }
+.chip {
+  padding: 6px 13px; font-family: 'Barlow Condensed', sans-serif;
+  font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
+  cursor: pointer; border: 1.5px solid var(--border); background: var(--white);
+  color: var(--muted); transition: all .2s; white-space: nowrap; flex-shrink: 0;
+}
+.chip:hover { border-color: var(--gold); color: var(--gold); }
+.chip.active { background: var(--gold); border-color: var(--gold); color: var(--black); }
+
+/* PRODUCT GROUP */
+.pgroup { margin-bottom: 50px; }
+.pgroup.phide { display: none; }
+
+.gh { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; padding-bottom: 14px; border-bottom: 2px solid var(--light); }
+.gnum { font-family: 'Barlow Condensed', sans-serif; font-size: 52px; font-weight: 800; color: var(--light); line-height: 1; flex-shrink: 0; }
+.glbl { font-size: 10px; letter-spacing: 3px; color: var(--gold); text-transform: uppercase; font-weight: 700; margin-bottom: 3px; }
+.gtitle { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(17px, 2.5vw, 23px); font-weight: 800; text-transform: uppercase; color: var(--black); }
+
+/* PRODUCT GRID */
+.pgrid { display: grid; grid-template-columns: 1fr; gap: 14px; }
+@media(min-width: 480px) { .pgrid { grid-template-columns: repeat(2, 1fr); } }
+@media(min-width: 900px) { .pgrid { grid-template-columns: repeat(3, 1fr); } }
+@media(min-width: 1024px) { .pgrid { grid-template-columns: repeat(2, 1fr); } }
+@media(min-width: 1200px) { .pgrid { grid-template-columns: repeat(3, 1fr); } }
+
+/* PRODUCT CARD */
+.pcard { border: 1px solid var(--border); background: var(--white); overflow: hidden; transition: box-shadow .3s, transform .3s; cursor: pointer; }
+.pcard:hover { box-shadow: 0 8px 28px rgba(0,0,0,0.1); transform: translateY(-4px); }
+
+.cimg { height: 175px; background: var(--light); overflow: hidden; position: relative; display: flex; align-items: center; justify-content: center; }
+.cimg img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s; }
+.pcard:hover .cimg img { transform: scale(1.06); }
+.ccat {
+  position: absolute; top: 10px; left: 10px;
+  background: var(--gold); color: var(--black);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 9px; font-weight: 800; letter-spacing: 2px;
+  text-transform: uppercase; padding: 3px 9px;
+}
+
+.cbody { padding: 14px 15px 17px; }
+.cbody h4 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 15px; font-weight: 700; text-transform: uppercase;
+  color: var(--black); margin-bottom: 6px; line-height: 1.25;
+}
+.cbody p { font-size: 12px; color: var(--muted); line-height: 1.65; margin-bottom: 12px; }
+.cenq {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+  color: var(--gold); background: none; border: none; cursor: pointer; padding: 0;
+  display: flex; align-items: center; gap: 5px; transition: gap .2s;
+}
+.cenq:hover { gap: 10px; }
+
+/* MODAL */
+.moverlay {
+  display: none;
+  position: fixed; inset: 0; background: rgba(0,0,0,0.75);
+  z-index: 99999; align-items: center; justify-content: center;
+  padding: 20px;
+}
+.moverlay.mopen { display: flex; }
+.modal {
+  background: var(--white); width: 100%; max-width: 440px;
+  padding: clamp(22px, 5vw, 38px); position: relative;
+  max-height: 90vh; overflow-y: auto;
+}
+.mcls { position: absolute; top: 12px; right: 16px; background: none; border: none; font-size: 22px; cursor: pointer; color: var(--muted); }
+.modal h3 { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(18px, 4vw, 24px); font-weight: 800; text-transform: uppercase; margin-bottom: 4px; }
+.msub { font-size: 13px; color: var(--muted); margin-bottom: 16px; }
+.mtag {
+  display: inline-block; background: var(--light); padding: 5px 13px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 11px; font-weight: 700; letter-spacing: 1px;
+  text-transform: uppercase; color: var(--gold); margin-bottom: 16px;
+}
+.mform { display: flex; flex-direction: column; gap: 10px; }
+.mform input, .mform textarea {
+  padding: 11px 13px; border: 1px solid var(--border);
+  font-family: 'Barlow', sans-serif; font-size: 13.5px;
+  color: var(--text); background: var(--white);
+  outline: none; transition: border-color .2s; width: 100%;
+}
+.mform input:focus, .mform textarea:focus { border-color: var(--gold); }
+.mform textarea { resize: vertical; min-height: 80px; }
+.msubmit {
+  width: 100%; padding: 13px; background: var(--gold); color: var(--black);
+  font-family: 'Barlow Condensed', sans-serif; font-weight: 800;
+  font-size: 13px; letter-spacing: 2px; text-transform: uppercase;
+  border: none; cursor: pointer; transition: background .2s;
+}
+.msubmit:hover { background: var(--gold-dark); }
+    </style>
+</head>
+
+<body>
+
+    <!--Preloader-->
+    <div id="preloader">
+        <div id="loader" class="loader">
+            <div class="loader-container">
+                <div class="loader-icon"><img src="assets/img/logo/lOGO.jpg.jpeg" alt="Preloader"></div>
+            </div>
+        </div>
+    </div>
+    <!--Preloader-end -->
+
+    <!-- Scroll-top -->
+    <button class="scroll__top scroll-to-target" data-target="html">
+        <i class="renova-up-arrow"></i>
+    </button>
+    <!-- Scroll-top-end-->
+
+    <!-- header-area -->
+        <header>
+        <!-- <div class="tg-header__top">
+            <div class="container custom-container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4">
+                        <div class="tg-header__top-menu">
+                            <ul class="list-wrap">
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="contact.html">Careers</a></li>
+                                <li><a href="contact.html">Insights</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="tg-header__top-delivery">
+                            <p>Express delivery and free returns within 24 hours</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="tg-header__top-social">
+                            <ul class="list-wrap">
+                                <li><a href="https://www.facebook.com/" target="_blank">FB</a></li>
+                                <li><a href="https://twitter.com/home" target="_blank">TW</a></li>
+                                <li><a href="https://www.linkedin.com/" target="_blank">LI</a></li>
+                                <li><a href="https://www.instagram.com/" target="_blank">IN</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div id="header-fixed-height"></div>
+        <div id="sticky-header" class="tg-header__area">
+            <div class="container custom-container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="tgmenu__wrap">
+                            <nav class="tgmenu__nav">
+                                <div class="offCanvas-toggle">
+                                    <a href="javascript:void(0)" class="menu-tigger">
+                                        <img src="assets/img/icons/bar_icon.svg" alt="" class="injectable">
+                                    </a>
+                                </div>
+                                <div class="logo">
+                                    
+                                    <a href="index.html"><img src="assets/img/logo/lOGO.jpg.jpeg" alt="Logo" style="max-height:70px;"></a>
+                                </div>
+                                <div class="tgmenu__navbar-wrap tgmenu__main-menu d-none d-xl-flex">
+                                    <ul class="navigation">
+                                        <li class=" menu-item-has"><a href="index.html">Home</a>
+                                        </li>
+                                        <li class="menu-item-has"><a href="about.html">About Us</a>
+                                        </li>
+                                        <li class="menu-item-has"><a href="gallery.html">Gallery</a>
+                                        </li>
+                                        
+                                        <li class=" active menu-item-has-children">
+  <a href="products.html">Products</a>
+  <ul class="sub-menu product-mega">
+    <li class="pd-col">
+      <div class="pd-group">
+        <span class="pd-title">Concrete &amp; Mixing</span>
+        <ul>
+          <li><a href="products.html#g1">Concrete Mixer</a></li>
+          <li><a href="products.html#g1">Mortar Mixer</a></li>
+        </ul>
+      </div>
+      <div class="pd-group">
+        <span class="pd-title">Steel &amp; Bar Working</span>
+        <ul>
+          <li><a href="products.html#g2">Bar Bending Machine</a></li>
+          <li><a href="products.html#g2">Bar Cutting Machine</a></li>
+          <li><a href="products.html#g2">Ring Making Machine</a></li>
+          <li><a href="products.html#g2">CNC Stirrup Bender</a></li>
+          <li><a href="products.html#g2">Thread Rolling Machine</a></li>
+          <li><a href="products.html#g2">Decoiling Machine</a></li>
+          <li><a href="products.html#g2">Scrap Straightening Machine</a></li>
+          <li><a href="products.html#g2">Rebar Tying Tool</a></li>
+        </ul>
+      </div>
+      <div class="pd-group">
+        <span class="pd-title">Rail Track Tools</span>
+        <ul>
+          <li><a href="products.html#g3">Rail Track Cutting Machine</a></li>
+          <li><a href="products.html#g3">Rail Track Jack</a></li>
+          <li><a href="products.html#g3">Rail Track Drilling Machine</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="pd-col">
+      <div class="pd-group">
+        <span class="pd-title">Vibrators</span>
+        <ul>
+          <li><a href="products.html#g4">Concrete Vibrators</a></li>
+          <li><a href="products.html#g4">High Frequency Vibrators</a></li>
+          <li><a href="products.html#g4">Portable Needle Vibrator</a></li>
+          <li><a href="products.html#g4">Platform Vibrators</a></li>
+          <li><a href="products.html#g4">Screed Vibrators</a></li>
+          <li><a href="products.html#g4">Shutter Vibrators</a></li>
+          <li><a href="products.html#g4">Wacker Neuson</a></li>
+        </ul>
+      </div>
+      <div class="pd-group">
+        <span class="pd-title">Soil Compaction</span>
+        <ul>
+          <li><a href="products.html#g5">Soil Compactors</a></li>
+          <li><a href="products.html#g5">Tamping Rammer</a></li>
+          <li><a href="products.html#g5">Earth Compactor</a></li>
+          <li><a href="products.html#g5">Vibrator Roller</a></li>
+          <li><a href="products.html#g5">Vibratory Paver Roller</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="pd-col">
+      <div class="pd-group">
+        <span class="pd-title">Surface Finishing</span>
+        <ul>
+          <li><a href="products.html#g6">Power Trowels</a></li>
+          <li><a href="products.html#g6">Bullfloat</a></li>
+          <li><a href="products.html#g6">Truss Screed</a></li>
+          <li><a href="products.html#g6">Plaster Spray Machine</a></li>
+        </ul>
+      </div>
+      <div class="pd-group">
+        <span class="pd-title">Cutting &amp; Civil Lab</span>
+        <ul>
+          <li><a href="products.html#g7">Concrete Groove Cutter</a></li>
+          <li><a href="products.html#g7">Brick Cutting Machine</a></li>
+          <li><a href="products.html#g8">Total Station &amp; Auto Level</a></li>
+          <li><a href="products.html#g8">Cube Moulds &amp; CTM Machine</a></li>
+          <li><a href="products.html#g8">Slump Cone &amp; Lab Tools</a></li>
+        </ul>
+      </div>
+      <div class="pd-group">
+        <span class="pd-title">Lifting, Winches &amp; Pumps</span>
+        <ul>
+          <li><a href="products.html#g9">Hoist &amp; Mini Crane</a></li>
+          <li><a href="products.html#g9">Chain Blocks</a></li>
+          <li><a href="products.html#g9">Electric Winch</a></li>
+          <li><a href="products.html#g9">Lifting Accessories</a></li>
+          <li><a href="products.html#g10">Grout &amp; Dewatering Pumps</a></li>
+          <li><a href="products.html#g11">Accessories &amp; Ropes</a></li>
+          <li><a href="products.html#g11">Expansion Joint Boards</a></li>
+        </ul>
+      </div>
+      <a href="products.html" class="pd-quote">View All Products →</a>
+    </li>
+  </ul>
+</li>
+
+
+                                        <!-- <li class="menu-item-has-children"><a href="#">Shop</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="shop.html">Shop Page</a></li>
+                                                <li><a href="shop-details.html">Shop Details</a></li>
+                                            </ul>
+                                        </li> -->
+                                        <!-- <li class="menu-item-has-children"><a href="#">Portfolio</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="products.html ">Portfolio Page</a></li>
+                                                <li><a href="project-details.html">Portfolio Details</a></li>
+                                            </ul>
+                                        </li> -->
+                                        <!-- <li class="menu-item-has-children"><a href="#">Blog</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="blog.html">Blog Standard</a></li>
+                                                <li><a href="blog-2.html">Blog List</a></li>
+                                                <li><a href="blog-3.html">Blog Grid</a></li>
+                                                <li><a href="blog-details.html">Blog Details</a></li>
+                                            </ul>
+                                        </li> -->
+                                        <li class="menu-item-has"><a href="contact.html">Contact Us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- <div class="tgmenu__action">
+                                    <ul class="list-wrap">
+
+
+                                        <li class="header-btn">
+                                            <a href="contact.html" class="btn border-btn">Get In Touch</a>
+                                        </li>
+                                    </ul>
+                                </div> -->
+                                <div class="mobile-nav-toggler"><i class="tg-flaticon-menu-1"></i></div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu  -->
+        <div class="tgmobile__menu">
+            <nav class="tgmobile__menu-box">
+                <div class="close-btn"><i class="tg-flaticon-close-1"></i></div>
+                <div class="nav-logo">
+                    <a href="index.html"><img src="assets/img/logo/lOGO.jpg.jpeg" alt="Logo"></a>
+                </div>
+
+                <div class="tgmobile__menu-outer">
+                    <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+                </div>
+                <div class="social-links">
+                    <ul class="list-wrap">
+                        <li><a href="https://www.facebook.com/profile.php?id=61590381431714"><i class="fab fa-facebook-f"></i></a></li>
+                        <!-- <li><a href="#"><i class="fab fa-twitter"></i></a></li> -->
+                        <li><a href="https://www.instagram.com/shamsconmac_pvt_ltd/"><i class="fab fa-instagram"></i></a></li>
+                                <!-- <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube"></i></a></li> -->
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="tgmobile__menu-backdrop"></div>
+        <!-- End Mobile Menu -->
+
+        <!-- header-search -->
+        <div class="search__popup">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="search__wrapper">
+                            <div class="search__close">
+                                <button type="button" class="search-close-btn">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17 1L1 17" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M1 1L17 17" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="search__form">
+                                <form action="#">
+                                    <div class="search__input">
+                                        <input class="search-input-field" type="text" placeholder="Type keywords here">
+                                        <span class="search-focus-border"></span>
+                                        <button>
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.55 18.1C14.272 18.1 18.1 14.272 18.1 9.55C18.1 4.82797 14.272 1 9.55 1C4.82797 1 1 4.82797 1 9.55C1 14.272 4.82797 18.1 9.55 18.1Z"
+                                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                                <path d="M19.0002 19.0002L17.2002 17.2002" stroke="currentColor"
+                                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search-popup-overlay"></div>
+        <!-- header-search-end -->
+
+        <!-- offCanvas-menu -->
+        <div class="offCanvas__info">
+            <div class="offCanvas__close-icon menu-close">
+                <button><i class="far fa-window-close"></i></button>
+            </div>
+            <div class="offCanvas__logo mb-30">
+                <a href="index.html"><img src="assets/img/logo/lOGO.jpg.jpeg" alt="Logo"></a>
+            </div>
+            <div class="offCanvas__side-info mb-30">
+                <div class="contact-list mb-30">
+                    <h4>Address</h4>
+                    <p>Gut No 31, Mitmita, Sharnapur Phata, Near Daultabad Tee Point Chh Sambhajinagar 431002</p>
+                </div>
+              <div class="contact-list mb-30">
+                    <h4>Phone Number</h4>
+                    <p>
+Main Office <br>
+
++91 954541752 <br>
++91 8007991752
+<br>
+Sales
+
++91 8805441752</p>
+                </div>
+                <div class="contact-list mb-30">
+                    <h4>Email Address</h4>
+                    <p>shamsconmac@gmail.com</p>
+                </div>
+            </div>
+            <!-- <div class="offCanvas__social-icon mt-30">
+                <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
+                <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
+                <a href="javascript:void(0)"><i class="fab fa-google-plus-g"></i></a>
+                <a href="javascript:void(0)"><i class="fab fa-instagram"></i></a>
+            </div> -->
+        </div>
+        <div class="offCanvas__overly"></div>
+        <!-- offCanvas-menu-end -->
+
+    </header>
+    <!-- header-area-end -->
+
+
+<!-- breadcrumb-area -->
+<div class="breadcrumb__area breadcrumb__bg" data-background="assets/img/images/ban6.jpeg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb__content">
+                    <h2 class="title">Our Products</h2>
+                    <nav class="breadcrumb">
+                        <span property="itemListElement" typeof="ListItem">
+                            <a href="index.html">Home</a>
+                        </span>
+                        <span class="breadcrumb-separator">/</span>
+                        <span property="itemListElement" typeof="ListItem">Our Products</span>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- breadcrumb-area-end -->
+
+<!-- PRODUCTS LAYOUT -->
+<div class="wrap">
+  <div class="playout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <button class="sb-tog" id="sbTog" onclick="toggleSb()">
+        <span>Filter by Category</span>
+        <span class="sta">&#9660;</span>
+      </button>
+      <div class="sb-body" id="sbBody">
+        <div class="sb-hd">Product Categories</div>
+
+        <div class="sbg">
+          <button class="sbg-btn sopen" onclick="toggleSbG(this,'sg1')">
+            Concrete &amp; Mixing <span class="sbg-arr">&#9660;</span>
+          </button>
+          <div class="sb-sub sopen" id="sg1">
+            <a href="#g1" onclick="filterGroup('mixing',null,true)">Concrete Mixer</a>
+            <a href="#g1" onclick="filterGroup('mixing',null,true)">Mortar Mixer</a>
+          </div>
+        </div>
+
+        <div class="sbg">
+          <button class="sbg-btn" onclick="toggleSbG(this,'sg2')">
+            Steel &amp; Bar Working <span class="sbg-arr">&#9660;</span>
+          </button>
+          <div class="sb-sub" id="sg2">
+            <a href="#g2" onclick="filterGroup('steel',null,true)">Bar Bending Machine</a>
+            <a href="#g2" onclick="filterGroup('steel',null,true)">Bar Cutting Machine</a>
+            <a href="#g2" onclick="filterGroup('steel',null,true)">Ring Making Machine</a>
+            <a href="#g2" onclick="filterGroup('steel',null,true)">CNC Stirrup Bender</a>
+            <a href="#g2" onclick="filterGroup('steel',null,true)">Thread Rolling Machine</a>
+            <a href="#g2" onclick="filterGroup('steel',null,true)">Decoiling Machine</a>
+            <a href="#g2" onclick="filterGroup('steel',null,true)">Scrap Straightening Machine</a>
+            <a href="#g2" onclick="filterGroup('steel',null,true)">Rebar Tying Tool</a>
+          </div>
+        </div>
+
+        <div class="sbg">
+          <button class="sbg-btn" onclick="toggleSbG(this,'sg3')">
+            Rail Track Tools <span class="sbg-arr">&#9660;</span>
+          </button>
+          <div class="sb-sub" id="sg3">
+            <a href="#g3" onclick="filterGroup('rail',null,true)">Rail Track Cutting Machine</a>
+            <a href="#g3" onclick="filterGroup('rail',null,true)">Rail Track Jack</a>
+            <a href="#g3" onclick="filterGroup('rail',null,true)">Rail Track Drilling Machine</a>
+          </div>
+        </div>
+
+        <div class="sbg">
+          <button class="sbg-btn" onclick="toggleSbG(this,'sg4')">
+            Vibrators &amp; Compaction <span class="sbg-arr">&#9660;</span>
+          </button>
+          <div class="sb-sub" id="sg4">
+            <a href="#g4" onclick="filterGroup('vibrators',null,true)">Concrete Vibrators</a>
+            <a href="#g4" onclick="filterGroup('vibrators',null,true)">High Frequency Vibrators</a>
+            <a href="#g4" onclick="filterGroup('vibrators',null,true)">Portable Needle Vibrator</a>
+            <a href="#g4" onclick="filterGroup('vibrators',null,true)">Platform Vibrators</a>
+            <a href="#g4" onclick="filterGroup('vibrators',null,true)">Screed Vibrators</a>
+            <a href="#g4" onclick="filterGroup('vibrators',null,true)">Shutter Vibrators</a>
+            <a href="#g4" onclick="filterGroup('vibrators',null,true)">Wacker Neuson</a>
+          </div>
+        </div>
+
+        <div class="sbg">
+          <button class="sbg-btn" onclick="toggleSbG(this,'sg5')">
+            Soil Compaction <span class="sbg-arr">&#9660;</span>
+          </button>
+          <div class="sb-sub" id="sg5">
+            <a href="#g5" onclick="filterGroup('compaction',null,true)">Soil Compactors</a>
+            <a href="#g5" onclick="filterGroup('compaction',null,true)">Tamping Rammer</a>
+            <a href="#g5" onclick="filterGroup('compaction',null,true)">Earth Compactor</a>
+            <a href="#g5" onclick="filterGroup('compaction',null,true)">Vibrator Roller</a>
+            <a href="#g5" onclick="filterGroup('compaction',null,true)">Paver Roller</a>
+          </div>
+        </div>
+
+        <div class="sbg">
+          <button class="sbg-btn" onclick="toggleSbG(this,'sg6')">
+            Surface Finishing <span class="sbg-arr">&#9660;</span>
+          </button>
+          <div class="sb-sub" id="sg6">
+            <a href="#g6" onclick="filterGroup('finishing',null,true)">Power Trowels</a>
+            <a href="#g6" onclick="filterGroup('finishing',null,true)">Bullfloat</a>
+            <a href="#g6" onclick="filterGroup('finishing',null,true)">Truss Screed</a>
+            <a href="#g6" onclick="filterGroup('finishing',null,true)">Plaster Spray Machine</a>
+          </div>
+        </div>
+
+        <div class="sbg">
+          <button class="sbg-btn" onclick="toggleSbG(this,'sg7')">
+            Cutting Machines <span class="sbg-arr">&#9660;</span>
+          </button>
+          <div class="sb-sub" id="sg7">
+            <a href="#g7" onclick="filterGroup('cutting',null,true)">Concrete Groove Cutter</a>
+            <a href="#g7" onclick="filterGroup('cutting',null,true)">Brick Cutting Machine</a>
+          </div>
+        </div>
+
+        <div class="sbg">
+          <button class="sbg-btn" onclick="toggleSbG(this,'sg8')">
+            Civil Lab Equipment <span class="sbg-arr">&#9660;</span>
+          </button>
+          <div class="sb-sub" id="sg8">
+            <a href="#g8" onclick="filterGroup('testing',null,true)">Total Station</a>
+            <a href="#g8" onclick="filterGroup('testing',null,true)">Auto Level NL24</a>
+            <a href="#g8" onclick="filterGroup('testing',null,true)">Cube Moulds (ISI &amp; Non-ISI)</a>
+            <a href="#g8" onclick="filterGroup('testing',null,true)">CTM Machine</a>
+            <a href="#g8" onclick="filterGroup('testing',null,true)">Slump Cone</a>
+            <a href="#g8" onclick="filterGroup('testing',null,true)">Mini Concrete Mixer (Lab)</a>
+            <a href="#g8" onclick="filterGroup('testing',null,true)">Grouting Pumps</a>
+          </div>
+        </div>
+
+        <div class="sbg">
+          <button class="sbg-btn" onclick="toggleSbG(this,'sg9')">
+            Lifting &amp; Access <span class="sbg-arr">&#9660;</span>
+          </button>
+          <div class="sb-sub" id="sg9">
+            <a href="#g9" onclick="filterGroup('lifting',null,true)">Hoist &amp; Mini Crane</a>
+            <a href="#g9" onclick="filterGroup('lifting',null,true)">Suspended Platform</a>
+            <a href="#g9" onclick="filterGroup('lifting',null,true)">Tough Riders</a>
+            <a href="#g9" onclick="filterGroup('lifting',null,true)">Chain Blocks</a>
+            <a href="#g9" onclick="filterGroup('lifting',null,true)">Electric Winch / Hoist</a>
+            <a href="#g9" onclick="filterGroup('lifting',null,true)">Manual Winch</a>
+            <a href="#g9" onclick="filterGroup('lifting',null,true)">Lifting Accessories</a>
+            <a href="#g9" onclick="filterGroup('lifting',null,true)">Mini Lift</a>
+          </div>
+        </div>
+
+        <div class="sbg">
+          <button class="sbg-btn" onclick="toggleSbG(this,'sg10')">
+            Pumps &amp; Water <span class="sbg-arr">&#9660;</span>
+          </button>
+          <div class="sb-sub" id="sg10">
+            <a href="#g10" onclick="filterGroup('pumps',null,true)">Grout Pumps</a>
+            <a href="#g10" onclick="filterGroup('pumps',null,true)">Dewatering Pumps</a>
+            <a href="#g10" onclick="filterGroup('pumps',null,true)">Water Pump</a>
+          </div>
+        </div>
+
+        <div class="sbg">
+          <button class="sbg-btn" onclick="toggleSbG(this,'sg11')">
+            Construction Accessories <span class="sbg-arr">&#9660;</span>
+          </button>
+          <div class="sb-sub" id="sg11">
+            <a href="#g11" onclick="filterGroup('accessories',null,true)">Expansion Joint Boards</a>
+            <a href="#g11" onclick="filterGroup('accessories',null,true)">Ropes &amp; Safety Nets</a>
+          </div>
+        </div>
+
+        <div class="sb-cta">
+          <p>Need a quote for bulk orders or full site supply?</p>
+          <a href="contact.html">Get a Free Quote</a>
+        </div>
+      </div>
+
+      <!-- <div class="sb-pdf">
+        <p>Download our complete product catalogue</p>
+        <a href="#" class="btn btn-gold">Download PDF</a>
+      </div> -->
+    </aside>
+
+    <!-- PRODUCTS MAIN -->
+    <main class="pmain">
+
+      <div class="ptopbar">
+        <div>
+          <h2>All <span>Products</span></h2>
+          <div class="rcount" id="rcount">Showing all 12 product categories — 50+ products</div>
+        </div>
+        <button class="btn btn-dark" onclick="filterGroup('all')">Show All</button>
+      </div>
+
+      <!-- FILTER CHIPS -->
+      <div class="chips">
+        <div class="chip active" onclick="filterGroup('all',this)">All Products</div>
+        <div class="chip" onclick="filterGroup('mixing',this)">Concrete &amp; Mixing</div>
+        <div class="chip" onclick="filterGroup('steel',this)">Steel &amp; Bar</div>
+        <div class="chip" onclick="filterGroup('rail',this)">Rail Track</div>
+        <div class="chip" onclick="filterGroup('vibrators',this)">Vibrators</div>
+        <div class="chip" onclick="filterGroup('compaction',this)">Soil Compaction</div>
+        <div class="chip" onclick="filterGroup('finishing',this)">Surface Finishing</div>
+        <div class="chip" onclick="filterGroup('cutting',this)">Cutting</div>
+        <div class="chip" onclick="filterGroup('testing',this)">Civil Lab</div>
+        <div class="chip" onclick="filterGroup('lifting',this)">Lifting</div>
+        <div class="chip" onclick="filterGroup('pumps',this)">Pumps</div>
+        <div class="chip" onclick="filterGroup('accessories',this)">Accessories</div>
+      </div>
+
+      <!-- GROUP 1: Concrete & Mixing Equipment -->
+      <div class="pgroup" id="g1" data-group="mixing">
+        <div class="gh"><div class="gnum">01</div><div><div class="glbl">Category 01</div><div class="gtitle">Concrete & Mixing Equipment</div></div></div>
+        <div class="pgrid">
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/services/concreteM.jpeg" alt="Concrete Mixer"><div class="ccat">Mixing</div></div>
+            <div class="cbody"><h4>Concrete Mixer</h4><p>ABLE 250L VET Mixer With 2HP 1PH Crompton Electric Motor (Tilting Type) · ABLE Mini Mixer With 2HP 1PH Crompton / Godrej Electric Motor (Tilting Type) (Metal Wheel) · ORANGE Mini Mixer 240L With Electric Motor</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/products/mortar-mixer.png" alt="Mortar Mixer"><div class="ccat">Mixing</div></div>
+            <div class="cbody"><h4>Mortar Mixer</h4><p>Orange Mortar Mixer Multi Functional Portable</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GROUP 2: Steel & Bar Working Machines -->
+      <div class="pgroup" id="g2" data-group="steel">
+        <div class="gh"><div class="gnum">02</div><div><div class="glbl">Category 02</div><div class="gtitle">Steel & Bar Working Machines</div></div></div>
+        <div class="pgrid">
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/services/barB.jpeg" alt="Bar Bending Machine"><div class="ccat">Steel</div></div>
+            <div class="cbody"><h4>Bar Bending Machine</h4><p>BLUELINE Bar Bending B-50/GW50 (upto 40mm) · BLUELINE Bar Bending B-42/GW42-A (STANDARD) (upto 32mm) · BLUELINE HB-32 Hydraulic Steel Bar Bending &amp; Crimping Power Pack Model (upto 32mm)</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/services/barcutting.jpeg" alt="Bar Cutting Machine"><div class="ccat">Steel</div></div>
+            <div class="cbody"><h4>Bar Cutting Machine</h4><p>BLUELINE Bar Cutting C-50/GQ50 With Base Frame &amp; Siemens Starter (upto 40mm) · BLUELINE Bar Cutting C-40/GQ40 (Heavy) With Base Frame &amp; Starter (upto 32mm) · BLUELINE Bar Cutting C-40/GQ40I (INDIAN MAKE) (upto 32mm)</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/product/ring.webp" alt="Ring Making Machine"><div class="ccat">Steel</div></div>
+            <div class="cbody"><h4>Ring Making Machine</h4><p>BLUELINE Ring Making GF20 3 PHASE 415V (Digital Type) New Model (PIN SYSTEM)(upto 16mm) · BLUELINE Ring Making GF20 1 PHASE 220V (Digital Type) Heavy Model (upto 16mm) · BLUELINE Ring Making GF20 1 PHASE 220V (Limit Type) Heavy Model (upto 16mm)</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/product/cnc.png" alt="CNC Steel Bar Stirrup Bender"><div class="ccat">Steel</div></div>
+            <div class="cbody"><h4>CNC Steel Bar Stirrup Bender</h4><p>BLUELINE CNC STEEL BAR STIRRUP BENDER ORW14A (Chinese Servo Motor) Without Pay Off (Upto 12mm) · BLUELINE CNC STEEL BAR STIRRUP BENDER ORW10A (Without Pay Off) (Upto 10mm) · BLUELINE CNC STEEL BAR STIRRUP BENDER ORW12A Inbuilt Compressor (Without Pay Off) (Upto 10mm)</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/services/barTreading.jpeg" alt="Thread Rolling Machine"><div class="ccat">Steel</div></div>
+            <div class="cbody"><h4>Thread Rolling Machine</h4><p>SMT-40 Threading Machine, Max Thread Length (80-120)mm. (SENSOR TYPE) (Heavy Model) (3 Set Roller) · SMT-40 Threading Machine, Max Thread Length (80-120)mm. (LIMIT TYPE) (Eco Model) (2 Set Roller) · SEMI AUTOMATIC Threading Machine (Sensor Type) (Automatic Forward &amp; Reverse) (3 Set Roller)</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/services/barstraightM.jpeg" alt="Decoiling Machine"><div class="ccat">Steel</div></div>
+            <div class="cbody"><h4>Decoiling Machine</h4><p>GTQ4-12A Decoiling &amp; Straightening 7.5KW upto 12mm · GTQ4-14 Decoiling &amp; Straightening 16KW 14mm · GTQ4-12A Decoiling &amp; Straightening 7.5KW Economical upto 10mm</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/services/barcutter.jpeg" alt="Scrap Straightening Machine"><div class="ccat">Steel</div></div>
+            <div class="cbody"><h4>Scrap Straightening Machine</h4><p>Scrap Straightening Upto 6-14mm (With Cutter) · Scrap Straightening upto 14-25mm (No Cutter)</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/products/rebar-tying.jpg" alt="Rebar Tying Tool"><div class="ccat">Steel</div></div>
+            <div class="cbody"><h4>Rebar Tying Tool</h4><p>Tying Tool (German Quality) — Automatic battery-powered rebar tying tool for fast, consistent wire tying of steel reinforcement bars on large RCC slabs.</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GROUP 3: Rail Track Machine & Tools -->
+      <div class="pgroup" id="g3" data-group="rail">
+        <div class="gh"><div class="gnum">03</div><div><div class="glbl">Category 03</div><div class="gtitle">Rail Track Machine & Tools</div></div></div>
+        <div class="pgrid">
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/services/rail2.jpeg" alt="Rail Track Cutting Machine"><div class="ccat">Rail Track</div></div>
+            <div class="cbody"><h4>Rail Track Cutting Machine</h4><p>Heavy-duty rail track cutting machine designed for precise on-site cutting of railway tracks and steel rail sections on construction and maintenance projects.</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/services/rail1.jpeg" alt="Rail Profile Drilling Machine"><div class="ccat">Rail Track</div></div>
+            <div class="cbody"><h4>Rail track jack</h4><p>Portable rail profile drilling machine for drilling bolt holes and fastener positions in rail tracks with precision and efficiency during track laying and maintenance.</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/services/rail3.jpeg" alt="Rail Ballast Tamping Machine"><div class="ccat">Rail Track</div></div>
+            <div class="cbody"><h4>Rail track drilling  machine</h4><p>Motorised rail ballast tamping machine for compacting and consolidating track ballast beneath rail sleepers to ensure stable, aligned track geometry.</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GROUP 4: Vibrators & Compaction Equipment -->
+      <div class="pgroup" id="g4" data-group="vibrators">
+        <div class="gh"><div class="gnum">04</div><div><div class="glbl">Category 04</div><div class="gtitle">Vibrators & Compaction Equipment</div></div></div>
+        <div class="pgrid">
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/services/vibr.jpeg" alt="Concrete Vibrators"><div class="ccat">Vibrators</div></div>
+            <div class="cbody"><h4>Concrete Vibrators</h4><p>ABLE Concrete Diesel Engine Concrete Vibrator · Concrete Vibrator Greaves 2HP MK12 Petrol Engine · Concrete Vibrator Honda GX - Petrol Engine</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/product/high.jpg" alt="High Frequency Concrete Vibrators"><div class="ccat">Vibrators</div></div>
+            <div class="cbody"><h4>High Frequency Concrete Vibrators</h4><p>ORANGE X-MAN DINGO (Thread Model) · Orange X Man (lock model) Series · Orange hippo portable (Killick type) vibrators</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/product/needle.jpg" alt="Portable Concrete Needle Vibrator"><div class="ccat">Vibrators</div></div>
+            <div class="cbody"><h4>Portable Concrete Needle Vibrator</h4><p>ORANGE HANDY VIBRATOR — Compact portable needle vibrator for compacting concrete in tight areas, columns, and precast elements.</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/product/platformV.jpg" alt="Platform Vibrator"><div class="ccat">Vibrators</div></div>
+            <div class="cbody"><h4>Platform Vibrator</h4><p>Able Platform Vibrator · ABLE New Type 2 In 1 Platform Vibrator · Able Platform Inclined Vibrator — for vibrating precast moulds, paver blocks, and kerb stone casting units.</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/product/scred.png" alt="Screed Vibrators"><div class="ccat">Vibrators</div></div>
+            <div class="cbody"><h4>Screed Vibrators</h4><p>ABLE 4.2Mtr Long Double Beam Screed Vibrator (Electric Shutter) With 2HP 1Phase · ABLE 4.2Mtr Long Single Beam Screed Vibrator (Engine Mounted) With Husqvarna HH Petrol Engine · ABLE 4.2Mtr Long Double Beam Screed Vibrator (Engine Mounted) With Greaves 2HP MK12 Petrol Engine</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/product/able.jpg" alt="Able Shutter Vibrator"><div class="ccat">Vibrators</div></div>
+            <div class="cbody"><h4>Able Shutter Vibrator</h4><p>Imported Shutter Vibrator 2HP 1Phase 220V · AB-5 Portable Handy Shutter Vibrator 1 Phase — External vibrators clamped to formwork for compacting thin walls and columns.</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/product/wacker.jpg" alt="WACKER NEUSON Vibrators"><div class="ccat">Vibrators</div></div>
+            <div class="cbody"><h4>WACKER NEUSON Vibrators</h4><p>WACKER NEUSON IRFU High Frequency Integrated Converter Internal Vibrators "Premium Version" · WACKER NEUSON IEC High Frequency "Economical Version" · WACKER NEUSON HMS Series Modular Internal Vibrators</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GROUP 5: Soil Compaction & Ground Work -->
+      <div class="pgroup" id="g5" data-group="compaction">
+        <div class="gh"><div class="gnum">05</div><div><div class="glbl">Category 05</div><div class="gtitle">Soil Compaction & Ground Work</div></div></div>
+        <div class="pgrid">
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/services/earthpowercom.jpeg" alt="Soil Compactors"><div class="ccat">Compaction</div></div>
+            <div class="cbody"><h4>Soil Compactors</h4><p>ABLE AVC 40 (5TON) COMPACTOR With Greaves 5HP 1520 Diesel Engine · ORANGE OR-25 (3TON) COMPACTOR WITH WATER TANK With 3HP 3Phase Hindustan / Eltek Electric Motor · ABLE AVC 40 (5TON) COMPACTOR With 5HP 3Phase Crompton Electric Motor</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/services/tamp.jpeg" alt="Tamping Rammer"><div class="ccat">Compaction</div></div>
+            <div class="cbody"><h4>Tamping Rammer</h4><p>OR-80 Tamping Rammer (Heavy Model) With Honda GX160 5HP Petrol Engine · OR-80 Tamping Rammer (Economical Model) With HONDA (INDIAN) GX160 5HP Petrol Engine · OR-80 Tamping Rammer (Heavy Model) With Diesel Engine Rope Start</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/services/earthcom.jpeg" alt="Earth Compactor"><div class="ccat">Compaction</div></div>
+            <div class="cbody"><h4>Earth Compactor / Mini Compactor</h4><p>Earth Compactor · Mini Compactor — Engine-powered vibratory plate compactors for granular soils, gravel, and sub-base layers on site.</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/services/minirolll.jpeg" alt="Vibrator Roller"><div class="ccat">Compaction</div></div>
+            <div class="cbody"><h4>Vibrator Roller</h4><p>SMT-600 ORANGE Single Drum Roller With Greaves 5HP Diesel Engine · SMT-600 ORANGE Single Drum Roller With Honda GX160 5HP Petrol Engine · SMT-600 ORANGE DOUBLE DRUM ROLLER, 6.5HP CF178 CHANGFA DIESEL ENGINE</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/product/paver.png" alt="Vibratory Paver Roller"><div class="ccat">Compaction</div></div>
+            <div class="cbody"><h4>Vibratory Paver Roller</h4><p>ORANGE Vibratory Paver Roller 5.5mt with 8 Vibrators — Heavy-duty roller for uniform compaction and smooth surface finish on large asphalt road paving projects.</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GROUP 6: Surface Finishing Equipment -->
+      <div class="pgroup" id="g6" data-group="finishing">
+        <div class="gh"><div class="gnum">06</div><div><div class="glbl">Category 06</div><div class="gtitle">Surface Finishing Equipment</div></div></div>
+        <div class="pgrid">
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/services/powertroll.jpeg" alt="Power Trowels"><div class="ccat">Finishing</div></div>
+            <div class="cbody"><h4>Power Trowels</h4><p>OR PTF-1000mm Power Trowel (Light Model) (Oil Type) With 3HP 3PH Hindustan / Eltek Motor · Power Trowel Double Speed Motor 60/120 RPM · RPT-80 RIDE-ON TROWEL (4+4 BLADE TYPE) With Honda GX-390 13HP Petrol Engine (800mm Disc)</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/product/bull.png" alt="Bullfloat"><div class="ccat">Finishing</div></div>
+            <div class="cbody"><h4>Bullfloat</h4><p>BULLFLOAT (MANUEL) Big Stainless Steel (Eco) (1601 Model) Complete Set 1.2mtr x 30cm · Orange Bullfloat Surface, Finishing Screed With 2mtr L Type Beam With 0.4HP 1 Phase Electric Motor · COMB Type: Flexible Soft Flat Wire Length 1Mtr, M.S Handle 2+2</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/product/trsuk.png" alt="Truss Screed"><div class="ccat">Finishing</div></div>
+            <div class="cbody"><h4>Truss Screed</h4><p>Aluminum Orange Truss Screed · OR-BS-2DL Thruss Screed MS Steel Total Complete Set 6mtr Long With Honda GX-160 5HP Petrol Engine — for accurately levelling fresh concrete on large floor slabs.</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/products/plaster-spray.png" alt="Plaster Spray Machine"><div class="ccat">Finishing</div></div>
+            <div class="cbody"><h4>Plaster Spray Machine</h4><p>Spray Machine For Plaster Gun To Side Wall · Concrete Sprayer (Plaster) Unit Air Compressor With 3HP 1Phase Crompton Motor · Spray Machine For Air Compressor To Top Ceiling</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GROUP 7: Cutting Machines -->
+      <div class="pgroup" id="g7" data-group="cutting">
+        <div class="gh"><div class="gnum">07</div><div><div class="glbl">Category 07</div><div class="gtitle">Cutting Machines</div></div></div>
+        <div class="pgrid">
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/services/conCutter.jpeg" alt="Concrete Groove Cutters"><div class="ccat">Cutting</div></div>
+            <div class="cbody"><h4>Concrete Groove Cutters</h4><p>AB-150 D Concrete Groove Cutter Greaves 8.3HP Diesel Engine (Rope Start) Cutter 16" X 4mm · ORANGE OR-150 Concrete Groove Cutter (PVC Tank) Greaves 5HP 1520 Diesel Engine (Rope Start) · ORANGE / 4 Square OR-150 Concrete Groove Cutter Honda GX-390 13HP Petrol Engine (Metal Tank)</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/services/brickcu.jpeg" alt="Brick Cutting Machine"><div class="ccat">Cutting</div></div>
+            <div class="cbody"><h4>Brick Cutting Machine</h4><p>ORANGE Brick Cutting Machine — Heavy-duty brick and block cutting machine for clean, precise cuts on AAC blocks, bricks, and masonry on construction sites.</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GROUP 8: Civil Lab Equipment -->
+      <div class="pgroup" id="g8" data-group="testing">
+        <div class="gh"><div class="gnum">08</div><div><div class="glbl">Category 08</div><div class="gtitle">Civil Lab Equipment</div></div></div>
+        <div class="pgrid">
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/services/civillab.jpeg" alt="Total Station"><div class="ccat">Civil Lab</div></div>
+            <div class="cbody"><h4>Total Station</h4><p>Total Station Gm-101 &amp; Gm-55 — High-precision electronic total stations for land surveying, setting out, and construction layout. Accurate angular and distance measurement for civil engineering fieldwork.</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/services/civillab.jpeg" alt="Auto Level"><div class="ccat">Civil Lab</div></div>
+            <div class="cbody"><h4>Auto Level NL24 with Stand</h4><p>Automatic optical level NL24 with aluminium tripod stand — for differential levelling, height measurement, and benchmarking on construction sites and surveying projects.</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/services/civillab.jpeg" alt="Cube Moulds"><div class="ccat">Civil Lab</div></div>
+            <div class="cbody"><h4>Cube Moulds (ISI &amp; Non-ISI)</h4><p>ISI Cube Mould 150×150mm and Non-ISI Cube Moulds — Cast iron and MS cube moulds for standard concrete compressive strength testing as per IS 516 and BIS codes. Available in 150mm and 100mm sizes.</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/services/civillab.jpeg" alt="CTM Machine"><div class="ccat">Civil Lab</div></div>
+            <div class="cbody"><h4>CTM Machine (Compression Testing)</h4><p>CTM Machine 2000kN — Motorised compression testing machine for determining compressive strength of concrete cube and cylinder specimens. Available in 1000kN manual and 2000kN motorised models.</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/services/civillab.jpeg" alt="Slump Cone"><div class="ccat">Civil Lab</div></div>
+            <div class="cbody"><h4>Slump Cone &amp; Workability Tools</h4><p>Slump cone, tamping rod, and base plate set for measuring concrete workability as per IS 1199. Also includes steel beam mould 150×150×700mm for flexural strength testing per IS 516.</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/services/civillab.jpeg" alt="Mini Concrete Mixer Lab"><div class="ccat">Civil Lab</div></div>
+            <div class="cbody"><h4>Mini Concrete Mixer (Lab)</h4><p>Mini Concrete Mixer 200 ltr &amp; 230 ltr — compact portable mixers for laboratory trial mixes, small-batch concrete preparation, and mortar mixing on site or in civil testing labs.</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/services/civillab.jpeg" alt="Grouting Pumps"><div class="ccat">Civil Lab</div></div>
+            <div class="cbody"><h4>Cement &amp; Epoxy Grouting Pump</h4><p>Cement Grouting Pump and Epoxy Grouting Pump — for crack injection, anchor bolt grouting, underpinning, and post-tensioning duct grouting applications in structural repair and construction.</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GROUP 9: Lifting & Access Equipment -->
+      <div class="pgroup" id="g9" data-group="lifting">
+        <div class="gh"><div class="gnum">09</div><div><div class="glbl">Category 09</div><div class="gtitle">Lifting & Access Equipment</div></div></div>
+        <div class="pgrid">
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/services/tower.jpeg" alt="Hoist & Mini Crane"><div class="ccat">Lifting</div></div>
+            <div class="cbody"><h4>Tower crane buckets</h4><p>JK Mini 300 Crane With 1 Bucket · JK Mini 150 Crane With 1 Bucket · JK Mini 500 Crane With 1 Bucket Wire Rope Guide Type Remote Controlled</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/products/suspended-platform.png" alt="Suspended Platform"><div class="ccat">Lifting</div></div>
+            <div class="cbody"><h4>Suspended Platform</h4><p>Suspended Platform for 100mtr High, Full Galvanised type Without Counter Weight · Suspended Platform for 200mtr high With 2.2KW Hoister · Chair Suspended Rope Platform for 100mtr High, With Parapet Clamp With 1.5KW Hoister</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+         
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/product/tough.jpg" alt="Tough Riders"><div class="ccat">Lifting</div></div>
+            <div class="cbody"><h4>Tough Riders</h4><p>Trolley Type Tough Rider · 3 Door Type Tough Rider — Material transport platform riders for moving heavy loads on flat and inclined surfaces at construction sites.</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/services/chian.jpeg" alt="Chain Blocks"><div class="ccat">Lifting</div></div>
+            <div class="cbody"><h4>Chain Blocks</h4><p>Manual chain hoists in 1T, 2T, and 3T capacities — compact, durable chain pulley blocks for lifting, rigging, and load positioning on construction sites and industrial applications.</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/services/eltrowinch.jpeg" alt="Electric Winch"><div class="ccat">Lifting</div></div>
+            <div class="cbody"><h4>Electric Winch / Hoist</h4><p>PA Electric Hoist 200kg–1000kg range · Mini Crane with Clutch — Motor-driven wire rope hoists and electric winches for fast vertical lifting at construction floors and warehouses.</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/services/winch.jpeg" alt="Manual Winch"><div class="ccat">Lifting</div></div>
+            <div class="cbody"><h4>Manual Winch</h4><p>Hand-operated wire rope winches in various capacities — robust manual winches with clutch mechanism for controlled lifting, pulling, and cable tensioning on site.</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/services/lifitngtools.jpeg" alt="Lifting Accessories"><div class="ccat">Lifting</div></div>
+            <div class="cbody"><h4>Lifting Accessories &amp; Rigging Tools</h4><p>Chain slings, wire rope slings, shackles, hooks, eye bolts, lever hoists, clamps, plate lifters, and complete rigging hardware for safe heavy lifting operations.</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/services/minilift.jpeg" alt="Mini Lift"><div class="ccat">Lifting</div></div>
+            <div class="cbody"><h4>Mini lift and lifting equipments</h4><p>Compact electric mini-lift and power trolley systems for moving and raising materials on construction floors — ideal for slab casting, material shifting, and floor-to-floor lifting.</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GROUP 10: Pumps & Water Equipment -->
+      <div class="pgroup" id="g10" data-group="pumps">
+        <div class="gh"><div class="gnum">10</div><div><div class="glbl">Category 10</div><div class="gtitle">Pumps & Water Equipment</div></div></div>
+        <div class="pgrid">
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/products/grout-pump.png" alt="Grout Pumps"><div class="ccat">Pumps</div></div>
+            <div class="cbody"><h4>Grout Pumps</h4><p>40 PSI Grout Pump · 100 PSI Grout Pump · 140 PSI Grout Pump — Pneumatic and electric grout injection pumps for crack filling, anchor bolt grouting, and underpinning operations.</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/products/dewatering-pump.png" alt="Dewatering Jet Flow Pump"><div class="ccat">Pumps</div></div>
+            <div class="cbody"><h4>Dewatering Jet Flow Pump</h4><p>6Mtr Flexible Able Hose With 3" Jet Flow Pump · Dewatering Pump 3" Orange Jet Flow Type Pump Only — For rapid site dewatering, trench drainage, and basement water removal.</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/products/water-pump.png" alt="Water Pump"><div class="ccat">Pumps</div></div>
+            <div class="cbody"><h4>Water Pump (HUSQVARNA)</h4><p>HUSQVARNA Pump Set — High-performance water pump for construction site water supply, drainage, and transfer applications.</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GROUP 11: Construction Accessories -->
+      <div class="pgroup" id="g11" data-group="accessories">
+        <div class="gh"><div class="gnum">11</div><div><div class="glbl">Category 11</div><div class="gtitle">Construction Accessories</div></div></div>
+        <div class="pgrid">
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/services/joint.jpeg" alt="Expansion Joint Filler Boards"><div class="ccat">Accessories</div></div>
+            <div class="cbody"><h4>Expansion Joint Filler Boards</h4><p>Bituminous fibre and polystyrene expansion joint filler boards in 20mm &amp; 25mm thickness for concrete slab joints, road joints, bridge decks, and RCC structures per IS 1838 standards.</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/services/ropes.jpeg" alt="Ropes & Safety Nets"><div class="ccat">Accessories</div></div>
+            <div class="cbody"><h4>Ropes, Safety Nets &amp; Tarpaulins</h4><p>Polypropylene and HDPE twisted ropes, construction safety nets, green shade nets, and heavy-duty tarpaulins — complete range for site safety, scaffolding, and material protection.</p><button class="cenq">Enquire Now ›</button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GROUP 12: Agri Products -->
+      <!-- <div class="pgroup" id="g14" data-group="agri">
+        <div class="gh"><div class="gnum">12</div><div><div class="glbl">Category 12</div><div class="gtitle">Agri Products</div></div></div>
+        <div class="pgrid">
+          <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/services/ropes.jpeg" alt="Green Shade Nets"><div class="ccat">Agri</div></div>
+            <div class="cbody"><h4>Green Shade Nets &amp; Tarpaulins</h4><p>UV-stabilised green shade nets and heavy-duty tarpaulins for crop protection, greenhouse covering, and agricultural use.</p><button class="cenq">Enquire Now ›</button></div>
+          </div> -->
+          <!-- <div class="pcard" onclick="openModal(this)">
+            <div class="cimg"><img src="assets/img/images/harvest.jpg" alt="Bird Nets Sports Nets"><div class="ccat">Agri</div></div>
+            <div class="cbody"><h4>Bird Nets &amp; Sports Nets</h4><p>High-quality HDPE bird protection nets for orchards and farms, plus custom sports nets for cricket, football, and tennis.</p><button class="cenq">Enquire Now ›</button></div>
+          </div> -->
+        </div>
+      </div>
+
+    </main>
+  </div>
+</div>
+
+
+
+        <!-- cta-area -->
+        <!-- <section class="cta__area fix">
+            <div class="cta__bg" data-background="assets/img/bg/cta_bg.jpg"></div>
+            <div class="container">
+                <div class="row align-items-end">
+                    <div class="col-lg-8">
+                        <div class="cta__content">
+                            <h2 class="title">Ready to work with <br> our team?</h2>
+                            <div class="cta__btn">
+                                <a href="contact.html" class="btn btn-two">Let’s build together <img
+                                        src="assets/img/icons/right_arrow.svg" alt="" class="injectable"></a>
+                                <a href="contact.html" class="btn transparent-btn">Contact With Us <img
+                                        src="assets/img/icons/right_arrow.svg" alt="" class="injectable"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="cta__content-right" data-aos="fade-up" data-aos-delay="600">
+                            <h4 class="title">Trusted Supplier of Construction Machinery & Hardware Across India</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cta__shape">
+                <img src="assets/img/images/cta_shape.png" alt="shape" data-aos="fade-down-left" data-aos-delay="400">
+            </div>
+        </section> -->
+        <!-- cta-area-end -->
+
+    </main>
+    <!-- main-area-end -->
+
+    <!-- footer-area -->
+        <footer class="footer__area">
+        <div class="container">
+            <!-- <div class="footer__features">
+                <a href="contact.html">Commercial Building</a>
+                <a href="contact.html">Remodeling Building</a>
+                <a href="contact.html">Residential Development</a>
+                <a href="contact.html">Architectural Development</a>
+            </div> -->
+            <div class="footer__top">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+                        <div class="footer__widget">
+                            <div class="footer__logo">
+                                <a href="index.html"><img src="assets/img/logo/lOGO.jpg.jpeg" alt="logo" style="max-height:55px;"></a>
+                            </div>
+                            <div class="footer__content">
+                                <p>Your trusted partner for anything in hardware and construction machinery — serving contractors across India since 1969.
+
+                                    </p>
+                            </div>
+                         <div class="footer__social">
+                                <ul class="list-wrap">
+                                    <li><a href="https://www.facebook.com/profile.php?id=61590381431714" target="_blank"><i
+                                                class="fab fa-facebook-f"></i></a></li>
+                                    <!-- <li><a href="https://twitter.com/home" target="_blank"><i
+                                                class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/" target="_blank"><i
+                                                class="fab fa-linkedin-in"></i></a></li> -->
+                                    <li><a href="https://www.instagram.com/shamsconmac_pvt_ltd/" target="_blank"><i
+                                                class="fab fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                            <p style="margin-top:8px;font-size:13px;"><a href="mailto:shamsconmac@gmail.com">shamsconmac@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-3 col-sm-4">
+                        <div class="footer__widget">
+                            <h4 class="footer__widget-title">Useful Links</h4>
+                            <div class="footer__widget-link">
+                                <ul class="list-wrap">
+                                    <li>
+                                        <a href="about.html"><i class="renova-right-arrow"></i><span>About Us</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="products.html"><i class="renova-right-arrow"></i><span>Our
+                                                Products</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="gallery.html"><i class="renova-right-arrow"></i><span>Our
+                                                Gallery</span></a>
+                                    </li>
+                                    <!-- <li>
+                                        <a href="team.html"><i class="renova-right-arrow"></i><span>Our Team</span></a>
+                                    </li> -->
+                                    <li>
+                                        <a href="contact.html"><i class="renova-right-arrow"></i><span>Contact
+                                                Us</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-3 col-sm-6">
+                        <div class="footer__widget">
+                            <h4 class="footer__widget-title">Our Services</h4>
+                            <div class="footer__widget-link">
+                                <ul class="list-wrap">
+                                    <li>
+                                        <a href="gallery.html"><i
+                                                class="renova-right-arrow"></i><span>Construction Machinery</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="gallery.html"><i
+                                                class="renova-right-arrow"></i><span>Lifting Equipment</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="gallery.html"><i
+                                                class="renova-right-arrow"></i><span>Safety Products & Nets</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="gallery.html"><i
+                                                class="renova-right-arrow"></i><span>Bitumen & Waterproofing</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="gallery.html"><i
+                                                class="renova-right-arrow"></i><span>Garware Ropes & Tarpaulins</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
+                        <div class="footer__widget">
+                            <h4 class="footer__widget-title">Quick Info</h4>
+                            <div class="footer__widget-link">
+                                <ul class="list-wrap">
+                                    <li>
+                                        <a href="about.html"><i class="renova-right-arrow"></i><span>Our
+                                                Story</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html"><i
+                                                class="renova-right-arrow"></i><span>Appointment</span></a>
+                                    </li>
+                                   
+                                    <li>
+                                        <a href="contact.html"><i class="renova-right-arrow"></i><span>Get in
+                                                touch</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="products.html"><i class="renova-right-arrow"></i><span> Our Products</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-8">
+                        <div class="footer__widget">
+                            <h4 class="footer__widget-title">Newsletter</h4>
+                            <div class="footer__newsletter">
+                                <p>Stay updated with new products, brand arrivals, and special offers from Shams Conmac.</p>
+                                <form action="assets/newsletter.php" class="footer__newsletter-form" id="newsletter-form">
+                                    <input type="email" name="email" placeholder="Email Address" required>
+                                    <button type="submit" class="btn btn-two">Subscribe</button>
+                                    <p class="newsletter-response mb-0"></p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-7">
+                        <div class="copyright-text">
+                            <p>© 2026 Shams Conmac Pvt. Ltd. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                    <!-- <div class="col-md-5">
+                        <div class="footer__bottom-menu">
+                            <ul class="list-wrap">
+                                <li><a href="contact.html">Terms and Conditions</a></li>
+                                <li><a href="contact.html">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer-area-end -->
+
+
+
+
+    <!-- JS here -->
+<script>
+  // Sidebar mobile toggle
+function toggleSb() {
+  document.getElementById('sbBody').classList.toggle('stopen');
+  document.getElementById('sbTog').classList.toggle('stopen');
+}
+
+// Sidebar accordion
+function toggleSbG(btn, id) {
+  var s = document.getElementById(id);
+  var o = s.classList.contains('sopen');
+  document.querySelectorAll('.sb-sub').forEach(function(x) { x.classList.remove('sopen'); });
+  document.querySelectorAll('.sbg-btn').forEach(function(x) { x.classList.remove('sopen'); });
+  if (!o) { s.classList.add('sopen'); btn.classList.add('sopen'); }
+}
+
+// Filter groups
+var labelMap = {
+  'mixing':     'Concrete & Mixing Equipment',
+  'steel':      'Steel & Bar Working Machines',
+  'rail':       'Rail Track Machine & Tools',
+  'vibrators':  'Vibrators & Compaction Equipment',
+  'compaction': 'Soil Compaction & Ground Work',
+  'finishing':  'Surface Finishing Equipment',
+  'cutting':    'Cutting Machines',
+  'testing':    'Civil Lab Equipment',
+  'lifting':    'Lifting & Access Equipment',
+  'pumps':      'Pumps & Water Equipment',
+  'accessories':'Construction Accessories',
+  'agri':       'Agri Products'
+};
+
+function filterGroup(g, chip, fromSb) {
+  document.querySelectorAll('.chip').forEach(function(c) { c.classList.remove('active'); });
+  if (chip) { chip.classList.add('active'); }
+  else if (!fromSb) { document.querySelector('.chip').classList.add('active'); }
+
+  document.querySelectorAll('.pgroup').forEach(function(p) {
+    if (g === 'all') {
+      p.classList.remove('phide');
+    } else {
+      if (p.getAttribute('data-group') === g) { p.classList.remove('phide'); }
+      else { p.classList.add('phide'); }
+    }
+  });
+
+  var rc = document.getElementById('rcount');
+  if (g === 'all') { rc.textContent = 'Showing all 12 product categories — 50+ products'; }
+  else { rc.textContent = 'Showing: ' + (labelMap[g] || g); }
+
+  if (g !== 'all') {
+    var el = document.querySelector('.pgroup:not(.phide)');
+    if (el) { setTimeout(function() { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 80); }
+  }
+
+  if (fromSb && window.innerWidth < 1024) {
+    document.getElementById('sbBody').classList.remove('stopen');
+    document.getElementById('sbTog').classList.remove('stopen');
+  }
+}
+
+// Product enquiry modal
+function openModal(el) {
+  var name = el.querySelector('h4') ? el.querySelector('h4').textContent.trim() : '';
+  var desc = el.querySelector('p') ? el.querySelector('p').textContent.trim() : '';
+  var img = el.querySelector('img') ? el.querySelector('img').getAttribute('src') : '';
+  var cat = el.querySelector('.ccat') ? el.querySelector('.ccat').textContent.trim() : '';
+
+  document.getElementById('mProductName').textContent = name;
+  document.getElementById('mProductDesc').textContent = desc;
+  document.getElementById('mProductCat').textContent = cat;
+  document.getElementById('mProductField').value = name;
+  var mImg = document.getElementById('mProductImg');
+  mImg.src = img;
+  mImg.alt = name;
+
+  var modal = document.getElementById('enquiryModal');
+  modal.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  document.getElementById('enquiryModal').style.display = 'none';
+  document.body.style.overflow = '';
+}
+
+function handleOverlayClick(e) {
+  if (e.target.id === 'enquiryModal') closeModal();
+}
+
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closeModal();
+});
+
+function submitEnquiry(e) {
+  e.preventDefault();
+  var product = document.getElementById('mProductField').value;
+  var name = document.getElementById('mEnqName').value.trim();
+  var phone = document.getElementById('mEnqPhone').value.trim();
+  var email = document.getElementById('mEnqEmail').value.trim();
+  var msg = document.getElementById('mEnqMsg').value.trim();
+
+  var text = 'Hello Shams Conmac,%0A%0AI am interested in: *' + encodeURIComponent(product) + '*%0A%0AName: ' + encodeURIComponent(name) + '%0APhone: ' + encodeURIComponent(phone);
+  if (email) text += '%0AEmail: ' + encodeURIComponent(email);
+  if (msg) text += '%0A%0AMessage: ' + encodeURIComponent(msg);
+
+  window.open('https://wa.me/918805441752?text=' + text, '_blank');
+  closeModal();
+}
+</script>
+
+
+
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.odometer.min.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.marquee.min.js"></script>
+    <script src="assets/js/tg-cursor.min.js"></script>
+    <script src="assets/js/ajax-form.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/svg-inject.min.js"></script>
+    <script src="assets/js/tween-max.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        SVGInject(document.querySelectorAll("img.injectable"));
+    </script>
+
+<!-- PRODUCT ENQUIRY MODAL -->
+<div id="enquiryModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.75);z-index:99999;align-items:center;justify-content:center;padding:16px;" onclick="handleOverlayClick(event)">
+  <div style="background:#fff;width:100%;max-width:440px;max-height:90vh;overflow-y:auto;position:relative;border-radius:2px;">
+    <button onclick="closeModal()" style="position:absolute;top:10px;right:14px;background:none;border:none;font-size:24px;cursor:pointer;color:#888;z-index:1;line-height:1;">&#215;</button>
+    <div style="height:190px;overflow:hidden;border-bottom:3px solid #f8b300;">
+      <img id="mProductImg" src="" alt="" style="width:100%;height:100%;object-fit:cover;display:block;">
+    </div>
+    <div style="padding:22px 24px 28px;">
+      <div id="mProductCat" style="display:inline-block;background:#f5f3ee;padding:4px 12px;font-size:10px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#f8b300;margin-bottom:10px;"></div>
+      <h3 id="mProductName" style="font-family:Barlow Condensed,sans-serif;font-size:22px;font-weight:800;text-transform:uppercase;margin-bottom:8px;color:#111;"></h3>
+      <p id="mProductDesc" style="font-size:13px;color:#666;line-height:1.65;margin-bottom:20px;"></p>
+      <div style="border-top:1px solid #eee;padding-top:18px;">
+        <p style="font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#f8b300;margin-bottom:12px;">Send Enquiry</p>
+        <form onsubmit="submitEnquiry(event)" style="display:flex;flex-direction:column;gap:10px;">
+          <input type="hidden" id="mProductField" value="">
+          <input type="text" id="mEnqName" placeholder="Your Name *" required style="padding:11px 13px;border:1px solid #ddd;font-size:13.5px;outline:none;width:100%;box-sizing:border-box;">
+          <input type="tel" id="mEnqPhone" placeholder="Phone Number *" required style="padding:11px 13px;border:1px solid #ddd;font-size:13.5px;outline:none;width:100%;box-sizing:border-box;">
+          <input type="email" id="mEnqEmail" placeholder="Email Address" style="padding:11px 13px;border:1px solid #ddd;font-size:13.5px;outline:none;width:100%;box-sizing:border-box;">
+          <textarea id="mEnqMsg" placeholder="Message (optional)" style="padding:11px 13px;border:1px solid #ddd;font-size:13.5px;outline:none;width:100%;box-sizing:border-box;min-height:70px;resize:vertical;font-family:inherit;"></textarea>
+          <button type="submit" style="padding:14px;background:#f8b300;color:#111;font-family:Barlow Condensed,sans-serif;font-weight:800;font-size:13px;letter-spacing:2px;text-transform:uppercase;border:none;cursor:pointer;">Send via WhatsApp &#8250;</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/918805441752" target="_blank" rel="noopener noreferrer"
+       style="position:fixed;left:20px;bottom:30px;z-index:9999;display:flex;align-items:center;justify-content:center;width:56px;height:56px;background:#25D366;border-radius:50%;box-shadow:0 4px 12px rgba(0,0,0,0.25);transition:transform 0.2s;"
+       onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="#fff">
+        <path d="M16 2C8.268 2 2 8.268 2 16c0 2.478.649 4.942 1.883 7.115L2 30l7.115-1.867A13.94 13.94 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2zm0 25.6a11.55 11.55 0 0 1-5.892-1.613l-.422-.252-4.222 1.108 1.126-4.107-.276-.435A11.562 11.562 0 0 1 4.4 16C4.4 9.593 9.593 4.4 16 4.4S27.6 9.593 27.6 16 22.407 27.6 16 27.6zm6.34-8.64c-.347-.174-2.055-1.014-2.374-1.13-.319-.116-.551-.174-.783.174-.232.347-.9 1.13-1.103 1.362-.203.232-.406.26-.753.087-.347-.174-1.464-.54-2.788-1.72-1.031-.919-1.727-2.053-1.93-2.4-.203-.347-.022-.535.152-.708.157-.156.347-.406.52-.61.174-.203.232-.347.347-.578.116-.232.058-.435-.029-.61-.087-.174-.783-1.888-1.073-2.587-.283-.68-.57-.587-.783-.598l-.667-.011c-.232 0-.61.087-.928.435-.319.347-1.218 1.19-1.218 2.9s1.247 3.364 1.42 3.597c.174.232 2.452 3.745 5.942 5.252.83.359 1.479.573 1.984.733.833.265 1.592.228 2.191.138.668-.1 2.055-.84 2.345-1.652.29-.812.29-1.508.203-1.652-.086-.145-.318-.232-.665-.406z"/>
+      </svg>
+    </a>
+</body>
+
+</html>

@@ -12034,6 +12034,7 @@ textarea {
 }
 .contact__info-content .content {
   min-height: 100px;
+  min-width: 0;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -12062,6 +12063,7 @@ textarea {
   margin-bottom: 0;
   font-size: 24px;
   font-weight: 500;
+  overflow-wrap: anywhere;
 }
 @media (max-width: 1199.98px) {
   .contact__info-content .content .title {

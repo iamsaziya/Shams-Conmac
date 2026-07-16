@@ -11,37 +11,26 @@ $(function() {
 		// Stop the browser from submitting the form.
 		e.preventDefault();
 
-		// Serialize the form data.
-		var formData = $(form).serialize();
-
-		// Submit the form using AJAX.
-		$.ajax({
-			type: 'POST',
-			url: $(form).attr('action'),
-			data: formData
-		})
-		.done(function(response) {
+		// Send via EmailJS (service/template configured in the EmailJS dashboard).
+		emailjs.sendForm('service_f0o7g5i', 'template_mbfmzrl', form[0])
+		.then(function() {
 			// Make sure that the formMessages div has the 'success' class.
 			$(formMessages).removeClass('error');
 			$(formMessages).addClass('success');
 
 			// Set the message text.
-			$(formMessages).text(response);
+			$(formMessages).text('Thank You! Your message has been sent.');
 
 			// Clear the form.
 			$('#contact-form input,#contact-form textarea').val('');
 		})
-		.fail(function(data) {
+		.catch(function(err) {
 			// Make sure that the formMessages div has the 'error' class.
 			$(formMessages).removeClass('success');
 			$(formMessages).addClass('error');
 
 			// Set the message text.
-			if (data.responseText !== '') {
-				$(formMessages).text(data.responseText);
-			} else {
-				$(formMessages).text('Oops! An error occured and your message could not be sent.');
-			}
+			$(formMessages).text('Oops! Something went wrong and your message could not be sent.');
 		});
 	});
 

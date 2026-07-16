@@ -808,8 +808,17 @@ Sales
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-grp">
-                                    <input type="text" name="subject" placeholder="Your Subject">
+                                <div class="row gutter-20">
+                                    <div class="col-md-6">
+                                        <div class="form-grp">
+                                            <input type="text" name="subject" placeholder="Your Subject">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-grp">
+                                            <input type="tel" name="Phone" placeholder="Phone Number">
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="form-grp">
                                     <textarea name="message" placeholder="Type Your Message"></textarea>
@@ -983,6 +992,8 @@ Sales
 
 
     <!-- JS here -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>emailjs.init({ publicKey: "KH5oYxDWnstMC01uA" });</script>
     <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/isotope.pkgd.min.js"></script>
